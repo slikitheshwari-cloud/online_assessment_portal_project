@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "topic": "Artificial Intelligence: Boon or Bane"
+  },
+  {
+    "id": 2,
+    "topic": "Impact of Social Media on Students"
+  },
+  {
+    "id": 3,
+    "topic": "Online Education vs Traditional Education"
+  },
+  {
+    "id": 4,
+    "topic": "Role of Technology in Daily Life"
+  },
+  {
+    "id": 5,
+    "topic": "Digital India and Its Impact"
+  },
+  {
+    "id": 6,
+    "topic": "Is Artificial Intelligence Replacing Human Jobs?"
+  },
+  {
+    "id": 7,
+    "topic": "Advantages of Internet in Education"
+  },
+  {
+    "id": 8,
+    "topic": "Cyber Security in the Digital Era"
+  },
+  {
+    "id": 9,
+    "topic": "Cashless Economy: Benefits and Challenges"
+  },
+  {
+    "id": 10,
+    "topic": "Electric Vehicles: Future of Transportation"
+  },
+  {
+    "id": 11,
+    "topic": "Role of Automation in Industries"
+  },
+  {
+    "id": 12,
+    "topic": "Future of Robotics"
+  },
+  {
+    "id": 13,
+    "topic": "Importance of Data Science in Modern World"
+  },
+  {
+    "id": 14,
+    "topic": "Impact of Smartphones on Human Relationships"
+  },
+  {
+    "id": 15,
+    "topic": "Cloud Computing and Its Applications"
+  },
+  {
+    "id": 16,
+    "topic": "Internet of Things (IoT) in Daily Life"
+  },
+  {
+    "id": 17,
+    "topic": "Blockchain Technology and Future"
+  },
+  {
+    "id": 18,
+    "topic": "Impact of 5G Technology"
+  },
+  {
+    "id": 19,
+    "topic": "Technology and Employment Opportunities"
+  },
+  {
+    "id": 20,
+    "topic": "Importance of Digital Literacy"
+  },
+  {
+    "id": 21,
+    "topic": "Importance of Time Management for Students"
+  },
+  {
+    "id": 22,
+    "topic": "Should Mobile Phones Be Allowed in Colleges?"
+  },
+  {
+    "id": 23,
+    "topic": "Importance of Skill Development for Employability"
+  },
+  {
+    "id": 24,
+    "topic": "Examination System in India"
+  },
+  {
+    "id": 25,
+    "topic": "Importance of Higher Education"
+  },
+  {
+    "id": 26,
+    "topic": "Value of Discipline in Student Life"
+  },
+  {
+    "id": 27,
+    "topic": "Role of Teachers in Nation Building"
+  },
+  {
+    "id": 28,
+    "topic": "Online Learning: Advantages and Disadvantages"
+  },
+  {
+    "id": 29,
+    "topic": "Education is the Key to Success"
+  },
+  {
+    "id": 30,
+    "topic": "Importance of Reading Books"
+  },
+  {
+    "id": 31,
+    "topic": "Competitive Exams and Student Stress"
+  },
+  {
+    "id": 32,
+    "topic": "Importance of Communication Skills in Career Growth"
+  },
+  {
+    "id": 33,
+    "topic": "Importance of Soft Skills for Placements"
+  },
+  {
+    "id": 34,
+    "topic": "Students and Social Responsibility"
+  },
+  {
+    "id": 35,
+    "topic": "Vocational Education in India"
+  },
+  {
+    "id": 36,
+    "topic": "My Dream Career and Future Goals"
+  },
+  {
+    "id": 37,
+    "topic": "Importance of Leadership Qualities"
+  },
+  {
+    "id": 38,
+    "topic": "Role of Ethics in Professional Life"
+  },
+  {
+    "id": 39,
+    "topic": "Success Comes Through Hard Work"
+  },
+  {
+    "id": 40,
+    "topic": "Teamwork in Organizations"
+  },
+  {
+    "id": 41,
+    "topic": "Women Leadership in Corporate World"
+  },
+  {
+    "id": 42,
+    "topic": "Importance of Goal Setting"
+  },
+  {
+    "id": 43,
+    "topic": "First Impression in Interviews"
+  },
+  {
+    "id": 44,
+    "topic": "Importance of Professional Ethics"
+  },
+  {
+    "id": 45,
+    "topic": "How to Handle Failure in Career"
+  },
+  {
+    "id": 46,
+    "topic": "Work From Home: Pros and Cons"
+  },
+  {
+    "id": 47,
+    "topic": "Importance of Decision Making Skills"
+  },
+  {
+    "id": 48,
+    "topic": "Entrepreneurship as a Career"
+  },
+  {
+    "id": 49,
+    "topic": "Startup Culture in India"
+  },
+  {
+    "id": 50,
+    "topic": "Importance of Adaptability in Workplace"
+  },
+  {
+    "id": 51,
+    "topic": "Women Empowerment in India"
+  },
+  {
+    "id": 52,
+    "topic": "Climate Change and Global Warming"
+  },
+  {
+    "id": 53,
+    "topic": "Effects of Pollution on Human Life"
+  },
+  {
+    "id": 54,
+    "topic": "Role of Youth in Nation Building"
+  },
+  {
+    "id": 55,
+    "topic": "Population Growth and Its Impact"
+  },
+  {
+    "id": 56,
+    "topic": "Importance of Voting in Democracy"
+  },
+  {
+    "id": 57,
+    "topic": "Corruption in India"
+  },
+  {
+    "id": 58,
+    "topic": "Poverty and Unemployment"
+  },
+  {
+    "id": 59,
+    "topic": "Gender Equality in Society"
+  },
+  {
+    "id": 60,
+    "topic": "Role of Media in Society"
+  },
+  {
+    "id": 61,
+    "topic": "Impact of Movies on Youth"
+  },
+  {
+    "id": 62,
+    "topic": "Drug Addiction Among Youth"
+  },
+  {
+    "id": 63,
+    "topic": "Importance of Mental Health Awareness"
+  },
+  {
+    "id": 64,
+    "topic": "Social Media and Fake News"
+  },
+  {
+    "id": 65,
+    "topic": "Importance of Cleanliness in Public Places"
+  },
+  {
+    "id": 66,
+    "topic": "Health is Wealth"
+  },
+  {
+    "id": 67,
+    "topic": "Honesty is the Best Policy"
+  },
+  {
+    "id": 68,
+    "topic": "Importance of Sports in Life"
+  },
+  {
+    "id": 69,
+    "topic": "Save Water Save Life"
+  },
+  {
+    "id": 70,
+    "topic": "Importance of Environmental Protection"
+  },
+  {
+    "id": 71,
+    "topic": "Trees are Our Best Friends"
+  },
+  {
+    "id": 72,
+    "topic": "Role of Discipline in Success"
+  },
+  {
+    "id": 73,
+    "topic": "Hard Work vs Smart Work"
+  },
+  {
+    "id": 74,
+    "topic": "Failure is the Stepping Stone to Success"
+  },
+  {
+    "id": 75,
+    "topic": "Positive Thinking and Success"
+  }
+]

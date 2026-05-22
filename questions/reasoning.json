@@ -1,0 +1,1652 @@
+[
+  {
+    "id": 1,
+    "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
+    "options": {
+      "A": "Apple",
+      "B": "Banana",
+      "C": "Mango",
+      "D": "Carrot"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 2,
+    "question": "If CAT = 24, then BAT = ?",
+    "options": {
+      "A": "21",
+      "B": "22",
+      "C": "23",
+      "D": "24"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "Find the next letter: A, C, E, G, ?",
+    "options": {
+      "A": "H",
+      "B": "I",
+      "C": "J",
+      "D": "K"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "question": "Pointing to a man, Ravi said, 'He is my father's son.' Who is he?",
+    "options": {
+      "A": "Brother",
+      "B": "Uncle",
+      "C": "Ravi himself",
+      "D": "Cousin"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "If South-East becomes North, then North-East becomes:",
+    "options": {
+      "A": "East",
+      "B": "South",
+      "C": "West",
+      "D": "North-West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Choose the missing number: 2, 4, 8, 16, ?",
+    "options": {
+      "A": "24",
+      "B": "30",
+      "C": "32",
+      "D": "36"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Find the odd pair:",
+    "options": {
+      "A": "Pen : Write",
+      "B": "Knife : Cut",
+      "C": "Chair : Sit",
+      "D": "Book : Eat"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 8,
+    "question": "If FRIEND is coded as HUMJTK, then CANDLE is coded as:",
+    "options": {
+      "A": "EDPFNG",
+      "B": "FDRIRL",
+      "C": "DCMEOH",
+      "D": "EBOEMF"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "Which number replaces the question mark? 3, 6, 12, 24, ?",
+    "options": {
+      "A": "36",
+      "B": "42",
+      "C": "48",
+      "D": "60"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "question": "A man walks 5 km north and then turns right. Which direction is he facing now?",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "question": "Find the odd one out: Circle, Square, Triangle, Table",
+    "options": {
+      "A": "Circle",
+      "B": "Square",
+      "C": "Triangle",
+      "D": "Table"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 12,
+    "question": "If DOG = 26, then CAT = ?",
+    "options": {
+      "A": "20",
+      "B": "21",
+      "C": "22",
+      "D": "24"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 13,
+    "question": "Find the next alphabet: Z, X, V, T, ?",
+    "options": {
+      "A": "R",
+      "B": "Q",
+      "C": "P",
+      "D": "O"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "question": "Pointing to a woman, Raj said, 'She is the daughter of my mother's husband.' Who is she?",
+    "options": {
+      "A": "Sister",
+      "B": "Mother",
+      "C": "Wife",
+      "D": "Daughter"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "A person facing east turns left. Which direction is he facing?",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "West",
+      "D": "East"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "question": "Find the next number: 5, 10, 20, 40, ?",
+    "options": {
+      "A": "60",
+      "B": "70",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Fish : Water",
+      "B": "Bird : Sky",
+      "C": "Camel : Desert",
+      "D": "Lion : Ocean"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 18,
+    "question": "If PEN is coded as 123, then BOOK may be coded as:",
+    "options": {
+      "A": "4566",
+      "B": "7889",
+      "C": "2345",
+      "D": "1122"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "question": "Find the missing number: 1, 4, 9, 16, ?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "A boy walks south and turns left. Which direction is he facing?",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "North",
+      "D": "South"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 21,
+    "question": "Find the odd one out: Rose, Lotus, Jasmine, Mango",
+    "options": {
+      "A": "Rose",
+      "B": "Lotus",
+      "C": "Jasmine",
+      "D": "Mango"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 22,
+    "question": "If BAT = 23, then RAT = ?",
+    "options": {
+      "A": "39",
+      "B": "41",
+      "C": "43",
+      "D": "45"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "Find the next alphabet: B, D, F, H, ?",
+    "options": {
+      "A": "I",
+      "B": "J",
+      "C": "K",
+      "D": "L"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "If A is brother of B and B is sister of C, then A is C’s:",
+    "options": {
+      "A": "Brother",
+      "B": "Sister",
+      "C": "Cousin",
+      "D": "Father"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 25,
+    "question": "Facing south, turning right means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "North",
+      "D": "South"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "Find the next number: 7, 14, 21, 28, ?",
+    "options": {
+      "A": "32",
+      "B": "35",
+      "C": "38",
+      "D": "42"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Doctor : Hospital",
+      "B": "Teacher : School",
+      "C": "Pilot : Airport",
+      "D": "Farmer : Court"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 28,
+    "question": "If EAST = 1234 and TEA = 412, then SEAT = ?",
+    "options": {
+      "A": "3142",
+      "B": "3214",
+      "C": "2143",
+      "D": "1324"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "Find the missing number: 9, 18, 36, 72, ?",
+    "options": {
+      "A": "96",
+      "B": "108",
+      "C": "124",
+      "D": "144"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 30,
+    "question": "A person walks west and turns left. Which direction is he facing?",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "Find the odd one out: Cow, Goat, Tiger, Buffalo",
+    "options": {
+      "A": "Cow",
+      "B": "Goat",
+      "C": "Tiger",
+      "D": "Buffalo"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 32,
+    "question": "If CAT = 24 and BAT = 23, then MAT = ?",
+    "options": {
+      "A": "33",
+      "B": "34",
+      "C": "35",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "Find the next alphabet: A, D, G, J, ?",
+    "options": {
+      "A": "K",
+      "B": "L",
+      "C": "M",
+      "D": "N"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "Pointing to a boy, Sita said, 'He is the son of my grandfather’s son.' The boy is Sita’s:",
+    "options": {
+      "A": "Brother",
+      "B": "Cousin",
+      "C": "Uncle",
+      "D": "Nephew"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 35,
+    "question": "Facing north, turning left means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "South",
+      "D": "North"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Find the next number: 11, 22, 44, 88, ?",
+    "options": {
+      "A": "132",
+      "B": "154",
+      "C": "166",
+      "D": "176"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 37,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Bird : Fly",
+      "B": "Fish : Swim",
+      "C": "Snake : Crawl",
+      "D": "Dog : Sky"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 38,
+    "question": "If SOUTH is written as HTUOS, then NORTH is:",
+    "options": {
+      "A": "HTRON",
+      "B": "NROHT",
+      "C": "HTRON",
+      "D": "HTRNO"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 39,
+    "question": "Find the missing number: 2, 5, 10, 17, 26, ?",
+    "options": {
+      "A": "35",
+      "B": "36",
+      "C": "37",
+      "D": "38"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 40,
+    "question": "A boy facing west turns right. He now faces:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 41,
+    "question": "Find the odd one out: Pen, Pencil, Eraser, Chair",
+    "options": {
+      "A": "Pen",
+      "B": "Pencil",
+      "C": "Eraser",
+      "D": "Chair"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 42,
+    "question": "If DOG = 26, then FOX = ?",
+    "options": {
+      "A": "41",
+      "B": "42",
+      "C": "43",
+      "D": "44"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 43,
+    "question": "Find the next alphabet: C, F, I, L, ?",
+    "options": {
+      "A": "N",
+      "B": "O",
+      "C": "P",
+      "D": "Q"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "question": "If X is sister of Y and Y is father of Z, then X is Z’s:",
+    "options": {
+      "A": "Mother",
+      "B": "Aunt",
+      "C": "Sister",
+      "D": "Cousin"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Facing east, turning right means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "West",
+      "D": "East"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "question": "Find the next number: 100, 81, 64, 49, ?",
+    "options": {
+      "A": "25",
+      "B": "36",
+      "C": "40",
+      "D": "45"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Sun : Day",
+      "B": "Moon : Night",
+      "C": "Rain : Cloud",
+      "D": "Chair : Sleep"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 48,
+    "question": "If FRIEND = HUMJTK, then SCHOOL = ?",
+    "options": {
+      "A": "TDIPPM",
+      "B": "TDIQPM",
+      "C": "TDIPOL",
+      "D": "TDIQOL"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 49,
+    "question": "Find the missing number: 1, 1, 2, 3, 5, ?",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "9"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "A person walks north, then east. Which direction is he from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 51,
+    "question": "Find the odd one out: Apple, Banana, Orange, Potato",
+    "options": {
+      "A": "Apple",
+      "B": "Banana",
+      "C": "Orange",
+      "D": "Potato"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 52,
+    "question": "If CAR = 24, then BUS = ?",
+    "options": {
+      "A": "40",
+      "B": "42",
+      "C": "44",
+      "D": "46"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 53,
+    "question": "Find the next alphabet: D, G, J, M, ?",
+    "options": {
+      "A": "O",
+      "B": "P",
+      "C": "Q",
+      "D": "R"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "question": "If P is father of Q and Q is mother of R, then P is R’s:",
+    "options": {
+      "A": "Brother",
+      "B": "Grandfather",
+      "C": "Uncle",
+      "D": "Father"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "Facing west, turning right means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 56,
+    "question": "Find the next number: 4, 8, 16, 32, ?",
+    "options": {
+      "A": "48",
+      "B": "56",
+      "C": "64",
+      "D": "72"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 57,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Bird : Nest",
+      "B": "Lion : Den",
+      "C": "Dog : Kennel",
+      "D": "Fish : Tree"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 58,
+    "question": "If TABLE = UBCMF, then CHAIR = ?",
+    "options": {
+      "A": "DIBJS",
+      "B": "DIBKT",
+      "C": "DIBJR",
+      "D": "EJCJS"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 59,
+    "question": "Find the missing number: 1, 3, 6, 10, 15, ?",
+    "options": {
+      "A": "18",
+      "B": "20",
+      "C": "21",
+      "D": "24"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 60,
+    "question": "A person walks north and turns right. He now faces:",
+    "options": {
+      "A": "South",
+      "B": "East",
+      "C": "West",
+      "D": "North"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Find the odd one out: Delhi, Mumbai, Chennai, India",
+    "options": {
+      "A": "Delhi",
+      "B": "Mumbai",
+      "C": "Chennai",
+      "D": "India"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 62,
+    "question": "If BAT = 23 and CAT = 24, then HAT = ?",
+    "options": {
+      "A": "29",
+      "B": "30",
+      "C": "31",
+      "D": "32"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 63,
+    "question": "Find the next alphabet: E, H, K, N, ?",
+    "options": {
+      "A": "Q",
+      "B": "R",
+      "C": "S",
+      "D": "T"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 64,
+    "question": "If A is mother of B and C is brother of B, then C is A’s:",
+    "options": {
+      "A": "Son",
+      "B": "Brother",
+      "C": "Father",
+      "D": "Cousin"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 65,
+    "question": "Facing south, turning left means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "North",
+      "D": "South"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 66,
+    "question": "Find the next number: 6, 12, 24, 48, ?",
+    "options": {
+      "A": "72",
+      "B": "84",
+      "C": "96",
+      "D": "108"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 67,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Teacher : School",
+      "B": "Doctor : Hospital",
+      "C": "Pilot : Aeroplane",
+      "D": "Fish : Forest"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 68,
+    "question": "If GOOD = HPPE, then BAD = ?",
+    "options": {
+      "A": "CBE",
+      "B": "DCF",
+      "C": "CDF",
+      "D": "BCE"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 69,
+    "question": "Find the missing number: 13, 26, 39, 52, ?",
+    "options": {
+      "A": "63",
+      "B": "65",
+      "C": "67",
+      "D": "69"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 70,
+    "question": "A boy facing east turns left. He now faces:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 71,
+    "question": "Find the odd one out: Monday, Tuesday, Friday, December",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Friday",
+      "D": "December"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 72,
+    "question": "If DOG = 26, then LOG = ?",
+    "options": {
+      "A": "33",
+      "B": "34",
+      "C": "35",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 73,
+    "question": "Find the next alphabet: F, I, L, O, ?",
+    "options": {
+      "A": "Q",
+      "B": "R",
+      "C": "S",
+      "D": "T"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "question": "If M is son of N and N is daughter of O, then M is O’s:",
+    "options": {
+      "A": "Brother",
+      "B": "Grandson",
+      "C": "Father",
+      "D": "Nephew"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 75,
+    "question": "Facing north, turning right means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "South",
+      "D": "North"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 76,
+    "question": "Find the next number: 8, 16, 32, 64, ?",
+    "options": {
+      "A": "96",
+      "B": "112",
+      "C": "128",
+      "D": "144"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 77,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Book : Read",
+      "B": "Pen : Write",
+      "C": "Knife : Cut",
+      "D": "Ball : Eat"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 78,
+    "question": "If SKY = TLZ, then SUN = ?",
+    "options": {
+      "A": "TVO",
+      "B": "TVN",
+      "C": "TWM",
+      "D": "UVN"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 79,
+    "question": "Find the missing number: 15, 30, 45, 60, ?",
+    "options": {
+      "A": "70",
+      "B": "75",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 80,
+    "question": "A person walks east and then north. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 81,
+    "question": "Find the odd one out: Red, Blue, Green, Apple",
+    "options": {
+      "A": "Red",
+      "B": "Blue",
+      "C": "Green",
+      "D": "Apple"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 82,
+    "question": "If BAT = 23, then MAP = ?",
+    "options": {
+      "A": "29",
+      "B": "30",
+      "C": "31",
+      "D": "32"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "Find the next alphabet: G, J, M, P, ?",
+    "options": {
+      "A": "R",
+      "B": "S",
+      "C": "T",
+      "D": "U"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 84,
+    "question": "If X is father of Y and Y is brother of Z, then X is Z’s:",
+    "options": {
+      "A": "Father",
+      "B": "Brother",
+      "C": "Uncle",
+      "D": "Grandfather"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 85,
+    "question": "Facing west, turning left means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 86,
+    "question": "Find the next number: 9, 18, 36, 72, ?",
+    "options": {
+      "A": "96",
+      "B": "108",
+      "C": "124",
+      "D": "144"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 87,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Cow : Milk",
+      "B": "Bee : Honey",
+      "C": "Hen : Egg",
+      "D": "Fish : Sand"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 88,
+    "question": "If APPLE = BQQMF, then MANGO = ?",
+    "options": {
+      "A": "NBOHP",
+      "B": "NCPHP",
+      "C": "NBPHP",
+      "D": "NBOIQ"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 89,
+    "question": "Find the missing number: 21, 24, 27, 30, ?",
+    "options": {
+      "A": "32",
+      "B": "33",
+      "C": "35",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "A boy walks south and then east. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 91,
+    "question": "Find the odd one out: Laptop, Keyboard, Monitor, Refrigerator",
+    "options": {
+      "A": "Laptop",
+      "B": "Keyboard",
+      "C": "Monitor",
+      "D": "Refrigerator"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 92,
+    "question": "If CAT = 24, then FAT = ?",
+    "options": {
+      "A": "27",
+      "B": "28",
+      "C": "29",
+      "D": "30"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Find the next alphabet: H, K, N, Q, ?",
+    "options": {
+      "A": "S",
+      "B": "T",
+      "C": "U",
+      "D": "V"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 94,
+    "question": "If A is brother of B and B is father of C, then A is C’s:",
+    "options": {
+      "A": "Father",
+      "B": "Brother",
+      "C": "Uncle",
+      "D": "Grandfather"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 95,
+    "question": "Facing east, turning left means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "West",
+      "D": "East"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 96,
+    "question": "Find the next number: 14, 28, 56, 112, ?",
+    "options": {
+      "A": "168",
+      "B": "196",
+      "C": "224",
+      "D": "256"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 97,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Eye : See",
+      "B": "Ear : Hear",
+      "C": "Nose : Smell",
+      "D": "Leg : Taste"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 98,
+    "question": "If BALL = CZMM, then CALL = ?",
+    "options": {
+      "A": "DZMM",
+      "B": "DZNN",
+      "C": "EZMM",
+      "D": "DYMM"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 99,
+    "question": "Find the missing number: 50, 45, 40, 35, ?",
+    "options": {
+      "A": "25",
+      "B": "28",
+      "C": "30",
+      "D": "32"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 100,
+    "question": "A person walks west and then south. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 101,
+    "question": "Find the odd one out: Tiger, Lion, Elephant, Sparrow",
+    "options": {
+      "A": "Tiger",
+      "B": "Lion",
+      "C": "Elephant",
+      "D": "Sparrow"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 102,
+    "question": "If CAT = 24, then DOG = ?",
+    "options": {
+      "A": "24",
+      "B": "25",
+      "C": "26",
+      "D": "27"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 103,
+    "question": "Find the next alphabet: I, L, O, R, ?",
+    "options": {
+      "A": "T",
+      "B": "U",
+      "C": "V",
+      "D": "W"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 104,
+    "question": "If A is sister of B and B is brother of C, then A is C’s:",
+    "options": {
+      "A": "Brother",
+      "B": "Sister",
+      "C": "Mother",
+      "D": "Cousin"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 105,
+    "question": "Facing north, turning left means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "South",
+      "D": "North"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "question": "Find the next number: 12, 24, 48, 96, ?",
+    "options": {
+      "A": "144",
+      "B": "168",
+      "C": "192",
+      "D": "224"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 107,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Teacher : Teach",
+      "B": "Doctor : Treat",
+      "C": "Chef : Cook",
+      "D": "Pilot : Swim"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 108,
+    "question": "If BOOK = CPPL, then GAME = ?",
+    "options": {
+      "A": "HBNF",
+      "B": "HBNG",
+      "C": "IBNG",
+      "D": "HBMF"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 109,
+    "question": "Find the missing number: 2, 6, 12, 20, 30, ?",
+    "options": {
+      "A": "40",
+      "B": "42",
+      "C": "44",
+      "D": "46"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 110,
+    "question": "A person walks south and turns right. He now faces:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "North",
+      "D": "South"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 111,
+    "question": "Find the odd one out: Gold, Silver, Copper, Plastic",
+    "options": {
+      "A": "Gold",
+      "B": "Silver",
+      "C": "Copper",
+      "D": "Plastic"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 112,
+    "question": "If BAT = 23, then HAT = ?",
+    "options": {
+      "A": "29",
+      "B": "30",
+      "C": "31",
+      "D": "32"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 113,
+    "question": "Find the next alphabet: J, M, P, S, ?",
+    "options": {
+      "A": "U",
+      "B": "V",
+      "C": "W",
+      "D": "X"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 114,
+    "question": "If X is father of Y and Y is father of Z, then X is Z’s:",
+    "options": {
+      "A": "Father",
+      "B": "Brother",
+      "C": "Grandfather",
+      "D": "Uncle"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "question": "Facing east, turning right means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "West",
+      "D": "East"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 116,
+    "question": "Find the next number: 15, 30, 60, 120, ?",
+    "options": {
+      "A": "180",
+      "B": "210",
+      "C": "240",
+      "D": "300"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 117,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Bird : Fly",
+      "B": "Fish : Swim",
+      "C": "Snake : Crawl",
+      "D": "Dog : Water"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 118,
+    "question": "If NOTE = OPUF, then BALL = ?",
+    "options": {
+      "A": "CBMM",
+      "B": "CBNN",
+      "C": "DBMM",
+      "D": "DBNN"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 119,
+    "question": "Find the missing number: 5, 10, 17, 26, 37, ?",
+    "options": {
+      "A": "48",
+      "B": "50",
+      "C": "52",
+      "D": "54"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 120,
+    "question": "A person walks north and then west. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 121,
+    "question": "Find the odd one out: Car, Bus, Train, Banana",
+    "options": {
+      "A": "Car",
+      "B": "Bus",
+      "C": "Train",
+      "D": "Banana"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 122,
+    "question": "If DOG = 26, then FOG = ?",
+    "options": {
+      "A": "27",
+      "B": "28",
+      "C": "29",
+      "D": "30"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 123,
+    "question": "Find the next alphabet: K, N, Q, T, ?",
+    "options": {
+      "A": "V",
+      "B": "W",
+      "C": "X",
+      "D": "Y"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 124,
+    "question": "If P is mother of Q and Q is sister of R, then P is R’s:",
+    "options": {
+      "A": "Sister",
+      "B": "Mother",
+      "C": "Aunt",
+      "D": "Grandmother"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 125,
+    "question": "Facing south, turning right means facing:",
+    "options": {
+      "A": "East",
+      "B": "West",
+      "C": "North",
+      "D": "South"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 126,
+    "question": "Find the next number: 20, 40, 80, 160, ?",
+    "options": {
+      "A": "240",
+      "B": "280",
+      "C": "320",
+      "D": "360"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 127,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Eye : See",
+      "B": "Ear : Hear",
+      "C": "Tongue : Taste",
+      "D": "Leg : Smell"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 128,
+    "question": "If APPLE = BQQMF, then GRAPE = ?",
+    "options": {
+      "A": "HSBQF",
+      "B": "HSBRF",
+      "C": "HTBQF",
+      "D": "HTBRF"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 129,
+    "question": "Find the missing number: 3, 7, 13, 21, 31, ?",
+    "options": {
+      "A": "41",
+      "B": "42",
+      "C": "43",
+      "D": "44"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 130,
+    "question": "A boy walks east and then south. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 131,
+    "question": "Find the odd one out: Pen, Pencil, Notebook, Television",
+    "options": {
+      "A": "Pen",
+      "B": "Pencil",
+      "C": "Notebook",
+      "D": "Television"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 132,
+    "question": "If CAT = 24, then RAT = ?",
+    "options": {
+      "A": "39",
+      "B": "40",
+      "C": "41",
+      "D": "42"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 133,
+    "question": "Find the next alphabet: L, O, R, U, ?",
+    "options": {
+      "A": "W",
+      "B": "X",
+      "C": "Y",
+      "D": "Z"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 134,
+    "question": "If A is father of B and B is brother of C, then A is C’s:",
+    "options": {
+      "A": "Father",
+      "B": "Brother",
+      "C": "Uncle",
+      "D": "Grandfather"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 135,
+    "question": "Facing west, turning left means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "East",
+      "D": "West"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 136,
+    "question": "Find the next number: 25, 50, 100, 200, ?",
+    "options": {
+      "A": "300",
+      "B": "350",
+      "C": "400",
+      "D": "450"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 137,
+    "question": "Choose the related pair:",
+    "options": {
+      "A": "Sun : Day",
+      "B": "Moon : Night",
+      "C": "Cloud : Rain",
+      "D": "Stone : Fly"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 138,
+    "question": "If BOOK = CPPL, then PEN = ?",
+    "options": {
+      "A": "QFO",
+      "B": "QEN",
+      "C": "RFO",
+      "D": "RFP"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 139,
+    "question": "Find the missing number: 8, 15, 24, 35, 48, ?",
+    "options": {
+      "A": "61",
+      "B": "62",
+      "C": "63",
+      "D": "64"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 140,
+    "question": "A person walks north and then east. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 141,
+    "question": "Find the odd one out: Rose, Lily, Lotus, Tiger",
+    "options": {
+      "A": "Rose",
+      "B": "Lily",
+      "C": "Lotus",
+      "D": "Tiger"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 142,
+    "question": "If BAT = 23, then MAT = ?",
+    "options": {
+      "A": "33",
+      "B": "34",
+      "C": "35",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 143,
+    "question": "Find the next alphabet: M, P, S, V, ?",
+    "options": {
+      "A": "X",
+      "B": "Y",
+      "C": "Z",
+      "D": "A"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 144,
+    "question": "If X is brother of Y and Y is mother of Z, then X is Z’s:",
+    "options": {
+      "A": "Father",
+      "B": "Uncle",
+      "C": "Brother",
+      "D": "Grandfather"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 145,
+    "question": "Facing east, turning left means facing:",
+    "options": {
+      "A": "North",
+      "B": "South",
+      "C": "West",
+      "D": "East"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 146,
+    "question": "Find the next number: 30, 60, 120, 240, ?",
+    "options": {
+      "A": "360",
+      "B": "420",
+      "C": "480",
+      "D": "540"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 147,
+    "question": "Choose the odd pair:",
+    "options": {
+      "A": "Doctor : Hospital",
+      "B": "Teacher : School",
+      "C": "Chef : Kitchen",
+      "D": "Pilot : Ocean"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 148,
+    "question": "If CAR = DBS, then BUS = ?",
+    "options": {
+      "A": "CVT",
+      "B": "CUT",
+      "C": "DVT",
+      "D": "DUU"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 149,
+    "question": "Find the missing number: 11, 22, 35, 50, 67, ?",
+    "options": {
+      "A": "84",
+      "B": "86",
+      "C": "88",
+      "D": "90"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 150,
+    "question": "A person walks west and then north. He is in which direction from the starting point?",
+    "options": {
+      "A": "North-East",
+      "B": "North-West",
+      "C": "South-East",
+      "D": "South-West"
+    },
+    "answer": "B"
+  }
+]

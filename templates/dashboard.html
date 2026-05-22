@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — CDC Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0a0a0f;--cream:#f5f2eb;--gold:#c9a84c;--green:#3dba6e;--err:#e84545;--card:#13131e;--border:#252535;--muted:#8888a0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:#0d0d15;color:var(--cream);min-height:100vh;}
+
+  /* ── TOPBAR ── */
+  .topbar{background:#11111a;border-bottom:1px solid var(--border);padding:14px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  .topbar-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--gold);letter-spacing:.06em;}
+  .topbar-right{display:flex;align-items:center;gap:16px;}
+  .avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#a07030);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;color:var(--ink);}
+  .topbar-name{font-size:.9rem;color:#ccc;}
+  .btn-logout{font-size:.82rem;color:#666;text-decoration:none;padding:6px 14px;border:1px solid #222;border-radius:6px;transition:.2s;}
+  .btn-logout:hover{border-color:#555;color:#ccc;}
+
+  /* ── MAIN ── */
+  .main{max-width:960px;margin:0 auto;padding:40px 24px;}
+
+  /* ── WELCOME ── */
+  .welcome{margin-bottom:36px;}
+  .welcome-sub{font-size:.85rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+  .welcome-name{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;}
+  .welcome-roll{color:var(--muted);font-size:.9rem;margin-top:4px;}
+
+  /* ── EXAM CARD (no previous results) ── */
+  .exam-card{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:40px;text-align:center;margin-bottom:32px;position:relative;overflow:hidden;}
+  .exam-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(201,168,76,.08),transparent);}
+  .exam-icon{font-size:3rem;margin-bottom:16px;}
+  .exam-card h2{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;margin-bottom:10px;}
+  .exam-card p{color:var(--muted);font-size:.95rem;line-height:1.7;max-width:480px;margin:0 auto 28px;}
+  .exam-meta{display:flex;justify-content:center;gap:24px;margin-bottom:28px;flex-wrap:wrap;}
+  .exam-meta-item{text-align:center;}
+  .exam-meta-val{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;color:var(--gold);}
+  .exam-meta-lbl{font-size:.75rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+  .btn-start{display:inline-block;background:var(--gold);color:var(--ink);font-family:'Syne',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.04em;padding:16px 48px;border-radius:8px;text-decoration:none;transition:.2s;position:relative;}
+  .btn-start:hover{background:#debb66;transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.25);}
+
+  /* ── ALREADY ATTEMPTED ── */
+  .attempted-banner{background:rgba(61,186,110,.07);border:1px solid rgba(61,186,110,.25);border-radius:12px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+  .attempted-banner .icon{font-size:1.8rem;flex-shrink:0;}
+  .attempted-banner h3{font-family:'Syne',sans-serif;font-weight:700;margin-bottom:4px;}
+  .attempted-banner p{font-size:.88rem;color:var(--muted);}
+  .btn-retake{margin-left:auto;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;padding:10px 22px;border-radius:7px;text-decoration:none;white-space:nowrap;transition:.2s;}
+  .btn-retake:hover{background:var(--gold);color:var(--ink);}
+
+  /* ── SECTION LABEL ── */
+  .section-label{font-family:'Syne',sans-serif;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;}
+
+  /* ── LATEST SCORE CARD ── */
+  .score-grid{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-bottom:24px;}
+  @media(max-width:560px){.score-grid{grid-template-columns:1fr;text-align:center;}}
+  .donut{position:relative;width:110px;height:110px;flex-shrink:0;margin:0 auto;}
+  .donut svg{transform:rotate(-90deg);}
+  .donut-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .donut-pct{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800;color:var(--gold);}
+  .donut-lbl{font-size:.65rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;}
+  .score-details{}
+  .score-title{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:14px;}
+  .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
+  .bar-name{font-size:.78rem;color:var(--muted);width:80px;flex-shrink:0;}
+  .bar-bg{flex:1;background:#1e1e2e;border-radius:4px;height:7px;overflow:hidden;}
+  .bar-fill{height:100%;border-radius:4px;background:var(--gold);}
+  .bar-val{font-size:.78rem;color:var(--cream);width:36px;text-align:right;flex-shrink:0;}
+  .score-date{font-size:.78rem;color:#444;margin-top:14px;}
+
+  /* ── HISTORY TABLE ── */
+  .history-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:32px;}
+  .history-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
+  .history-header h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;}
+  table{width:100%;border-collapse:collapse;font-size:.85rem;}
+  th{background:#0f0f1a;padding:10px 14px;text-align:left;font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;}
+  td{padding:11px 14px;border-bottom:1px solid #1a1a28;}
+  tr:last-child td{border-bottom:none;}
+  .badge{display:inline-block;padding:3px 10px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem;}
+  .badge-high{background:rgba(61,186,110,.15);color:var(--green);}
+  .badge-mid{background:rgba(201,168,76,.15);color:var(--gold);}
+  .badge-low{background:rgba(232,69,69,.15);color:var(--err);}
+
+  /* ── INFO PILLS ── */
+  .pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;}
+  .pill{background:#1a1a28;border:1px solid var(--border);border-radius:20px;padding:7px 16px;font-size:.82rem;color:var(--muted);}
+  .pill span{color:var(--cream);font-weight:500;}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-logo">CDC Assessment</div>
+  <div class="topbar-right">
+    <div class="avatar">{{ student_name[0].upper() }}</div>
+    <span class="topbar-name">{{ student_name }}</span>
+    <a href="/logout" class="btn-logout">Logout</a>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- WELCOME -->
+  <div class="welcome">
+    <div class="welcome-sub">Welcome back</div>
+    <div class="welcome-name">{{ student_name }} 👋</div>
+    <div class="welcome-roll">Roll No: {{ roll_number }}</div>
+  </div>
+
+  <!-- INFO PILLS -->
+  <div class="pills">
+    <div class="pill">📝 Sections: <span>Aptitude · Reasoning · English · Essay</span></div>
+    <div class="pill">⏱ Duration: <span>60 minutes</span></div>
+    <div class="pill">🎯 Total Marks: <span>40</span></div>
+    <div class="pill">📋 Questions: <span>30 MCQ + 1 Essay</span></div>
+  </div>
+
+  {% if results %}
+    <!-- ── ALREADY ATTEMPTED ── -->
+    <div class="attempted-banner">
+      <div class="icon">✅</div>
+      <div>
+        <h3>Exam Already Attempted</h3>
+        <p>You have taken this exam {{ results|length }} time{{ 's' if results|length > 1 else '' }}. Your latest score is <strong>{{ results[0].percentage }}%</strong>. You can retake it below.</p>
+      </div>
+      <a href="/exam" class="btn-retake">Retake Exam →</a>
+    </div>
+
+    <!-- LATEST RESULT -->
+    <div class="section-label">Latest Result</div>
+    {% set r = results[0] %}
+    <div class="score-grid">
+      <!-- Donut -->
+      <div class="donut">
+        <svg width="110" height="110" viewBox="0 0 110 110">
+          <circle cx="55" cy="55" r="46" fill="none" stroke="#1e1e2e" stroke-width="10"/>
+          <circle cx="55" cy="55" r="46" fill="none" stroke="#c9a84c" stroke-width="10"
+            stroke-dasharray="{{ (r.percentage / 100 * 289.0)|round(1) }} 289"
+            stroke-linecap="round"/>
+        </svg>
+        <div class="donut-val">
+          <span class="donut-pct">{{ r.percentage }}%</span>
+          <span class="donut-lbl">Overall</span>
+        </div>
+      </div>
+      <!-- Bars -->
+      <div class="score-details">
+        <div class="score-title">{{ r.total_score }} / 40 marks</div>
+        {% set sections = [
+          ('Aptitude',  r.aptitude_score),
+          ('Reasoning', r.reasoning_score),
+          ('English',   r.english_score),
+          ('Essay',     r.essay_score)
+        ] %}
+        {% for name, score in sections %}
+        <div class="bar-row">
+          <span class="bar-name">{{ name }}</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:{{ score * 10 }}%"></div></div>
+          <span class="bar-val">{{ score }}/10</span>
+        </div>
+        {% endfor %}
+        <div class="score-date">Submitted: {{ r.submitted_at }}</div>
+      </div>
+    </div>
+
+    <!-- HISTORY TABLE (if more than 1 attempt) -->
+    {% if results|length > 1 %}
+    <div class="section-label">All Attempts</div>
+    <div class="history-card">
+      <div class="history-header">
+        <h3>Exam History</h3>
+        <span style="font-size:.82rem;color:#555;">{{ results|length }} attempts</span>
+      </div>
+      <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Date</th><th>Aptitude</th><th>Reasoning</th>
+            <th>English</th><th>Essay</th><th>Total</th><th>%</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in results %}
+          <tr>
+            <td style="color:#555;">{{ loop.index }}</td>
+            <td style="color:#888;font-size:.8rem;">{{ r.submitted_at }}</td>
+            <td>{{ r.aptitude_score }}/10</td>
+            <td>{{ r.reasoning_score }}/10</td>
+            <td>{{ r.english_score }}/10</td>
+            <td>{{ r.essay_score }}/10</td>
+            <td style="font-weight:600;">{{ r.total_score }}/40</td>
+            <td>
+              <span class="badge {% if r.percentage >= 75 %}badge-high{% elif r.percentage >= 50 %}badge-mid{% else %}badge-low{% endif %}">
+                {{ r.percentage }}%
+              </span>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+    </div>
+    {% endif %}
+
+  {% else %}
+    <!-- ── FIRST TIME — START EXAM ── -->
+    <div class="exam-card">
+      <div class="exam-icon">🎯</div>
+      <h2>Ready for Your Placement Assessment?</h2>
+      <p>This exam tests your Aptitude, Logical Reasoning, English, and Essay Writing skills. Make sure you have 60 uninterrupted minutes before you begin.</p>
+      <div class="exam-meta">
+        <div class="exam-meta-item">
+          <div class="exam-meta-val">60</div>
+          <div class="exam-meta-lbl">Minutes</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="exam-meta-val">30</div>
+          <div class="exam-meta-lbl">MCQ Questions</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="exam-meta-val">1</div>
+          <div class="exam-meta-lbl">Essay Topic</div>
+        </div>
+        <div class="exam-meta-item">
+          <div class="exam-meta-val">40</div>
+          <div class="exam-meta-lbl">Total Marks</div>
+        </div>
+      </div>
+      <a href="/exam" class="btn-start">Start Exam →</a>
+    </div>
+  {% endif %}
+
+</div>
+
+<script>
+// Animate bars on load
+window.addEventListener('load', () => {
+  document.querySelectorAll('.bar-fill').forEach(b => {
+    const w = b.style.width;
+    b.style.width = '0';
+    setTimeout(() => { b.style.transition = 'width 1s ease'; b.style.width = w; }, 200);
+  });
+});
+</script>
+</body>
+</html>

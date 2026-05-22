@@ -1,0 +1,1652 @@
+[
+  {
+    "id": 1,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She go to college daily.",
+      "B": "She goes to college daily.",
+      "C": "She going to college daily.",
+      "D": "She gone to college daily."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Identify the correct article: ___ apple a day keeps the doctor away.",
+    "options": {
+      "A": "A",
+      "B": "An",
+      "C": "The",
+      "D": "No article"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Choose the correct tense: He ___ playing cricket now.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "was",
+      "D": "were"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "Select the synonym of 'Happy'.",
+    "options": {
+      "A": "Sad",
+      "B": "Angry",
+      "C": "Joyful",
+      "D": "Tired"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "Select the antonym of 'Brave'.",
+    "options": {
+      "A": "Bold",
+      "B": "Courageous",
+      "C": "Fearful",
+      "D": "Strong"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Enviroment",
+      "B": "Environment",
+      "C": "Environmant",
+      "D": "Envirnoment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "question": "Fill in the blank: They ___ completed the work.",
+    "options": {
+      "A": "has",
+      "B": "have",
+      "C": "had",
+      "D": "having"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "question": "Identify the noun in the sentence: 'Ravi plays football.'",
+    "options": {
+      "A": "Plays",
+      "B": "Football",
+      "C": "Ravi",
+      "D": "Both B and C"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "Choose the correct preposition: She is sitting ___ the chair.",
+    "options": {
+      "A": "in",
+      "B": "on",
+      "C": "at",
+      "D": "over"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "Select the correct passive voice: 'They completed the project.'",
+    "options": {
+      "A": "The project completed by them.",
+      "B": "The project was completed by them.",
+      "C": "The project is completed by them.",
+      "D": "The project has completed by them."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "question": "Choose the correct verb form: If I ___ rich, I would help the poor.",
+    "options": {
+      "A": "am",
+      "B": "was",
+      "C": "were",
+      "D": "be"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Choose the synonym of 'Quick'.",
+    "options": {
+      "A": "Slow",
+      "B": "Rapid",
+      "C": "Weak",
+      "D": "Silent"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "Choose the antonym of 'Expand'.",
+    "options": {
+      "A": "Grow",
+      "B": "Increase",
+      "C": "Contract",
+      "D": "Develop"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 14,
+    "question": "Fill in the blank: He has been working here ___ 2020.",
+    "options": {
+      "A": "for",
+      "B": "since",
+      "C": "from",
+      "D": "by"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I have ate lunch.",
+      "B": "I has eaten lunch.",
+      "C": "I have eaten lunch.",
+      "D": "I eaten lunch."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "Identify the adjective: 'She wore a beautiful dress.'",
+    "options": {
+      "A": "wore",
+      "B": "dress",
+      "C": "beautiful",
+      "D": "she"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Acheivement",
+      "B": "Achievement",
+      "C": "Acheivment",
+      "D": "Achievment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "question": "Fill in the blank: The students ___ studying for exams.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "was",
+      "D": "has"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Choose the correct question tag: 'She is a doctor, ___?'",
+    "options": {
+      "A": "isn't she",
+      "B": "doesn't she",
+      "C": "is she",
+      "D": "does she"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "Select the antonym of 'Ancient'.",
+    "options": {
+      "A": "Old",
+      "B": "Modern",
+      "C": "Historic",
+      "D": "Traditional"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Choose the correct modal verb: You ___ obey traffic rules.",
+    "options": {
+      "A": "can",
+      "B": "may",
+      "C": "must",
+      "D": "might"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 22,
+    "question": "Select the synonym of 'Difficult'.",
+    "options": {
+      "A": "Easy",
+      "B": "Hard",
+      "C": "Soft",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "Choose the correct article: He is ___ honest man.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She do not like tea.",
+      "B": "She does not likes tea.",
+      "C": "She does not like tea.",
+      "D": "She not like tea."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "Identify the adverb: 'He runs quickly.'",
+    "options": {
+      "A": "runs",
+      "B": "quickly",
+      "C": "he",
+      "D": "none"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "Choose the correct tense: I ___ my homework yesterday.",
+    "options": {
+      "A": "do",
+      "B": "did",
+      "C": "done",
+      "D": "doing"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Choose the antonym of 'Success'.",
+    "options": {
+      "A": "Failure",
+      "B": "Victory",
+      "C": "Growth",
+      "D": "Profit"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 28,
+    "question": "Choose the correct preposition: The cat is ___ the table.",
+    "options": {
+      "A": "under",
+      "B": "on",
+      "C": "at",
+      "D": "from"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 29,
+    "question": "Select the synonym of 'Begin'.",
+    "options": {
+      "A": "End",
+      "B": "Start",
+      "C": "Stop",
+      "D": "Finish"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Neither Ravi nor his friends was present.",
+      "B": "Neither Ravi nor his friends were present.",
+      "C": "Neither Ravi nor his friends is present.",
+      "D": "Neither Ravi nor his friends has present."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 31,
+    "question": "Synonym of 'Abandon'",
+    "options": {
+      "A": "Leave",
+      "B": "Hold",
+      "C": "Keep",
+      "D": "Collect"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 32,
+    "question": "Antonym of 'Victory'",
+    "options": {
+      "A": "Win",
+      "B": "Success",
+      "C": "Defeat",
+      "D": "Achievement"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "Synonym of 'Calm'",
+    "options": {
+      "A": "Angry",
+      "B": "Peaceful",
+      "C": "Loud",
+      "D": "Rough"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Antonym of 'Generous'",
+    "options": {
+      "A": "Kind",
+      "B": "Selfish",
+      "C": "Helpful",
+      "D": "Honest"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "Synonym of 'Huge'",
+    "options": {
+      "A": "Tiny",
+      "B": "Massive",
+      "C": "Short",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Antonym of 'Victory'",
+    "options": {
+      "A": "Defeat",
+      "B": "Gain",
+      "C": "Reward",
+      "D": "Progress"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 37,
+    "question": "Synonym of 'Smart'",
+    "options": {
+      "A": "Intelligent",
+      "B": "Dull",
+      "C": "Weak",
+      "D": "Poor"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "Antonym of 'Accept'",
+    "options": {
+      "A": "Admit",
+      "B": "Receive",
+      "C": "Reject",
+      "D": "Approve"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 39,
+    "question": "Synonym of 'Silent'",
+    "options": {
+      "A": "Quiet",
+      "B": "Loud",
+      "C": "Noisy",
+      "D": "Rough"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 40,
+    "question": "Antonym of 'Ancient'",
+    "options": {
+      "A": "Old",
+      "B": "Modern",
+      "C": "Historic",
+      "D": "Past"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "Synonym of 'Beautiful'",
+    "options": {
+      "A": "Ugly",
+      "B": "Pretty",
+      "C": "Dirty",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "question": "Antonym of 'Increase'",
+    "options": {
+      "A": "Expand",
+      "B": "Reduce",
+      "C": "Develop",
+      "D": "Rise"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 43,
+    "question": "Synonym of 'Brilliant'",
+    "options": {
+      "A": "Clever",
+      "B": "Foolish",
+      "C": "Slow",
+      "D": "Weak"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 44,
+    "question": "Antonym of 'Dangerous'",
+    "options": {
+      "A": "Safe",
+      "B": "Risky",
+      "C": "Harmful",
+      "D": "Unsafe"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "question": "Synonym of 'Honest'",
+    "options": {
+      "A": "Truthful",
+      "B": "Clever",
+      "C": "Smart",
+      "D": "Brave"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 46,
+    "question": "Antonym of 'Permanent'",
+    "options": {
+      "A": "Lasting",
+      "B": "Temporary",
+      "C": "Strong",
+      "D": "Stable"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "Synonym of 'Rapid'",
+    "options": {
+      "A": "Slow",
+      "B": "Fast",
+      "C": "Calm",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "Antonym of 'Simple'",
+    "options": {
+      "A": "Easy",
+      "B": "Plain",
+      "C": "Complex",
+      "D": "Clear"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 49,
+    "question": "Synonym of 'Tiny'",
+    "options": {
+      "A": "Huge",
+      "B": "Small",
+      "C": "Big",
+      "D": "Long"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Antonym of 'Early'",
+    "options": {
+      "A": "Fast",
+      "B": "Before",
+      "C": "Late",
+      "D": "Soon"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He do his work properly.",
+      "B": "He does his work properly.",
+      "C": "He doing his work properly.",
+      "D": "He done his work properly."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 52,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I am living here since 2020.",
+      "B": "I have been living here since 2020.",
+      "C": "I was living here since 2020.",
+      "D": "I live here since 2020."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 53,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Each student have a book.",
+      "B": "Each student has a book.",
+      "C": "Each students has a book.",
+      "D": "Each student having a book."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She can sings well.",
+      "B": "She can sing well.",
+      "C": "She can singing well.",
+      "D": "She can sung well."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 55,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The news are true.",
+      "B": "The news is true.",
+      "C": "The news were true.",
+      "D": "The news have true."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 56,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Mathematics are difficult.",
+      "B": "Mathematics is difficult.",
+      "C": "Mathematics were difficult.",
+      "D": "Mathematics have difficult."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 57,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "One of the boys are absent.",
+      "B": "One of the boys is absent.",
+      "C": "One of the boys were absent.",
+      "D": "One of the boys have absent."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 58,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She is senior than me.",
+      "B": "She is senior to me.",
+      "C": "She is senior from me.",
+      "D": "She is senior with me."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 59,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He prefers tea than coffee.",
+      "B": "He prefers tea to coffee.",
+      "C": "He prefers tea over coffee.",
+      "D": "He prefers tea from coffee."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 60,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The furniture are expensive.",
+      "B": "The furniture is expensive.",
+      "C": "The furnitures are expensive.",
+      "D": "The furnitures is expensive."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She enjoys to dance.",
+      "B": "She enjoys dancing.",
+      "C": "She enjoy dancing.",
+      "D": "She enjoying dance."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 62,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I look forward to meet you.",
+      "B": "I look forward to meeting you.",
+      "C": "I look forward meet you.",
+      "D": "I look forward for meeting you."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 63,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He is good in mathematics.",
+      "B": "He is good at mathematics.",
+      "C": "He is good on mathematics.",
+      "D": "He is good with mathematics."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 64,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Neither of the answers are correct.",
+      "B": "Neither of the answers is correct.",
+      "C": "Neither of the answer are correct.",
+      "D": "Neither of answer is correct."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 65,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He as well as his friends were invited.",
+      "B": "He as well as his friends was invited.",
+      "C": "He as well as his friends are invited.",
+      "D": "He as well as his friends have invited."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She did not went there.",
+      "B": "She did not go there.",
+      "C": "She did not gone there.",
+      "D": "She not go there."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 67,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The police is investigating the case.",
+      "B": "The police are investigating the case.",
+      "C": "The police was investigating the case.",
+      "D": "The police has investigating the case."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 68,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He is married with a doctor.",
+      "B": "He is married to a doctor.",
+      "C": "He is married by a doctor.",
+      "D": "He is married from a doctor."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 69,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "This is more better.",
+      "B": "This is much better.",
+      "C": "This is most better.",
+      "D": "This is very better."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 70,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I have less books than you.",
+      "B": "I have fewer books than you.",
+      "C": "I have little books than you.",
+      "D": "I have lowest books than you."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 71,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The sceneries are beautiful.",
+      "B": "The scenery is beautiful.",
+      "C": "The scenery are beautiful.",
+      "D": "The sceneries is beautiful."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 72,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He insisted to go.",
+      "B": "He insisted on going.",
+      "C": "He insisted for going.",
+      "D": "He insisted go."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 73,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She is capable to do it.",
+      "B": "She is capable of doing it.",
+      "C": "She is capable for doing it.",
+      "D": "She capable of do it."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Hardly had I reached than it rained.",
+      "B": "Hardly had I reached when it rained.",
+      "C": "Hardly I had reached when it rained.",
+      "D": "Hardly had I reach when it rained."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 75,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "No sooner did he arrive when it started raining.",
+      "B": "No sooner did he arrive than it started raining.",
+      "C": "No sooner he arrived than it started raining.",
+      "D": "No sooner arrived than it started raining."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 76,
+    "question": "Identify the error: 'She do not like coffee.'",
+    "options": {
+      "A": "She",
+      "B": "do",
+      "C": "not",
+      "D": "coffee"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "question": "Identify the error: 'He have completed the task.'",
+    "options": {
+      "A": "He",
+      "B": "have",
+      "C": "completed",
+      "D": "task"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 78,
+    "question": "Identify the error: 'The boys is playing cricket.'",
+    "options": {
+      "A": "boys",
+      "B": "is",
+      "C": "playing",
+      "D": "cricket"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "question": "Identify the error: 'I am knowing the answer.'",
+    "options": {
+      "A": "am",
+      "B": "knowing",
+      "C": "the",
+      "D": "answer"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 80,
+    "question": "Identify the error: 'She is senior than me.'",
+    "options": {
+      "A": "She",
+      "B": "senior",
+      "C": "than",
+      "D": "me"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 81,
+    "question": "Identify the error: 'One of my friend is absent.'",
+    "options": {
+      "A": "One",
+      "B": "my",
+      "C": "friend",
+      "D": "absent"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 82,
+    "question": "Identify the error: 'The furniture are expensive.'",
+    "options": {
+      "A": "furniture",
+      "B": "are",
+      "C": "expensive",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 83,
+    "question": "Identify the error: 'He did not wrote the letter.'",
+    "options": {
+      "A": "did",
+      "B": "not",
+      "C": "wrote",
+      "D": "letter"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 84,
+    "question": "Identify the error: 'She prefers coffee than tea.'",
+    "options": {
+      "A": "prefers",
+      "B": "coffee",
+      "C": "than",
+      "D": "tea"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 85,
+    "question": "Identify the error: 'Each of the students have books.'",
+    "options": {
+      "A": "Each",
+      "B": "students",
+      "C": "have",
+      "D": "books"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 86,
+    "question": "Identify the error: 'I look forward to meet you.'",
+    "options": {
+      "A": "look",
+      "B": "forward",
+      "C": "meet",
+      "D": "you"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 87,
+    "question": "Identify the error: 'He is good in English.'",
+    "options": {
+      "A": "He",
+      "B": "good",
+      "C": "in",
+      "D": "English"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 88,
+    "question": "Identify the error: 'The police is investigating.'",
+    "options": {
+      "A": "police",
+      "B": "is",
+      "C": "investigating",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 89,
+    "question": "Identify the error: 'She enjoys to sing.'",
+    "options": {
+      "A": "enjoys",
+      "B": "to sing",
+      "C": "she",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Identify the error: 'He married with a doctor.'",
+    "options": {
+      "A": "He",
+      "B": "married",
+      "C": "with",
+      "D": "doctor"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 91,
+    "question": "Identify the error: 'Neither of the boys are present.'",
+    "options": {
+      "A": "Neither",
+      "B": "boys",
+      "C": "are",
+      "D": "present"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 92,
+    "question": "Identify the error: 'Sceneries of Kashmir are beautiful.'",
+    "options": {
+      "A": "Sceneries",
+      "B": "Kashmir",
+      "C": "are",
+      "D": "beautiful"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 93,
+    "question": "Identify the error: 'He is capable to solve this.'",
+    "options": {
+      "A": "capable",
+      "B": "to solve",
+      "C": "this",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 94,
+    "question": "Identify the error: 'She insisted to come.'",
+    "options": {
+      "A": "She",
+      "B": "insisted",
+      "C": "to come",
+      "D": "no error"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 95,
+    "question": "Identify the error: 'The news are true.'",
+    "options": {
+      "A": "news",
+      "B": "are",
+      "C": "true",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 96,
+    "question": "Identify the error: 'I have less friends.'",
+    "options": {
+      "A": "have",
+      "B": "less",
+      "C": "friends",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 97,
+    "question": "Identify the error: 'He is one of the boy who works hard.'",
+    "options": {
+      "A": "one",
+      "B": "boy",
+      "C": "who",
+      "D": "works"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 98,
+    "question": "Identify the error: 'She is suffering with fever.'",
+    "options": {
+      "A": "suffering",
+      "B": "with",
+      "C": "fever",
+      "D": "no error"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 99,
+    "question": "Identify the error: 'Ravi as well as his friends are coming.'",
+    "options": {
+      "A": "Ravi",
+      "B": "as well as",
+      "C": "are",
+      "D": "coming"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 100,
+    "question": "Identify the error: 'No sooner he arrived than it rained.'",
+    "options": {
+      "A": "sooner",
+      "B": "he arrived",
+      "C": "than",
+      "D": "rained"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 101,
+    "question": "Choose the synonym of 'Accurate'.",
+    "options": {
+      "A": "Wrong",
+      "B": "Correct",
+      "C": "False",
+      "D": "Weak"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 102,
+    "question": "Choose the antonym of 'Victory'.",
+    "options": {
+      "A": "Success",
+      "B": "Defeat",
+      "C": "Win",
+      "D": "Achievement"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 103,
+    "question": "Choose the synonym of 'Ancient'.",
+    "options": {
+      "A": "Modern",
+      "B": "Old",
+      "C": "Recent",
+      "D": "Current"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 104,
+    "question": "Choose the antonym of 'Expand'.",
+    "options": {
+      "A": "Grow",
+      "B": "Increase",
+      "C": "Reduce",
+      "D": "Develop"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 105,
+    "question": "Choose the synonym of 'Rapid'.",
+    "options": {
+      "A": "Slow",
+      "B": "Fast",
+      "C": "Weak",
+      "D": "Late"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "question": "Choose the antonym of 'Generous'.",
+    "options": {
+      "A": "Kind",
+      "B": "Helpful",
+      "C": "Selfish",
+      "D": "Friendly"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 107,
+    "question": "Choose the synonym of 'Brilliant'.",
+    "options": {
+      "A": "Intelligent",
+      "B": "Weak",
+      "C": "Dull",
+      "D": "Slow"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 108,
+    "question": "Choose the antonym of 'Permanent'.",
+    "options": {
+      "A": "Stable",
+      "B": "Temporary",
+      "C": "Fixed",
+      "D": "Lasting"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 109,
+    "question": "Choose the synonym of 'Tiny'.",
+    "options": {
+      "A": "Huge",
+      "B": "Large",
+      "C": "Small",
+      "D": "Tall"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 110,
+    "question": "Choose the antonym of 'Simple'.",
+    "options": {
+      "A": "Easy",
+      "B": "Plain",
+      "C": "Complex",
+      "D": "Clear"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 111,
+    "question": "Choose the synonym of 'Honest'.",
+    "options": {
+      "A": "Truthful",
+      "B": "Clever",
+      "C": "Smart",
+      "D": "Bold"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 112,
+    "question": "Choose the antonym of 'Accept'.",
+    "options": {
+      "A": "Receive",
+      "B": "Admit",
+      "C": "Reject",
+      "D": "Approve"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 113,
+    "question": "Choose the synonym of 'Calm'.",
+    "options": {
+      "A": "Angry",
+      "B": "Peaceful",
+      "C": "Noisy",
+      "D": "Rough"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 114,
+    "question": "Choose the antonym of 'Ancient'.",
+    "options": {
+      "A": "Historic",
+      "B": "Old",
+      "C": "Modern",
+      "D": "Traditional"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "question": "Choose the synonym of 'Difficult'.",
+    "options": {
+      "A": "Hard",
+      "B": "Easy",
+      "C": "Simple",
+      "D": "Clear"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 116,
+    "question": "Choose the antonym of 'Early'.",
+    "options": {
+      "A": "Soon",
+      "B": "Late",
+      "C": "Fast",
+      "D": "Before"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 117,
+    "question": "Choose the synonym of 'Silent'.",
+    "options": {
+      "A": "Loud",
+      "B": "Quiet",
+      "C": "Noisy",
+      "D": "Rough"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 118,
+    "question": "Choose the antonym of 'Increase'.",
+    "options": {
+      "A": "Rise",
+      "B": "Expand",
+      "C": "Reduce",
+      "D": "Develop"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 119,
+    "question": "Choose the synonym of 'Beautiful'.",
+    "options": {
+      "A": "Ugly",
+      "B": "Pretty",
+      "C": "Weak",
+      "D": "Dirty"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 120,
+    "question": "Choose the antonym of 'Dangerous'.",
+    "options": {
+      "A": "Risky",
+      "B": "Unsafe",
+      "C": "Safe",
+      "D": "Harmful"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 121,
+    "question": "Fill in the blank: He ___ to school every day.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "gone",
+      "D": "going"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 122,
+    "question": "Fill in the blank: They ___ completed the assignment.",
+    "options": {
+      "A": "has",
+      "B": "have",
+      "C": "had",
+      "D": "having"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 123,
+    "question": "Fill in the blank: She is interested ___ music.",
+    "options": {
+      "A": "on",
+      "B": "in",
+      "C": "at",
+      "D": "for"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 124,
+    "question": "Fill in the blank: I have been waiting here ___ two hours.",
+    "options": {
+      "A": "since",
+      "B": "for",
+      "C": "from",
+      "D": "by"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 125,
+    "question": "Fill in the blank: The train arrived ___ time.",
+    "options": {
+      "A": "in",
+      "B": "on",
+      "C": "at",
+      "D": "for"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 126,
+    "question": "Fill in the blank: She ___ playing tennis now.",
+    "options": {
+      "A": "is",
+      "B": "are",
+      "C": "was",
+      "D": "were"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 127,
+    "question": "Fill in the blank: Ravi and Raju ___ friends.",
+    "options": {
+      "A": "is",
+      "B": "am",
+      "C": "are",
+      "D": "was"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 128,
+    "question": "Fill in the blank: He is afraid ___ dogs.",
+    "options": {
+      "A": "from",
+      "B": "with",
+      "C": "of",
+      "D": "at"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 129,
+    "question": "Fill in the blank: I prefer tea ___ coffee.",
+    "options": {
+      "A": "than",
+      "B": "to",
+      "C": "over",
+      "D": "from"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 130,
+    "question": "Fill in the blank: She is married ___ a doctor.",
+    "options": {
+      "A": "with",
+      "B": "to",
+      "C": "from",
+      "D": "by"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 131,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Accomodation",
+      "B": "Accommodation",
+      "C": "Acommodation",
+      "D": "Acomodation"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 132,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Definately",
+      "B": "Definetely",
+      "C": "Definitely",
+      "D": "Definatly"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 133,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Recieve",
+      "B": "Receive",
+      "C": "Receeve",
+      "D": "Receve"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 134,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Seperate",
+      "B": "Separate",
+      "C": "Separrate",
+      "D": "Seperete"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 135,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Occassion",
+      "B": "Ocassion",
+      "C": "Occasion",
+      "D": "Occassionn"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 136,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Government",
+      "B": "Goverment",
+      "C": "Governmant",
+      "D": "Govarnment"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 137,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Succesful",
+      "B": "Successful",
+      "C": "Successfull",
+      "D": "Succesfull"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 138,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Commitee",
+      "B": "Committee",
+      "C": "Comittee",
+      "D": "Committe"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 139,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Maintanance",
+      "B": "Maintenance",
+      "C": "Maintainance",
+      "D": "Maintenence"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 140,
+    "question": "Choose the correct spelling.",
+    "options": {
+      "A": "Priviledge",
+      "B": "Privilege",
+      "C": "Privilage",
+      "D": "Privillage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 141,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He don't know the answer.",
+      "B": "He doesn't knows the answer.",
+      "C": "He doesn't know the answer.",
+      "D": "He not know the answer."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 142,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The team are winning.",
+      "B": "The team is winning.",
+      "C": "The teams is winning.",
+      "D": "The team were winning."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 143,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "I am agree with you.",
+      "B": "I agree with you.",
+      "C": "I agreeing with you.",
+      "D": "I agreed with you."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 144,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She has two brother-in-laws.",
+      "B": "She has two brothers-in-law.",
+      "C": "She has two brother-in-law.",
+      "D": "She has two brothers-in-laws."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 145,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The teacher along with students were present.",
+      "B": "The teacher along with students was present.",
+      "C": "The teacher along with students are present.",
+      "D": "The teacher along with students have present."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 146,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "He denied to help me.",
+      "B": "He denied helping me.",
+      "C": "He denied help me.",
+      "D": "He denied for helping me."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 147,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "Neither Ram nor his friends is coming.",
+      "B": "Neither Ram nor his friends are coming.",
+      "C": "Neither Ram nor his friends was coming.",
+      "D": "Neither Ram nor his friends has coming."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 148,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She is one of the best student.",
+      "B": "She is one of the best students.",
+      "C": "She is one of the better students.",
+      "D": "She is best student."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 149,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "The quality of apples are good.",
+      "B": "The quality of apples is good.",
+      "C": "The quality of apples were good.",
+      "D": "The quality of apples have good."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 150,
+    "question": "Choose the correct sentence.",
+    "options": {
+      "A": "She hardly never makes mistakes.",
+      "B": "She hardly ever makes mistakes.",
+      "C": "She never hardly makes mistakes.",
+      "D": "She makes mistakes hardly never."
+    },
+    "answer": "B"
+  }
+]

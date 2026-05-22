@@ -1,0 +1,26 @@
+/* CDC Assessment — Shared Stylesheet */
+/* Individual page styles are inline in templates; this file is for global overrides */
+
+:root {
+  --ink:    #0a0a0f;
+  --cream:  #f5f2eb;
+  --gold:   #c9a84c;
+  --green:  #3dba6e;
+  --err:    #e84545;
+  --card:   #13131e;
+  --border: #252535;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--ink);
+  color: var(--cream);
+}
+
+a { color: var(--gold); }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0d0d15; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }

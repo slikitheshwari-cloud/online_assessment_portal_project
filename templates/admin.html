@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel — CDC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --ink:#0a0a0f;
+  --cream:#f5f2eb;
+  --gold:#c9a84c;
+  --green:#3dba6e;
+  --err:#e84545;
+  --card:#13131e;
+  --border:#252535;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#0d0d15;
+  color:var(--cream);
+  min-height:100vh;
+}
+
+/* TOPBAR */
+
+.topbar{
+  background:#11111a;
+  border-bottom:1px solid var(--border);
+  padding:14px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.topbar-title{
+  font-family:'Syne',sans-serif;
+  font-weight:800;
+  font-size:1.1rem;
+  color:#e84545;
+}
+
+.topbar-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:9px 20px;
+  border-radius:6px;
+  font-family:'Syne',sans-serif;
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.04em;
+  cursor:pointer;
+  border:none;
+  text-decoration:none;
+  transition:.2s;
+  display:inline-block;
+}
+
+.btn-green{
+  background:var(--green);
+  color:#fff;
+}
+
+.btn-green:hover{
+  background:#34a862;
+}
+
+.btn-gold{
+  background:var(--gold);
+  color:var(--ink);
+}
+
+.btn-gold:hover{
+  background:#debb66;
+}
+
+.btn-outline{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--cream);
+}
+
+.btn-err{
+  background:var(--err);
+  color:#fff;
+}
+
+/* MAIN */
+
+.main{
+  padding:28px;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+/* STATS */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:16px;
+  margin-bottom:32px;
+}
+
+.stat-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:20px;
+}
+
+.stat-label{
+  font-size:.75rem;
+  color:#888;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+.stat-val{
+  font-family:'Syne',sans-serif;
+  font-size:2rem;
+  font-weight:800;
+}
+
+/* FORM */
+
+.form-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:24px;
+  margin-bottom:28px;
+}
+
+.form-title{
+  font-family:'Syne',sans-serif;
+  font-size:1.1rem;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+  align-items:end;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+label{
+  font-size:.78rem;
+  color:#888;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+input{
+  background:#1a1a28;
+  border:1px solid #2a2a40;
+  border-radius:8px;
+  padding:10px 12px;
+  color:var(--cream);
+  font-size:.9rem;
+  outline:none;
+  transition:.2s;
+}
+
+input:focus{
+  border-color:var(--gold);
+}
+
+/* TABLE */
+
+.table-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.table-header{
+  padding:18px 20px;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.table-header h3{
+  font-family:'Syne',sans-serif;
+  font-weight:700;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.88rem;
+}
+
+th{
+  background:#0f0f1a;
+  padding:12px 14px;
+  text-align:left;
+  font-size:.75rem;
+  color:#888;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+td{
+  padding:12px 14px;
+  border-bottom:1px solid #1a1a28;
+  vertical-align:middle;
+}
+
+tr:last-child td{
+  border-bottom:none;
+}
+
+tr:hover td{
+  background:rgba(255,255,255,.02);
+}
+
+.pct-badge{
+  display:inline-block;
+  padding:3px 10px;
+  border-radius:12px;
+  font-family:'Syne',sans-serif;
+  font-weight:700;
+  font-size:.78rem;
+}
+
+.pct-high{
+  background:rgba(61,186,110,.15);
+  color:var(--green);
+}
+
+.pct-mid{
+  background:rgba(201,168,76,.15);
+  color:var(--gold);
+}
+
+.pct-low{
+  background:rgba(232,69,69,.15);
+  color:var(--err);
+}
+
+.empty{
+  text-align:center;
+  padding:48px;
+  color:#555;
+  font-size:.95rem;
+}
+
+.scroll{
+  overflow-x:auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+  <div class="topbar-title">
+    🔒 Admin Panel — CDC Assessment
+  </div>
+
+  <div class="topbar-actions">
+
+    <a href="/admin/export" class="btn btn-green">
+      ⬇ Export Excel
+    </a>
+
+    <a href="/admin/logout" class="btn btn-err">
+      Logout
+    </a>
+
+  </div>
+
+</div>
+
+<div class="main">
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+    <div class="stat-card">
+      <div class="stat-label">Total Students</div>
+      <div class="stat-val" style="color:var(--gold);">
+        {{ students_count }}
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-label">Exams Taken</div>
+      <div class="stat-val" style="color:var(--green);">
+        {{ results|length }}
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-label">Avg Percentage</div>
+
+      <div class="stat-val" style="color:#a78bfa;">
+
+        {% if results %}
+          {{
+            (
+              results
+              | map(attribute='percentage')
+              | list
+              | sum
+              / results|length
+            ) | round(1)
+          }}%
+        {% else %}
+          —
+        {% endif %}
+
+      </div>
+    </div>
+
+    <div class="stat-card">
+
+      <div class="stat-label">Top Score</div>
+
+      <div class="stat-val" style="color:var(--err);">
+
+        {% if results %}
+          {{
+            results
+            | map(attribute='percentage')
+            | list
+            | max
+            | round(1)
+          }}%
+        {% else %}
+          —
+        {% endif %}
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ADD STUDENT -->
+
+  <div class="form-card">
+
+    <div class="form-title">
+      ➕ Add New Student
+    </div>
+
+    <form method="POST" action="/admin/add_student">
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text"
+                 name="name"
+                 placeholder="Arjun Sharma"
+                 required>
+        </div>
+
+        <div class="form-group">
+          <label>Roll Number</label>
+          <input type="text"
+                 name="roll_number"
+                 placeholder="21MCA001"
+                 required>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="text"
+                 name="password"
+                 placeholder="Default = roll number"
+                 required>
+        </div>
+
+        <div class="form-group">
+          <label>Email (optional)</label>
+          <input type="email"
+                 name="email"
+                 placeholder="student@college.edu">
+        </div>
+
+        <div class="form-group">
+          <label>&nbsp;</label>
+          <button class="btn btn-gold" type="submit">
+            Add Student
+          </button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+  <!-- RESULTS TABLE -->
+
+  <div class="table-card">
+
+    <div class="table-header">
+
+      <h3>📊 Exam Results</h3>
+
+      <span style="color:#666;font-size:.85rem;">
+        {{ results|length }} records
+      </span>
+
+    </div>
+
+    {% if results %}
+
+    <div class="scroll">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Aptitude</th>
+            <th>Reasoning</th>
+            <th>English</th>
+            <th>Essay</th>
+            <th>Total</th>
+            <th>%</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {% for r in results %}
+
+          <tr>
+
+            <td style="color:#555;">
+              {{ loop.index }}
+            </td>
+
+            <td style="font-weight:500;">
+              {{ r.name }}
+            </td>
+
+            <td style="color:#888;font-size:.82rem;">
+              {{ r.roll_number }}
+            </td>
+
+            <td>{{ r.aptitude_score }}/10</td>
+
+            <td>{{ r.reasoning_score }}/10</td>
+
+            <td>{{ r.english_score }}/10</td>
+
+            <td>{{ r.essay_score }}/10</td>
+
+            <td style="font-family:'Syne',sans-serif;font-weight:700;">
+              {{ r.total_score }}/40
+            </td>
+
+            <td>
+
+              <span class="pct-badge
+                {% if r.percentage >= 75 %}
+                  pct-high
+                {% elif r.percentage >= 50 %}
+                  pct-mid
+                {% else %}
+                  pct-low
+                {% endif %}
+              ">
+
+                {{ r.percentage }}%
+
+              </span>
+
+            </td>
+
+            <!-- FIXED DATE LINE -->
+
+            <td style="color:#666;font-size:.8rem;">
+
+              {{ r.submitted_at if r.submitted_at else '' }}
+
+            </td>
+
+          </tr>
+
+          {% endfor %}
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    {% else %}
+
+    <div class="empty">
+      No exam results yet. Students haven't submitted exams.
+    </div>
+
+    {% endif %}
+
+  </div>
+
+</div>
+
+</body>
+</html>

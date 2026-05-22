@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam — CDC Assessment</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0a0a0f;
+    --cream:#f5f2eb;
+    --gold:#c9a84c;
+    --green:#3dba6e;
+    --err:#e84545;
+    --card:#13131e;
+    --border:#252535;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:#0d0d15;
+    color:var(--cream);
+    min-height:100vh;
+  }
+
+  /* TOPBAR */
+  .topbar{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#0d0d15;
+    border-bottom:1px solid var(--border);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 28px;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+
+  .topbar-title{
+    font-family:'Syne',sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--gold);
+  }
+
+  .topbar-student{
+    font-size:.88rem;
+    color:#999;
+  }
+
+  #timer{
+    font-family:'Syne',sans-serif;
+    font-size:1.4rem;
+    font-weight:800;
+    color:var(--green);
+    letter-spacing:.06em;
+    min-width:90px;
+    text-align:center;
+  }
+
+  #timer.danger{
+    color:var(--err);
+    animation:pulse 1s infinite;
+  }
+
+  @keyframes pulse{
+    0%,100%{opacity:1;}
+    50%{opacity:.5;}
+  }
+
+  /* TABS */
+  .tabs{
+    display:flex;
+    gap:8px;
+    padding:16px 28px;
+    border-bottom:1px solid var(--border);
+    overflow-x:auto;
+  }
+
+  .tab{
+    padding:8px 20px;
+    border-radius:6px;
+    font-family:'Syne',sans-serif;
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:.05em;
+    cursor:pointer;
+    border:1px solid var(--border);
+    background:transparent;
+    color:#666;
+    transition:.2s;
+  }
+
+  .tab.active{
+    background:var(--gold);
+    color:var(--ink);
+    border-color:var(--gold);
+  }
+
+  /* SECTIONS */
+  .section{
+    display:none;
+    padding:28px;
+  }
+
+  .section.active{
+    display:block;
+  }
+
+  .section-header{
+    font-family:'Syne',sans-serif;
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:6px;
+  }
+
+  .section-meta{
+    color:#777;
+    font-size:.88rem;
+    margin-bottom:28px;
+  }
+
+  /* QUESTION CARD */
+  .q-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:18px;
+    transition:.2s;
+  }
+
+  .q-card.answered{
+    border-color:rgba(61,186,110,.3);
+  }
+
+  .q-num{
+    font-size:.75rem;
+    color:var(--gold);
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+
+  .q-text{
+    font-size:1rem;
+    line-height:1.6;
+    margin-bottom:18px;
+  }
+
+  .options{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  @media(max-width:600px){
+    .options{
+      grid-template-columns:1fr;
+    }
+  }
+
+  .opt{
+    background:#1a1a28;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    cursor:pointer;
+    font-size:.9rem;
+    transition:.2s;
+    text-align:left;
+    color:var(--cream);
+  }
+
+  .opt:hover{
+    border-color:var(--gold);
+    background:#22223a;
+  }
+
+  .opt.selected{
+    background:rgba(201,168,76,.15);
+    border-color:var(--gold);
+    color:var(--gold);
+  }
+
+  /* ESSAY */
+  .essay-topic{
+    background:rgba(201,168,76,.08);
+    border:1px solid rgba(201,168,76,.3);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:20px;
+  }
+
+  .essay-label{
+    font-size:.78rem;
+    color:var(--gold);
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+
+  .essay-topic-text{
+    font-size:1.1rem;
+    font-weight:500;
+  }
+
+  textarea{
+    width:100%;
+    background:#13131e;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px;
+    color:var(--cream);
+    font-family:'DM Sans',sans-serif;
+    font-size:.95rem;
+    line-height:1.7;
+    resize:vertical;
+    min-height:240px;
+    outline:none;
+    transition:.2s;
+  }
+
+  textarea:focus{
+    border-color:var(--gold);
+  }
+
+  .word-count{
+    font-size:.82rem;
+    color:#666;
+    margin-top:8px;
+    text-align:right;
+  }
+
+  /* BUTTONS */
+  .nav-row{
+    display:flex;
+    gap:12px;
+    margin-top:28px;
+    flex-wrap:wrap;
+  }
+
+  .btn{
+    padding:12px 28px;
+    border-radius:7px;
+    font-family:'Syne',sans-serif;
+    font-weight:700;
+    font-size:.9rem;
+    letter-spacing:.04em;
+    border:none;
+    cursor:pointer;
+    transition:.2s;
+  }
+
+  .btn-next{
+    background:var(--gold);
+    color:var(--ink);
+  }
+
+  .btn-back{
+    background:#1e1e2e;
+    color:var(--cream);
+    border:1px solid var(--border);
+  }
+
+  .btn-submit{
+    background:var(--green);
+    color:#fff;
+  }
+
+  /* MODAL */
+  .modal-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:200;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .modal-overlay.show{
+    display:flex;
+  }
+
+  .modal{
+    background:#13131e;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:36px;
+    max-width:420px;
+    width:90%;
+    text-align:center;
+  }
+
+  .modal h3{
+    font-family:'Syne',sans-serif;
+    margin-bottom:12px;
+  }
+
+  .modal p{
+    color:#aaa;
+    margin-bottom:24px;
+    line-height:1.6;
+  }
+
+  .modal-btns{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+  }
+
+  /* SUBMIT OVERLAY */
+  #submitting{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:300;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  #submitting.show{
+    display:flex;
+  }
+
+  .spinner{
+    width:48px;
+    height:48px;
+    border:4px solid #222;
+    border-top-color:var(--gold);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+  }
+
+  @keyframes spin{
+    to{transform:rotate(360deg);}
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div>
+    <div class="topbar-title">CDC Online Assessment</div>
+    <div class="topbar-student">{{ student_name }}</div>
+  </div>
+
+  <div id="timer">60:00</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="goSection(0)">🧮 Aptitude</button>
+  <button class="tab" onclick="goSection(1)">🧩 Reasoning</button>
+  <button class="tab" onclick="goSection(2)">📝 English</button>
+  <button class="tab" onclick="goSection(3)">✍️ Essay</button>
+</div>
+
+<!-- APTITUDE -->
+<div class="section active" id="sec-0">
+
+  <div class="section-header">Aptitude Test</div>
+  <div class="section-meta">10 Questions</div>
+
+  {% for q in aptitude %}
+
+  <div class="q-card">
+
+    <div class="q-num">
+      Q{{ loop.index }}
+    </div>
+
+    <div class="q-text">
+      {{ q.question }}
+    </div>
+
+   <div class="options">
+
+  {% for opt in q.options.values() %}
+
+  <button
+    class="opt"
+    type="button"
+    onclick="selectOpt(this,'aptitude','{{ q.id }}')">
+
+    {{ opt }}
+
+  </button>
+
+  {% endfor %}
+
+</div>
+
+  </div>
+
+  {% endfor %}
+
+  <div class="nav-row">
+    <button class="btn btn-next" onclick="goSection(1)">
+      Next: Reasoning →
+    </button>
+  </div>
+
+</div>
+<!-- REASONING -->
+<div class="section" id="sec-1">
+
+  <div class="section-header">Reasoning Test</div>
+  <div class="section-meta">10 Questions</div>
+
+  {% for q in reasoning %}
+
+  <div class="q-card">
+
+    <div class="q-num">
+      Q{{ loop.index }}
+    </div>
+
+    <div class="q-text">
+      {{ q.question }}
+    </div>
+
+    <div class="options">
+
+      {% for opt in q.options.values() %}
+
+      <button
+        class="opt"
+        type="button"
+        onclick="selectOpt(this,'reasoning','{{ q.id }}')">
+
+        {{ opt }}
+
+      </button>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+  {% endfor %}
+
+  <div class="nav-row">
+    <button class="btn btn-back" onclick="goSection(0)">
+      ← Back
+    </button>
+
+    <button class="btn btn-next" onclick="goSection(2)">
+      Next: English →
+    </button>
+  </div>
+
+</div>
+<div class="section" id="sec-2">
+
+  <div class="section-header">English Test</div>
+  <div class="section-meta">10 Questions</div>
+
+  {% for q in english %}
+
+  <div class="q-card">
+
+    <div class="q-num">
+      Q{{ loop.index }}
+    </div>
+
+    <div class="q-text">
+      {{ q.question }}
+    </div>
+
+    <div class="options">
+
+      {% for opt in q.options.values() %}
+
+      <button
+        class="opt"
+        type="button"
+        onclick="selectOpt(this,'english','{{ q.id }}')">
+
+        {{ opt }}
+
+      </button>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+  {% endfor %}
+
+  <div class="nav-row">
+
+    <button class="btn btn-back" onclick="goSection(1)">
+      ← Back
+    </button>
+
+    <button class="btn btn-next" onclick="goSection(3)">
+      Next: Essay →
+    </button>
+
+  </div>
+
+</div>
+
+<!-- ESSAY -->
+<div class="section" id="sec-3">
+
+  <div class="section-header">Essay Writing</div>
+
+  <div class="essay-topic">
+    <div class="essay-label">Topic</div>
+    <div class="essay-topic-text">{{ essay_topic }}</div>
+  </div>
+
+  <textarea
+    id="essay-text"
+    placeholder="Write your essay here..."
+    oninput="updateWordCount()"></textarea>
+
+  <div class="word-count" id="word-count">0 words</div>
+
+  <div class="nav-row">
+
+    <button class="btn btn-back" onclick="goSection(2)">
+      ← Back
+    </button>
+
+    <button class="btn btn-submit" onclick="showSubmitModal()">
+      Submit Exam ✓
+    </button>
+
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="submit-modal">
+
+  <div class="modal">
+
+    <h3>Submit Exam?</h3>
+
+    <p>
+      Once submitted you cannot change answers.
+    </p>
+
+    <div class="modal-btns">
+
+      <button class="btn btn-back" onclick="hideSubmitModal()">
+        Cancel
+      </button>
+
+      <button class="btn btn-submit" onclick="submitExam()">
+        Yes Submit
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SUBMITTING -->
+<div id="submitting">
+  <div class="spinner"></div>
+  <p>Submitting Exam...</p>
+</div>
+
+<script>
+
+const answers = {
+  aptitude:{},
+  reasoning:{},
+  english:{}
+};
+
+function goSection(n){
+
+  document.querySelectorAll('.section')
+    .forEach((s,i)=>{
+      s.classList.toggle('active',i===n);
+    });
+
+  document.querySelectorAll('.tab')
+    .forEach((t,i)=>{
+      t.classList.toggle('active',i===n);
+    });
+
+  window.scrollTo(0,0);
+}
+
+function selectOpt(btn, section, question){
+
+  const card = btn.closest('.q-card');
+
+  card.querySelectorAll('.opt')
+      .forEach(o=>o.classList.remove('selected'));
+
+  btn.classList.add('selected');
+
+  card.classList.add('answered');
+
+  answers[section][question] = btn.innerText.trim();
+}
+
+function updateWordCount(){
+
+  const txt = document.getElementById('essay-text').value;
+
+  const count = txt.trim()
+                   .split(/\s+/)
+                   .filter(Boolean).length;
+
+  const el = document.getElementById('word-count');
+
+  el.innerText = count + ' words';
+
+  el.style.color = count >= 150 ? '#3dba6e' : '#e84545';
+}
+
+/* TIMER */
+
+let totalSeconds = 3600;
+
+const timerEl = document.getElementById('timer');
+
+const timerInterval = setInterval(()=>{
+
+  totalSeconds--;
+
+  if(totalSeconds <= 0){
+    clearInterval(timerInterval);
+    submitExam();
+    return;
+  }
+
+  const m = String(Math.floor(totalSeconds/60)).padStart(2,'0');
+  const s = String(totalSeconds%60).padStart(2,'0');
+
+  timerEl.innerText = `${m}:${s}`;
+
+  if(totalSeconds <= 300){
+    timerEl.classList.add('danger');
+  }
+
+},1000);
+
+function showSubmitModal(){
+  document.getElementById('submit-modal')
+          .classList.add('show');
+}
+
+function hideSubmitModal(){
+  document.getElementById('submit-modal')
+          .classList.remove('show');
+}
+
+async function submitExam(){
+
+  clearInterval(timerInterval);
+
+  hideSubmitModal();
+
+  document.getElementById('submitting')
+          .classList.add('show');
+
+  const payload = {
+    aptitude:answers.aptitude,
+    reasoning:answers.reasoning,
+    english:answers.english,
+    essay:document.getElementById('essay-text').value
+  };
+
+  try{
+
+    const res = await fetch('/submit',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+
+    if(data.status === 'ok'){
+      window.location.href = data.redirect;
+    }
+
+  }catch(err){
+
+    alert('Submission failed');
+
+    document.getElementById('submitting')
+            .classList.remove('show');
+  }
+}
+
+window.onbeforeunload = function(){
+  return 'Exam is in progress.';
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — CDC</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0a0a0f;--cream:#f5f2eb;--gold:#c9a84c;--err:#e84545;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--cream);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+  .card{background:#11111a;border:1px solid #222233;border-radius:16px;padding:44px 40px;width:100%;max-width:400px;}
+  .logo{font-family:'Syne',sans-serif;font-size:.85rem;font-weight:800;color:#e84545;letter-spacing:.12em;text-transform:uppercase;text-align:center;margin-bottom:8px;}
+  h2{font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:700;text-align:center;margin-bottom:6px;}
+  .sub{text-align:center;color:#666;font-size:.88rem;margin-bottom:28px;}
+  label{display:block;font-size:.8rem;color:#aaa;letter-spacing:.07em;text-transform:uppercase;margin-bottom:7px;}
+  input{width:100%;background:#1a1a28;border:1px solid #2a2a40;border-radius:8px;padding:12px 14px;color:var(--cream);font-size:.95rem;margin-bottom:20px;outline:none;transition:.2s;}
+  input:focus{border-color:#e84545;}
+  .btn{width:100%;background:#e84545;color:#fff;font-family:'Syne',sans-serif;font-weight:700;font-size:1rem;padding:14px;border:none;border-radius:8px;cursor:pointer;transition:.2s;}
+  .btn:hover{background:#ff5555;}
+  .error{background:rgba(232,69,69,.12);border:1px solid rgba(232,69,69,.4);color:#ff7070;padding:12px;border-radius:8px;font-size:.88rem;margin-bottom:18px;}
+  .back{text-align:center;margin-top:18px;font-size:.85rem;color:#555;}
+  .back a{color:var(--gold);text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">🔒 Admin Access</div>
+  <h2>Admin Login</h2>
+  <p class="sub">Faculty / Administrator only</p>
+  {% if error %}<div class="error">⚠️ {{ error }}</div>{% endif %}
+  <form method="POST" action="/admin/login">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="admin" required>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="••••••••" required>
+    <button class="btn" type="submit">Login →</button>
+  </form>
+  <p class="back"><a href="/">← Back to Home</a></p>
+</div>
+</body>
+</html>

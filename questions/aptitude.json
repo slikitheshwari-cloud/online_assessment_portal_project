@@ -1,0 +1,1655 @@
+[
+  {
+    
+      "id": 1,
+      "question": "What is the HCF of 24 and 36?",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "12",
+        "D": "18"
+      },
+      "answer": "C"
+    },
+    {
+      "id": 2,
+      "question": "What is the LCM of 12 and 15?",
+      "options": {
+        "A": "45",
+        "B": "60",
+        "C": "90",
+        "D": "120"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "Which number is divisible by 3?",
+      "options": {
+        "A": "1245",
+        "B": "1246",
+        "C": "1247",
+        "D": "1248"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "question": "The square root of 144 is:",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "14"
+      },
+      "answer": "C"
+    },
+    {
+      "id": 5,
+      "question": "The cube of 5 is:",
+      "options": {
+        "A": "25",
+        "B": "75",
+        "C": "100",
+        "D": "125"
+      },
+      "answer": "D"
+    },
+    {
+      "id": 6,
+      "question": "2³ × 2⁴ = ?",
+      "options": {
+        "A": "2⁷",
+        "B": "2¹²",
+        "C": "2⁸",
+        "D": "2⁶"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "What is 25% of 200?",
+      "options": {
+        "A": "25",
+        "B": "40",
+        "C": "50",
+        "D": "60"
+      },
+      "answer": "C"
+    },
+    {
+      "id": 8,
+      "question": "Simplify: 15 + 5 × 2",
+      "options": {
+        "A": "40",
+        "B": "25",
+        "C": "20",
+        "D": "30"
+      },
+      "answer": "B"
+    },
+    {
+      "id": 9,
+      "question": "What is 999 + 1?",
+      "options": {
+        "A": "1000",
+        "B": "1001",
+        "C": "998",
+        "D": "999"
+      },
+      "answer": "A"
+    },
+    {
+      "id": 10,
+      "question": "What is the remainder when 17 is divided by 5?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "B"
+    },
+  
+  {
+    "id": 11,
+    "question": "Which is a prime number?",
+    "options": {
+      "A": "21",
+      "B": "35",
+      "C": "41",
+      "D": "51"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "The successor of 999 is:",
+    "options": {
+      "A": "998",
+      "B": "1000",
+      "C": "1001",
+      "D": "9999"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "0 divided by any number is:",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Undefined",
+      "D": "Infinity"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "question": "The value of 7² is:",
+    "options": {
+      "A": "14",
+      "B": "21",
+      "C": "42",
+      "D": "49"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 15,
+    "question": "The smallest even prime number is:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "question": "What is 18% of 500?",
+    "options": {
+      "A": "80",
+      "B": "85",
+      "C": "90",
+      "D": "95"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "What is 3/4 of 200?",
+    "options": {
+      "A": "100",
+      "B": "125",
+      "C": "150",
+      "D": "175"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "Simplify: 100 ÷ 5 × 2",
+    "options": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "50"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 19,
+    "question": "The value of 9³ is:",
+    "options": {
+      "A": "729",
+      "B": "512",
+      "C": "625",
+      "D": "343"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "Which number is odd?",
+    "options": {
+      "A": "24",
+      "B": "38",
+      "C": "57",
+      "D": "80"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "A shirt costing ₹500 is sold for ₹600. Profit % = ?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "25%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 22,
+    "question": "20% of 250 = ?",
+    "options": {
+      "A": "25",
+      "B": "40",
+      "C": "50",
+      "D": "60"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 23,
+    "question": "A product is sold at 10% loss for ₹900. Cost price?",
+    "options": {
+      "A": "950",
+      "B": "1000",
+      "C": "1100",
+      "D": "1200"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 24,
+    "question": "Increase ₹400 by 25%.",
+    "options": {
+      "A": "450",
+      "B": "475",
+      "C": "500",
+      "D": "550"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "Decrease ₹800 by 20%.",
+    "options": {
+      "A": "620",
+      "B": "640",
+      "C": "680",
+      "D": "700"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "Profit = SP − ?",
+    "options": {
+      "A": "Loss",
+      "B": "Discount",
+      "C": "CP",
+      "D": "Tax"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 27,
+    "question": "If CP = ₹100 and SP = ₹120, profit = ?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "25%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "50% of 80 = ?",
+    "options": {
+      "A": "20",
+      "B": "30",
+      "C": "40",
+      "D": "50"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 29,
+    "question": "A man bought an item for ₹200 and sold it for ₹180. Loss % = ?",
+    "options": {
+      "A": "5%",
+      "B": "10%",
+      "C": "15%",
+      "D": "20%"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "What is 12.5% of 400?",
+    "options": {
+      "A": "40",
+      "B": "45",
+      "C": "50",
+      "D": "60"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 31,
+    "question": "Successive discounts of 10% and 20% are equal to:",
+    "options": {
+      "A": "28%",
+      "B": "30%",
+      "C": "32%",
+      "D": "35%"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 32,
+    "question": "If salary increases from ₹20000 to ₹24000, increase % = ?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "25%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "A student scored 360 out of 450. Percentage?",
+    "options": {
+      "A": "70%",
+      "B": "75%",
+      "C": "80%",
+      "D": "85%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 34,
+    "question": "25% of 25% of 400 = ?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "35"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "The marked price is ₹1000 with 10% discount. Selling price = ?",
+    "options": {
+      "A": "850",
+      "B": "900",
+      "C": "950",
+      "D": "1000"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "What is 5% of 600?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "35"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 37,
+    "question": "A shopkeeper gains ₹50 on selling an item for ₹250. CP = ?",
+    "options": {
+      "A": "150",
+      "B": "180",
+      "C": "200",
+      "D": "220"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 38,
+    "question": "What percent of 80 is 20?",
+    "options": {
+      "A": "15%",
+      "B": "20%",
+      "C": "25%",
+      "D": "30%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 39,
+    "question": "40% of 500 = ?",
+    "options": {
+      "A": "100",
+      "B": "150",
+      "C": "200",
+      "D": "250"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 40,
+    "question": "A TV costs ₹24000 after 20% discount. Original price = ?",
+    "options": {
+      "A": "28000",
+      "B": "30000",
+      "C": "32000",
+      "D": "35000"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "Profit percentage formula =",
+    "options": {
+      "A": "Profit/SP ×100",
+      "B": "Profit/CP ×100",
+      "C": "SP/CP ×100",
+      "D": "CP/SP ×100"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 42,
+    "question": "Loss percentage formula =",
+    "options": {
+      "A": "Loss/CP ×100",
+      "B": "Loss/SP ×100",
+      "C": "CP/SP ×100",
+      "D": "SP/CP ×100"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "An item sold for ₹480 at 20% profit. CP = ?",
+    "options": {
+      "A": "350",
+      "B": "380",
+      "C": "400",
+      "D": "420"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 44,
+    "question": "What is 75% of 80?",
+    "options": {
+      "A": "50",
+      "B": "55",
+      "C": "60",
+      "D": "65"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 45,
+    "question": "15% of 200 = ?",
+    "options": {
+      "A": "25",
+      "B": "30",
+      "C": "35",
+      "D": "40"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "question": "Ratio of 20:40 = ?",
+    "options": {
+      "A": "1:2",
+      "B": "2:1",
+      "C": "3:2",
+      "D": "4:1"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 47,
+    "question": "Average of 2, 4, 6, 8 = ?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "Average of first 5 natural numbers = ?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "question": "Ratio of boys to girls is 3:2. If boys = 30, girls = ?",
+    "options": {
+      "A": "15",
+      "B": "20",
+      "C": "25",
+      "D": "30"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Average of 10 and 20 = ?",
+    "options": {
+      "A": "12",
+      "B": "14",
+      "C": "15",
+      "D": "18"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 51,
+    "question": "The average of 15, 20, 25, 30 and 35 is:",
+    "options": {
+      "A": "20",
+      "B": "22",
+      "C": "25",
+      "D": "28"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 52,
+    "question": "If the ratio of boys to girls is 5:4 and there are 40 girls, number of boys = ?",
+    "options": {
+      "A": "45",
+      "B": "50",
+      "C": "55",
+      "D": "60"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 53,
+    "question": "A and B can complete a work in 12 days. A alone can do it in 20 days. B alone can do it in:",
+    "options": {
+      "A": "25 days",
+      "B": "30 days",
+      "C": "35 days",
+      "D": "40 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 54,
+    "question": "A train moving at 60 km/hr crosses a pole in 18 seconds. Length of train = ?",
+    "options": {
+      "A": "200 m",
+      "B": "250 m",
+      "C": "300 m",
+      "D": "350 m"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 55,
+    "question": "Simple Interest on ₹5000 at 10% for 2 years = ?",
+    "options": {
+      "A": "₹500",
+      "B": "₹750",
+      "C": "₹1000",
+      "D": "₹1200"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 56,
+    "question": "Compound Interest on ₹1000 at 10% for 2 years = ?",
+    "options": {
+      "A": "₹200",
+      "B": "₹210",
+      "C": "₹220",
+      "D": "₹230"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 57,
+    "question": "What is the probability of getting a head when a coin is tossed?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "1/2",
+      "D": "2"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 58,
+    "question": "How many outcomes are possible when rolling a dice?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "8"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 59,
+    "question": "The value of x in 2x + 5 = 15 is:",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 60,
+    "question": "If 3 men can complete a work in 15 days, how many days will 5 men take?",
+    "options": {
+      "A": "7",
+      "B": "8",
+      "C": "9",
+      "D": "10"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 61,
+    "question": "A train travels 120 km in 2 hours. Speed = ?",
+    "options": {
+      "A": "40 km/hr",
+      "B": "50 km/hr",
+      "C": "60 km/hr",
+      "D": "70 km/hr"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 62,
+    "question": "Distance covered at 80 km/hr in 3 hours = ?",
+    "options": {
+      "A": "180 km",
+      "B": "220 km",
+      "C": "240 km",
+      "D": "260 km"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 63,
+    "question": "Time taken to travel 150 km at 50 km/hr = ?",
+    "options": {
+      "A": "2 hrs",
+      "B": "2.5 hrs",
+      "C": "3 hrs",
+      "D": "3.5 hrs"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 64,
+    "question": "Simple Interest on ₹2000 at 5% for 3 years = ?",
+    "options": {
+      "A": "₹200",
+      "B": "₹250",
+      "C": "₹300",
+      "D": "₹350"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 65,
+    "question": "Compound Interest on ₹2000 at 10% for 2 years = ?",
+    "options": {
+      "A": "₹400",
+      "B": "₹420",
+      "C": "₹440",
+      "D": "₹460"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 66,
+    "question": "The probability of getting an even number on a dice = ?",
+    "options": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "1/2",
+      "D": "2/3"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 67,
+    "question": "The probability of getting number 5 on a dice = ?",
+    "options": {
+      "A": "1/2",
+      "B": "1/3",
+      "C": "1/6",
+      "D": "1/4"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 68,
+    "question": "Solve: 3x + 6 = 21",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 69,
+    "question": "Solve: x/2 = 8",
+    "options": {
+      "A": "12",
+      "B": "14",
+      "C": "16",
+      "D": "18"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 70,
+    "question": "A rectangle has length 10 cm and breadth 5 cm. Area = ?",
+    "options": {
+      "A": "40 sq.cm",
+      "B": "45 sq.cm",
+      "C": "50 sq.cm",
+      "D": "55 sq.cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 71,
+    "question": "Perimeter of a square with side 8 cm = ?",
+    "options": {
+      "A": "24 cm",
+      "B": "28 cm",
+      "C": "32 cm",
+      "D": "36 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 72,
+    "question": "Area of a triangle = 1/2 × ? × height",
+    "options": {
+      "A": "length",
+      "B": "breadth",
+      "C": "base",
+      "D": "side"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 73,
+    "question": "The perimeter of a rectangle is 30 cm and length is 10 cm. Breadth = ?",
+    "options": {
+      "A": "4 cm",
+      "B": "5 cm",
+      "C": "6 cm",
+      "D": "7 cm"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 74,
+    "question": "The diagonal of a square divides it into:",
+    "options": {
+      "A": "2 triangles",
+      "B": "4 triangles",
+      "C": "2 rectangles",
+      "D": "4 squares"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "A cube has how many faces?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "8"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 76,
+    "question": "The volume of a cube formula is:",
+    "options": {
+      "A": "a²",
+      "B": "a³",
+      "C": "2a",
+      "D": "4a"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 77,
+    "question": "If radius of circle is 7 cm, diameter = ?",
+    "options": {
+      "A": "7 cm",
+      "B": "12 cm",
+      "C": "14 cm",
+      "D": "21 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 78,
+    "question": "Circumference of circle formula =",
+    "options": {
+      "A": "πr²",
+      "B": "2πr",
+      "C": "πd²",
+      "D": "r²"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 79,
+    "question": "If 5 pencils cost ₹25, cost of 1 pencil = ?",
+    "options": {
+      "A": "₹3",
+      "B": "₹4",
+      "C": "₹5",
+      "D": "₹6"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 80,
+    "question": "A shopkeeper buys 10 books for ₹500. Cost of each book = ?",
+    "options": {
+      "A": "₹40",
+      "B": "₹45",
+      "C": "₹50",
+      "D": "₹55"
+    },
+    "answer": "C"
+  },
+   {
+    "id": 81,
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "options": {
+      "A": "24",
+      "B": "30",
+      "C": "32",
+      "D": "36"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 82,
+    "question": "Find the next number: 3, 6, 12, 24, ?",
+    "options": {
+      "A": "36",
+      "B": "42",
+      "C": "48",
+      "D": "54"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 83,
+    "question": "Find the next number: 5, 10, 20, 40, ?",
+    "options": {
+      "A": "60",
+      "B": "70",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 84,
+    "question": "Find the next number: 1, 4, 9, 16, ?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 85,
+    "question": "Find the next number: 1, 8, 27, 64, ?",
+    "options": {
+      "A": "81",
+      "B": "100",
+      "C": "125",
+      "D": "144"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 86,
+    "question": "Find the next number: 7, 14, 21, 28, ?",
+    "options": {
+      "A": "32",
+      "B": "35",
+      "C": "38",
+      "D": "42"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 87,
+    "question": "Find the next number: 2, 5, 10, 17, 26, ?",
+    "options": {
+      "A": "35",
+      "B": "36",
+      "C": "37",
+      "D": "38"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 88,
+    "question": "Find the next number: 11, 22, 44, 88, ?",
+    "options": {
+      "A": "132",
+      "B": "154",
+      "C": "166",
+      "D": "176"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 89,
+    "question": "Find the next number: 100, 81, 64, 49, ?",
+    "options": {
+      "A": "25",
+      "B": "36",
+      "C": "40",
+      "D": "45"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "Find the next number: 3, 9, 27, 81, ?",
+    "options": {
+      "A": "162",
+      "B": "189",
+      "C": "243",
+      "D": "324"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 91,
+    "question": "The average age of 5 persons is 24 years. Total age = ?",
+    "options": {
+      "A": "100",
+      "B": "110",
+      "C": "120",
+      "D": "130"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 92,
+    "question": "What is 3/5 of 250?",
+    "options": {
+      "A": "120",
+      "B": "130",
+      "C": "140",
+      "D": "150"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 93,
+    "question": "The area of a square with side 12 cm = ?",
+    "options": {
+      "A": "124 sq.cm",
+      "B": "132 sq.cm",
+      "C": "144 sq.cm",
+      "D": "156 sq.cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 94,
+    "question": "If CP = ₹600 and profit = 25%, SP = ?",
+    "options": {
+      "A": "₹700",
+      "B": "₹725",
+      "C": "₹750",
+      "D": "₹800"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 95,
+    "question": "A sum doubles in 5 years at simple interest. Rate = ?",
+    "options": {
+      "A": "10%",
+      "B": "15%",
+      "C": "20%",
+      "D": "25%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 96,
+    "question": "The value of 13² is:",
+    "options": {
+      "A": "139",
+      "B": "149",
+      "C": "169",
+      "D": "179"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 97,
+    "question": "Find the next number: 100, 81, 64, 49, ?",
+    "options": {
+      "A": "25",
+      "B": "36",
+      "C": "40",
+      "D": "45"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 98,
+    "question": "If a train travels at 72 km/hr, distance covered in 20 minutes = ?",
+    "options": {
+      "A": "20 km",
+      "B": "22 km",
+      "C": "24 km",
+      "D": "26 km"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 99,
+    "question": "A coin is tossed twice. Total possible outcomes = ?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "6"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 100,
+    "question": "The HCF of 36 and 54 is:",
+    "options": {
+      "A": "6",
+      "B": "9",
+      "C": "12",
+      "D": "18"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 101,
+    "question": "Find the missing term: 2, 6, 12, 20, 30, ?",
+    "options": {
+      "A": "40",
+      "B": "42",
+      "C": "44",
+      "D": "46"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 102,
+    "question": "A can complete a work in 8 days. Work completed in one day = ?",
+    "options": {
+      "A": "1/6",
+      "B": "1/7",
+      "C": "1/8",
+      "D": "1/9"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 103,
+    "question": "What is 22% of 500?",
+    "options": {
+      "A": "100",
+      "B": "110",
+      "C": "120",
+      "D": "130"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 104,
+    "question": "The perimeter of a rectangle of length 12 cm and breadth 8 cm = ?",
+    "options": {
+      "A": "20 cm",
+      "B": "30 cm",
+      "C": "40 cm",
+      "D": "50 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 105,
+    "question": "A bag contains 5 red and 3 blue balls. Probability of selecting a red ball = ?",
+    "options": {
+      "A": "3/8",
+      "B": "5/8",
+      "C": "1/2",
+      "D": "2/3"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 106,
+    "question": "The average of 7, 14, 21 and 28 = ?",
+    "options": {
+      "A": "16",
+      "B": "17.5",
+      "C": "18",
+      "D": "19"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 107,
+    "question": "Find the next number: 1, 8, 27, 64, ?",
+    "options": {
+      "A": "81",
+      "B": "100",
+      "C": "125",
+      "D": "144"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 108,
+    "question": "If selling price is ₹960 and loss is 20%, cost price = ?",
+    "options": {
+      "A": "₹1000",
+      "B": "₹1100",
+      "C": "₹1200",
+      "D": "₹1250"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 109,
+    "question": "A boat travels 90 km in 3 hours. Speed = ?",
+    "options": {
+      "A": "25 km/hr",
+      "B": "30 km/hr",
+      "C": "35 km/hr",
+      "D": "40 km/hr"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 110,
+    "question": "What is 45% of 800?",
+    "options": {
+      "A": "320",
+      "B": "340",
+      "C": "360",
+      "D": "380"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 111,
+    "question": "The square root of 1024 is:",
+    "options": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "34"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 112,
+    "question": "A can complete a work in 12 days. B can complete it in 18 days. Together they can complete it in:",
+    "options": {
+      "A": "6 days",
+      "B": "7.2 days",
+      "C": "8 days",
+      "D": "9 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 113,
+    "question": "Find the next term: 2, 5, 10, 17, 26, ?",
+    "options": {
+      "A": "35",
+      "B": "36",
+      "C": "37",
+      "D": "38"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 114,
+    "question": "A train running at 54 km/hr crosses a pole in 20 seconds. Length of train = ?",
+    "options": {
+      "A": "250 m",
+      "B": "280 m",
+      "C": "300 m",
+      "D": "320 m"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 115,
+    "question": "Simple Interest on ₹3000 at 8% for 3 years = ?",
+    "options": {
+      "A": "₹620",
+      "B": "₹680",
+      "C": "₹720",
+      "D": "₹760"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 116,
+    "question": "The probability of getting an odd number on a dice = ?",
+    "options": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "1/2",
+      "D": "2/3"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 117,
+    "question": "The value of 18² is:",
+    "options": {
+      "A": "284",
+      "B": "324",
+      "C": "364",
+      "D": "484"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 118,
+    "question": "Average of first 20 natural numbers = ?",
+    "options": {
+      "A": "10",
+      "B": "10.5",
+      "C": "11",
+      "D": "11.5"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 119,
+    "question": "A person bought an item for ₹1500 and sold it at 20% profit. Selling price = ?",
+    "options": {
+      "A": "₹1700",
+      "B": "₹1750",
+      "C": "₹1800",
+      "D": "₹1850"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 120,
+    "question": "Find the missing number: 7, 14, 28, 56, ?",
+    "options": {
+      "A": "98",
+      "B": "102",
+      "C": "112",
+      "D": "120"
+    },
+    "answer": "C"
+  },
+   {
+    "id": 121,
+    "question": "If 8 men complete a work in 24 days, then 12 men complete it in:",
+    "options": {
+      "A": "14 days",
+      "B": "16 days",
+      "C": "18 days",
+      "D": "20 days"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 122,
+    "question": "The cube of 12 is:",
+    "options": {
+      "A": "144",
+      "B": "728",
+      "C": "1728",
+      "D": "2744"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 123,
+    "question": "A car covers 360 km in 6 hours. Speed = ?",
+    "options": {
+      "A": "50 km/hr",
+      "B": "55 km/hr",
+      "C": "60 km/hr",
+      "D": "65 km/hr"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 124,
+    "question": "What is 7/8 of 400?",
+    "options": {
+      "A": "300",
+      "B": "320",
+      "C": "340",
+      "D": "350"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 125,
+    "question": "The perimeter of a square of side 15 cm = ?",
+    "options": {
+      "A": "45 cm",
+      "B": "50 cm",
+      "C": "60 cm",
+      "D": "75 cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 126,
+    "question": "Find the next number: 3, 9, 27, 81, ?",
+    "options": {
+      "A": "162",
+      "B": "189",
+      "C": "243",
+      "D": "324"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 127,
+    "question": "A mixture contains milk and water in ratio 7:3. Water percentage = ?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "30%",
+      "D": "35%"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 128,
+    "question": "The HCF of 48 and 72 is:",
+    "options": {
+      "A": "12",
+      "B": "18",
+      "C": "24",
+      "D": "36"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 129,
+    "question": "A sum amounts to ₹6600 in 2 years at 10% simple interest. Principal = ?",
+    "options": {
+      "A": "₹5000",
+      "B": "₹5500",
+      "C": "₹6000",
+      "D": "₹6200"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 130,
+    "question": "What is 16% of 250?",
+    "options": {
+      "A": "30",
+      "B": "35",
+      "C": "40",
+      "D": "45"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 131,
+    "question": "Find the next term: 1, 2, 6, 24, 120, ?",
+    "options": {
+      "A": "240",
+      "B": "360",
+      "C": "600",
+      "D": "720"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 132,
+    "question": "The area of a rectangle of length 14 cm and breadth 9 cm = ?",
+    "options": {
+      "A": "112 sq.cm",
+      "B": "116 sq.cm",
+      "C": "126 sq.cm",
+      "D": "136 sq.cm"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 133,
+    "question": "A can do a piece of work in 15 days and B in 10 days. Together they complete it in:",
+    "options": {
+      "A": "4 days",
+      "B": "5 days",
+      "C": "6 days",
+      "D": "7 days"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 134,
+    "question": "The probability of getting a number greater than 4 on a dice = ?",
+    "options": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "1/2",
+      "D": "2/3"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 135,
+    "question": "Find the value of x: 5x − 10 = 40",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "12"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 136,
+    "question": "The square root of 784 is:",
+    "options": {
+      "A": "24",
+      "B": "26",
+      "C": "28",
+      "D": "30"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 137,
+    "question": "A person sells an article at ₹840 with 5% loss. Cost price = ?",
+    "options": {
+      "A": "₹860",
+      "B": "₹880",
+      "C": "₹900",
+      "D": "₹920"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 138,
+    "question": "Average of 18, 24, 30, 36 and 42 = ?",
+    "options": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "34"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 139,
+    "question": "Find the next number: 10, 20, 40, 80, ?",
+    "options": {
+      "A": "120",
+      "B": "140",
+      "C": "160",
+      "D": "180"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 140,
+    "question": "What is 125% of 240?",
+    "options": {
+      "A": "260",
+      "B": "280",
+      "C": "300",
+      "D": "320"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 141,
+    "question": "A train covers 480 km in 8 hours. Speed = ?",
+    "options": {
+      "A": "50 km/hr",
+      "B": "55 km/hr",
+      "C": "60 km/hr",
+      "D": "65 km/hr"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 142,
+    "question": "The LCM of 16 and 20 is:",
+    "options": {
+      "A": "40",
+      "B": "60",
+      "C": "80",
+      "D": "100"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 143,
+    "question": "The value of 14² is:",
+    "options": {
+      "A": "176",
+      "B": "186",
+      "C": "196",
+      "D": "206"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 144,
+    "question": "A sum of ₹4000 amounts to ₹4800 in 2 years at simple interest. Rate = ?",
+    "options": {
+      "A": "8%",
+      "B": "10%",
+      "C": "12%",
+      "D": "15%"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 145,
+    "question": "Find the missing term: 6, 12, 24, 48, ?",
+    "options": {
+      "A": "72",
+      "B": "84",
+      "C": "96",
+      "D": "108"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 146,
+    "question": "A shopkeeper gains 15% by selling an article for ₹2300. Cost price = ?",
+    "options": {
+      "A": "₹1800",
+      "B": "₹1900",
+      "C": "₹2000",
+      "D": "₹2100"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 147,
+    "question": "Probability of getting a tail when a coin is tossed = ?",
+    "options": {
+      "A": "0",
+      "B": "1/4",
+      "C": "1/2",
+      "D": "1"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 148,
+    "question": "The average of first 15 even numbers = ?",
+    "options": {
+      "A": "14",
+      "B": "15",
+      "C": "16",
+      "D": "17"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 149,
+    "question": "Find the next term: 4, 9, 16, 25, 36, ?",
+    "options": {
+      "A": "42",
+      "B": "45",
+      "C": "49",
+      "D": "64"
+    },
+    "answer": "C"
+  },
+    {
+    "id": 150,
+    "question": "The cube root of 729 is:",
+    "options": {
+      "A": "7",
+      "B": "8",
+      "C": "9",
+      "D": "10"
+    },
+    "answer": "C"
+  }
+]
+

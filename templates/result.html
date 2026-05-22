@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result — CDC Assessment</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0a0a0f;--cream:#f5f2eb;--gold:#c9a84c;--green:#3dba6e;--err:#e84545;--card:#13131e;--border:#252535;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;background:#0d0d15;color:var(--cream);min-height:100vh;padding:40px 20px;}
+  .container{max-width:700px;margin:0 auto;}
+  .badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:5px 16px;border-radius:20px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;}
+  h1{font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;margin-bottom:6px;}
+  .student-info{color:#888;font-size:.9rem;margin-bottom:36px;}
+  /* SCORE CIRCLE */
+  .score-circle{text-align:center;margin:32px 0;}
+  .circle-wrap{display:inline-flex;align-items:center;justify-content:center;width:160px;height:160px;border-radius:50%;background:conic-gradient(var(--gold) calc(var(--pct)*3.6deg), #1e1e2e 0deg);padding:8px;}
+  .circle-inner{background:#0d0d15;width:100%;height:100%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .pct-val{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--gold);}
+  .pct-lbl{font-size:.78rem;color:#888;letter-spacing:.08em;text-transform:uppercase;}
+  /* SECTION BARS */
+  .sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0;}
+  @media(max-width:500px){.sections{grid-template-columns:1fr;}}
+  .sec-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;}
+  .sec-label{font-size:.75rem;color:#888;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;}
+  .sec-score{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;margin-bottom:10px;}
+  .bar-bg{background:#1e1e2e;border-radius:4px;height:6px;overflow:hidden;}
+  .bar-fill{height:100%;border-radius:4px;background:var(--gold);transition:width 1.2s ease;}
+  /* FEEDBACK */
+  .feedback-box{background:rgba(61,186,110,.06);border:1px solid rgba(61,186,110,.25);border-radius:12px;padding:22px;margin:24px 0;}
+  .feedback-label{font-size:.75rem;color:var(--green);letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+  .feedback-text{font-size:.95rem;line-height:1.7;color:#ccc;}
+  /* ACTIONS */
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px;}
+  .btn{padding:12px 28px;border-radius:7px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-decoration:none;border:none;cursor:pointer;transition:.2s;}
+  .btn-gold{background:var(--gold);color:var(--ink);}
+  .btn-gold:hover{background:#debb66;}
+  .btn-outline{background:transparent;border:1px solid var(--border);color:var(--cream);}
+  .btn-outline:hover{border-color:var(--cream);}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="badge">Exam Complete</div>
+  <h1>Your Results</h1>
+  <p class="student-info">{{ data.name }} · {{ data.roll_number }} · {{ data.submitted_at.strftime('%d %b %Y, %I:%M %p') if data.submitted_at and not data.submitted_at is string else data.submitted_at or '' }}</p>
+
+  <!-- Percentage circle -->
+  <div class="score-circle">
+    <div class="circle-wrap" style="--pct:{{ data.percentage }}">
+      <div class="circle-inner">
+        <span class="pct-val">{{ data.percentage }}%</span>
+        <span class="pct-lbl">Overall</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section scores -->
+  <div class="sections">
+    <div class="sec-card">
+      <div class="sec-label">Aptitude</div>
+      <div class="sec-score">{{ data.aptitude_score }} / 30</div>
+   
+      <div class="bar-bg">   <div class="bar-fill" style="width:{{ (data.aptitude_score / 30) * 100 }}%"></div>
+    </div>
+    <div class="sec-card">
+      <div class="sec-label">Reasoning</div>
+      <div class="sec-score">{{ data.reasoning_score }} / 30</div>
+      <div class="bar-bg"><div class="bar-fill" style="width:{{ (data.reasoning_score / 30) * 100 }}%"></div>
+    </div>
+    <div class="sec-card">
+      <div class="sec-label">English</div>
+      <div class="sec-score">{{ data.english_score }} / 30</div>
+      <div class="bar-bg"><div class="bar-fill" style="width:{{ (data.english_score / 30) * 100 }}%"></div>
+    </div>
+    <div class="sec-card">
+      <div class="sec-label">Essay</div>
+      <div class="sec-score">{{ data.essay_score }} / 10</div>
+      <div class="bar-bg"><div class="bar-fill" style="width:{{ data.essay_score * 10 }}%"></div></div>
+    </div>
+  </div>
+
+  <!-- Total -->
+  <div class="sec-card" style="text-align:center;padding:24px;">
+    <div class="sec-label">Total Score</div>
+    <div style="font-family:'Syne',sans-serif;font-size:2.4rem;font-weight:800;color:var(--gold);">
+  {{ data.total_score }} / 100
+</div>
+
+  <!-- Feedback -->
+  <div class="feedback-box">
+    <div class="feedback-label">📊 Personalised Feedback</div>
+    <div class="feedback-text">{{ data.feedback }}</div>
+  </div>
+
+  <!-- Actions -->
+  <div class="actions">
+    <a href="/dashboard" class="btn btn-gold">← Back to Dashboard</a>
+    <a href="/logout" class="btn btn-outline">Logout</a>
+  </div>
+</div>
+
+<script>
+// Animate bars on load
+window.addEventListener('load', () => {
+  document.querySelectorAll('.bar-fill').forEach(b => {
+    const w = b.style.width; b.style.width = '0';
+    setTimeout(() => b.style.width = w, 300);
+  });
+});
+</script>
+</body>
+</html>
