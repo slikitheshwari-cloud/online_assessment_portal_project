@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CDC Online Placement Assessment</title>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -202,6 +202,53 @@
     font-size:.82rem;
     border-top:1px solid #1a1a2a;
   }
+  .stats-section{
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.stat-card{
+  background:#14141c;
+  border:1px solid #2a2a3a;
+  border-radius:14px;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.stat-card h3{
+  color:#999;
+  margin-bottom:20px;
+  font-size:1rem;
+}
+
+.stat-card p{
+  font-size:4rem;
+  font-family:'Syne',sans-serif;
+  color:var(--gold);
+  font-weight:800;
+}
+
+.chart-box{
+  background:#14141c;
+  border:1px solid #2a2a3a;
+  border-radius:14px;
+  padding:30px;
+  height:350px;
+}
+
+@media(max-width:768px){
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
@@ -224,7 +271,23 @@
     <a href="/admin/login" class="btn btn-outline">Admin Panel</a>
   </div>
 </section>
+<section class="stats-section">
+  <p class="section-label">Assessment Analytics</p>
+  <h2 class="section-title">Platform Statistics</h2>
 
+  <div class="stats-grid">
+
+    <div class="stat-card">
+      <h3>Total Tests Taken</h3>
+      <p id="testCount">0</p>
+    </div>
+
+    <div class="chart-box">
+      <canvas id="testChart"></canvas>
+    </div>
+
+  </div>
+</section>
 <section class="features">
   <p class="section-label">What's included</p>
   <h2 class="section-title">Everything You Need to Succeed</h2>
@@ -242,6 +305,69 @@
 <footer>
   © 2024 CDC Online Assessment Portal · Built for placement excellence
 </footer>
+<script>
+async function loadChart() {
 
+    const response = await fetch('/stats');
+    const data = await response.json();
+
+    document.getElementById('testCount').innerText =
+        data.total_tests;
+
+    const ctx = document.getElementById('testChart');
+
+    new Chart(ctx, {
+        type: 'line',
+
+        data: {
+            labels: data.labels,
+            datasets: [{
+                label: 'Tests Per Day',
+                data: data.counts,
+                borderColor: '#c9a84c',
+                backgroundColor: 'rgba(201,168,76,0.15)',
+                fill: true,
+                tension: 0.4
+            }]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#fff'
+                    }
+                }
+            },
+
+            scales: {
+                x: {
+                    ticks: {
+                        color: '#aaa'
+                    },
+                    grid: {
+                        color: '#222'
+                    }
+                },
+
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: '#aaa'
+                    },
+                    grid: {
+                        color: '#222'
+                    }
+                }
+            }
+        }
+    });
+}
+
+loadChart();
+</script>
 </body>
 </html>

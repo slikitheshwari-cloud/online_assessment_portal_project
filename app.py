@@ -226,30 +226,32 @@ def submit():
             with open(os.path.join(Q_DIR, fname), encoding='utf-8') as f:
                 questions = json.load(f)
 
-            # Convert dict to list if needed
             if isinstance(questions, dict):
                 questions = list(questions.values())
 
-            # Answer key
             key = {}
 
             for q in questions:
-                question_text = q.get('question', '').strip()
-                answer = q.get('answer', '').strip()
+                question_id = str(q.get('id', '')).strip()
+                answer_key = str(q.get('answer', '')).strip()
+                options = q.get('options', {})
+                answer_text = str(options.get(answer_key, '')).strip()
 
-                if question_text:
-                    key[question_text] = answer
+                if question_id:
+                    key[question_id] = {
+                        'answer_key': answer_key.lower(),
+                        'answer_text': answer_text.lower()
+                    }
 
             score = 0
 
-            for question, student_answer in student_answers.items():
+            for question_id, student_answer in student_answers.items():
+                question_id = str(question_id).strip()
+                student_answer = str(student_answer).strip().lower()
 
-                question = question.strip()
-                student_answer = str(student_answer).strip()
+                correct = key.get(question_id)
 
-                correct_answer = str(key.get(question, '')).strip()
-
-                if student_answer == correct_answer:
+                if correct and student_answer in (correct['answer_key'], correct['answer_text']):
                     score += 1
 
             return score
@@ -257,7 +259,6 @@ def submit():
         except Exception as e:
             print(f"Error scoring {fname}: {e}")
             return 0
-
     # Raw scores
     apt_raw = score_section(data.get('aptitude', {}), 'aptitude.json')
     rea_raw = score_section(data.get('reasoning', {}), 'reasoning.json')
@@ -499,9 +500,39 @@ def createdb():
     init_db()
     click.echo(click.style(f'  ✓ Database ready: {DB_PATH}', fg='green', bold=True))
 
+@app.route('/stats')
+def stats():
+
+    conn = sqlite3.connect('cdc_assessment.db')
+    cursor = conn.cursor()
+
+    # total tests
+    cursor.execute("SELECT COUNT(*) FROM results")
+    total_tests = cursor.fetchone()[0]
+
+    # tests per day
+    cursor.execute("""
+        SELECT DATE(submitted_at), COUNT(*)
+        FROM results
+        GROUP BY DATE(submitted_at)
+        ORDER BY DATE(submitted_at)
+    """)
+
+    rows = cursor.fetchall()
+
+    labels = [row[0] for row in rows]
+    counts = [row[1] for row in rows]
+
+    conn.close()
+
+    return jsonify({
+        "total_tests": total_tests,
+        "labels": labels,
+        "counts": counts
+    })
 # ─────────────────────────────────────────────────────────────────────────────
 import os
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 2000))
+    app.run(host="0.0.0.0", port=port, debug=False)
