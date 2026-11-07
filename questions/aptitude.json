@@ -1,116 +1,114 @@
 [
   {
-    
-      "id": 1,
-      "question": "What is the HCF of 24 and 36?",
-      "options": {
-        "A": "6",
-        "B": "8",
-        "C": "12",
-        "D": "18"
-      },
-      "answer": "C"
+    "id": 1,
+    "question": "What is the HCF of 24 and 36?",
+    "options": {
+      "A": "6",
+      "B": "8",
+      "C": "12",
+      "D": "18"
     },
-    {
-      "id": 2,
-      "question": "What is the LCM of 12 and 15?",
-      "options": {
-        "A": "45",
-        "B": "60",
-        "C": "90",
-        "D": "120"
-      },
-      "answer": "B"
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "question": "What is the LCM of 12 and 15?",
+    "options": {
+      "A": "45",
+      "B": "60",
+      "C": "90",
+      "D": "120"
     },
-    {
-      "id": 3,
-      "question": "Which number is divisible by 3?",
-      "options": {
-        "A": "1245",
-        "B": "1246",
-        "C": "1247",
-        "D": "1248"
-      },
-      "answer": "A"
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "question": "Which number is divisible by 3?",
+    "options": {
+      "A": "1245",
+      "B": "1246",
+      "C": "1247",
+      "D": "1248"
     },
-    {
-      "id": 4,
-      "question": "The square root of 144 is:",
-      "options": {
-        "A": "10",
-        "B": "11",
-        "C": "12",
-        "D": "14"
-      },
-      "answer": "C"
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "The square root of 144 is:",
+    "options": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "14"
     },
-    {
-      "id": 5,
-      "question": "The cube of 5 is:",
-      "options": {
-        "A": "25",
-        "B": "75",
-        "C": "100",
-        "D": "125"
-      },
-      "answer": "D"
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "The cube of 5 is:",
+    "options": {
+      "A": "25",
+      "B": "75",
+      "C": "100",
+      "D": "125"
     },
-    {
-      "id": 6,
-      "question": "2³ × 2⁴ = ?",
-      "options": {
-        "A": "2⁷",
-        "B": "2¹²",
-        "C": "2⁸",
-        "D": "2⁶"
-      },
-      "answer": "A"
+    "answer": "D"
+  },
+  {
+    "id": 6,
+    "question": "2³ × 2⁴ = ?",
+    "options": {
+      "A": "2⁷",
+      "B": "2¹²",
+      "C": "2⁸",
+      "D": "2⁶"
     },
-    {
-      "id": 7,
-      "question": "What is 25% of 200?",
-      "options": {
-        "A": "25",
-        "B": "40",
-        "C": "50",
-        "D": "60"
-      },
-      "answer": "C"
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "question": "What is 25% of 200?",
+    "options": {
+      "A": "25",
+      "B": "40",
+      "C": "50",
+      "D": "60"
     },
-    {
-      "id": 8,
-      "question": "Simplify: 15 + 5 × 2",
-      "options": {
-        "A": "40",
-        "B": "25",
-        "C": "20",
-        "D": "30"
-      },
-      "answer": "B"
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Simplify: 15 + 5 × 2",
+    "options": {
+      "A": "40",
+      "B": "25",
+      "C": "20",
+      "D": "30"
     },
-    {
-      "id": 9,
-      "question": "What is 999 + 1?",
-      "options": {
-        "A": "1000",
-        "B": "1001",
-        "C": "998",
-        "D": "999"
-      },
-      "answer": "A"
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "question": "What is 999 + 1?",
+    "options": {
+      "A": "1000",
+      "B": "1001",
+      "C": "998",
+      "D": "999"
     },
-    {
-      "id": 10,
-      "question": "What is the remainder when 17 is divided by 5?",
-      "options": {
-        "A": "1",
-        "B": "2",
-        "C": "3",
-        "D": "4"
-      },
-      "answer": "B"
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "question": "What is the remainder when 17 is divided by 5?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
     },
-  
+    "answer": "B"
+  },
   {
     "id": 11,
     "question": "Which is a prime number?",
@@ -881,7 +879,7 @@
     },
     "answer": "C"
   },
-   {
+  {
     "id": 81,
     "question": "Find the next number: 2, 4, 8, 16, ?",
     "options": {
@@ -1321,7 +1319,7 @@
     },
     "answer": "C"
   },
-   {
+  {
     "id": 121,
     "question": "If 8 men complete a work in 24 days, then 12 men complete it in:",
     "options": {
@@ -1640,7 +1638,7 @@
     },
     "answer": "C"
   },
-    {
+  {
     "id": 150,
     "question": "The cube root of 729 is:",
     "options": {
@@ -1650,6 +1648,716 @@
       "D": "10"
     },
     "answer": "C"
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "B",
+    "id": 151
+  },
+  {
+    "question": "Find the next letter in the series: A, C, E, G, ?",
+    "options": {
+      "A": "H",
+      "B": "I",
+      "C": "J",
+      "D": "K"
+    },
+    "answer": "B",
+    "id": 152
+  },
+  {
+    "question": "Which one is different from the others?",
+    "options": {
+      "A": "Apple",
+      "B": "Banana",
+      "C": "Mango",
+      "D": "Carrot"
+    },
+    "answer": "D",
+    "id": 153
+  },
+  {
+    "question": "If CAT is coded as DBU, then DOG is coded as:",
+    "options": {
+      "A": "EPH",
+      "B": "EOH",
+      "C": "EPG",
+      "D": "FPH"
+    },
+    "answer": "A",
+    "id": 154
+  },
+  {
+    "question": "Pointing to a woman, Raj said, 'She is the daughter of my mother's only daughter.' Who is the woman?",
+    "options": {
+      "A": "Raj's sister",
+      "B": "Raj's daughter",
+      "C": "Raj's mother",
+      "D": "Raj's niece"
+    },
+    "answer": "B",
+    "id": 155
+  },
+  {
+    "question": "Find the missing number: 2, 6, 12, 20, ?",
+    "options": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "36"
+    },
+    "answer": "B",
+    "id": 156
+  },
+  {
+    "question": "If all roses are flowers and some flowers are red, then:",
+    "options": {
+      "A": "All roses are red",
+      "B": "Some roses may be red",
+      "C": "No roses are red",
+      "D": "All flowers are roses"
+    },
+    "answer": "B",
+    "id": 157
+  },
+  {
+    "question": "Choose the odd one out.",
+    "options": {
+      "A": "Circle",
+      "B": "Square",
+      "C": "Triangle",
+      "D": "Cube"
+    },
+    "answer": "D",
+    "id": 158
+  },
+  {
+    "question": "Complete the analogy: Book : Reading :: Pen : ?",
+    "options": {
+      "A": "Writing",
+      "B": "Drawing",
+      "C": "Paper",
+      "D": "Ink"
+    },
+    "answer": "A",
+    "id": 159
+  },
+  {
+    "question": "Find the next number in the series: 1, 4, 9, 16, ?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "36"
+    },
+    "answer": "B",
+    "id": 160
+  },
+  {
+    "question": "If Monday is the 1st day of the month, what day will the 15th be?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Sunday",
+      "D": "Wednesday"
+    },
+    "answer": "A",
+    "id": 161
+  },
+  {
+    "question": "Which word does not belong to the group?",
+    "options": {
+      "A": "Lion",
+      "B": "Tiger",
+      "C": "Elephant",
+      "D": "Leopard"
+    },
+    "answer": "C",
+    "id": 162
+  },
+  {
+    "question": "Complete the analogy: Finger : Hand :: Toe : ?",
+    "options": {
+      "A": "Leg",
+      "B": "Foot",
+      "C": "Heel",
+      "D": "Ankle"
+    },
+    "answer": "B",
+    "id": 163
+  },
+  {
+    "question": "Find the next letter series: Z, X, V, T, ?",
+    "options": {
+      "A": "S",
+      "B": "R",
+      "C": "Q",
+      "D": "P"
+    },
+    "answer": "B",
+    "id": 164
+  },
+  {
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "Cannot determine"
+    },
+    "answer": "C",
+    "id": 165
+  },
+  {
+    "question": "Find the missing number: 3, 7, 13, 21, ?",
+    "options": {
+      "A": "29",
+      "B": "30",
+      "C": "31",
+      "D": "33"
+    },
+    "answer": "C",
+    "id": 166
+  },
+  {
+    "question": "Which one is the odd pair?",
+    "options": {
+      "A": "Bird : Nest",
+      "B": "Dog : Kennel",
+      "C": "Horse : Stable",
+      "D": "Cow : Tree"
+    },
+    "answer": "D",
+    "id": 167
+  },
+  {
+    "question": "If today is Friday, what day will it be after 10 days?",
+    "options": {
+      "A": "Sunday",
+      "B": "Monday",
+      "C": "Tuesday",
+      "D": "Wednesday"
+    },
+    "answer": "B",
+    "id": 168
+  },
+  {
+    "question": "Choose the correct analogy: Doctor : Hospital :: Teacher : ?",
+    "options": {
+      "A": "School",
+      "B": "College",
+      "C": "Library",
+      "D": "Book"
+    },
+    "answer": "A",
+    "id": 169
+  },
+  {
+    "question": "Which number comes next in the series: 5, 10, 20, 40, ?",
+    "options": {
+      "A": "60",
+      "B": "70",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "C",
+    "id": 170
+  },
+  {
+    "question": "If all pens are books and all books are bags, then all pens are:",
+    "options": {
+      "A": "Bags",
+      "B": "Boxes",
+      "C": "Pencils",
+      "D": "Tables"
+    },
+    "answer": "A",
+    "id": 171
+  },
+  {
+    "question": "What is 10 × 3?",
+    "options": {
+      "A": "30",
+      "B": "27",
+      "C": "33",
+      "D": "36"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 172
+  },
+  {
+    "question": "What is 11 × 3?",
+    "options": {
+      "A": "33",
+      "B": "30",
+      "C": "36",
+      "D": "39"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 173
+  },
+  {
+    "question": "What is 12 × 3?",
+    "options": {
+      "A": "36",
+      "B": "33",
+      "C": "39",
+      "D": "42"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 174
+  },
+  {
+    "question": "What is 13 × 3?",
+    "options": {
+      "A": "39",
+      "B": "36",
+      "C": "42",
+      "D": "45"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 175
+  },
+  {
+    "question": "What is 14 × 3?",
+    "options": {
+      "A": "42",
+      "B": "39",
+      "C": "45",
+      "D": "48"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 176
+  },
+  {
+    "question": "What is 15 × 3?",
+    "options": {
+      "A": "45",
+      "B": "42",
+      "C": "48",
+      "D": "51"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 177
+  },
+  {
+    "question": "What is 16 × 3?",
+    "options": {
+      "A": "48",
+      "B": "45",
+      "C": "51",
+      "D": "54"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 178
+  },
+  {
+    "question": "What is 17 × 3?",
+    "options": {
+      "A": "51",
+      "B": "48",
+      "C": "54",
+      "D": "57"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 179
+  },
+  {
+    "question": "What is 18 × 3?",
+    "options": {
+      "A": "54",
+      "B": "51",
+      "C": "57",
+      "D": "60"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 180
+  },
+  {
+    "question": "What is 19 × 3?",
+    "options": {
+      "A": "57",
+      "B": "54",
+      "C": "60",
+      "D": "63"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 181
+  },
+  {
+    "question": "What is 5% of 1100?",
+    "options": {
+      "A": "55",
+      "B": "45",
+      "C": "65",
+      "D": "75"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 182
+  },
+  {
+    "question": "What is 5% of 1200?",
+    "options": {
+      "A": "60",
+      "B": "50",
+      "C": "70",
+      "D": "80"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 183
+  },
+  {
+    "question": "What is 5% of 1300?",
+    "options": {
+      "A": "65",
+      "B": "55",
+      "C": "75",
+      "D": "85"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 184
+  },
+  {
+    "question": "What is 5% of 1400?",
+    "options": {
+      "A": "70",
+      "B": "60",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 185
+  },
+  {
+    "question": "What is 5% of 1500?",
+    "options": {
+      "A": "75",
+      "B": "65",
+      "C": "85",
+      "D": "95"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 186
+  },
+  {
+    "question": "What is 5% of 1600?",
+    "options": {
+      "A": "80",
+      "B": "70",
+      "C": "90",
+      "D": "100"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 187
+  },
+  {
+    "question": "What is 5% of 1700?",
+    "options": {
+      "A": "85",
+      "B": "75",
+      "C": "95",
+      "D": "105"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 188
+  },
+  {
+    "question": "What is 5% of 1800?",
+    "options": {
+      "A": "90",
+      "B": "80",
+      "C": "100",
+      "D": "110"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 189
+  },
+  {
+    "question": "What is 5% of 1900?",
+    "options": {
+      "A": "95",
+      "B": "85",
+      "C": "105",
+      "D": "115"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 190
+  },
+  {
+    "question": "What is 5% of 2000?",
+    "options": {
+      "A": "100",
+      "B": "90",
+      "C": "110",
+      "D": "120"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 191
+  },
+  {
+    "question": "Find the average of 4, 6, and 8.",
+    "options": {
+      "A": "6",
+      "B": "4",
+      "C": "8",
+      "D": "10"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 192
+  },
+  {
+    "question": "Find the average of 8, 12, and 16.",
+    "options": {
+      "A": "12",
+      "B": "10",
+      "C": "14",
+      "D": "16"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 193
+  },
+  {
+    "question": "Find the average of 12, 18, and 24.",
+    "options": {
+      "A": "18",
+      "B": "16",
+      "C": "20",
+      "D": "22"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 194
+  },
+  {
+    "question": "Find the average of 16, 24, and 32.",
+    "options": {
+      "A": "24",
+      "B": "22",
+      "C": "26",
+      "D": "28"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 195
+  },
+  {
+    "question": "Find the average of 20, 30, and 40.",
+    "options": {
+      "A": "30",
+      "B": "28",
+      "C": "32",
+      "D": "34"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 196
+  },
+  {
+    "question": "Find the average of 24, 36, and 48.",
+    "options": {
+      "A": "36",
+      "B": "34",
+      "C": "38",
+      "D": "40"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 197
+  },
+  {
+    "question": "Find the average of 28, 42, and 56.",
+    "options": {
+      "A": "42",
+      "B": "40",
+      "C": "44",
+      "D": "46"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 198
+  },
+  {
+    "question": "Find the average of 32, 48, and 64.",
+    "options": {
+      "A": "48",
+      "B": "46",
+      "C": "50",
+      "D": "52"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 199
+  },
+  {
+    "question": "Find the average of 36, 54, and 72.",
+    "options": {
+      "A": "54",
+      "B": "52",
+      "C": "56",
+      "D": "58"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 200
+  },
+  {
+    "question": "Find the average of 40, 60, and 80.",
+    "options": {
+      "A": "60",
+      "B": "58",
+      "C": "62",
+      "D": "64"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 201
+  },
+  {
+    "question": "The ratio of boys to girls is 1:2. If there are 36 students, how many are boys?",
+    "options": {
+      "A": "12",
+      "B": "0",
+      "C": "24",
+      "D": "36"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 202
+  },
+  {
+    "question": "The ratio of boys to girls is 2:2. If there are 48 students, how many are boys?",
+    "options": {
+      "A": "24",
+      "B": "12",
+      "C": "36",
+      "D": "48"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 203
+  },
+  {
+    "question": "The ratio of boys to girls is 3:2. If there are 60 students, how many are boys?",
+    "options": {
+      "A": "36",
+      "B": "24",
+      "C": "48",
+      "D": "60"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 204
+  },
+  {
+    "question": "The ratio of boys to girls is 4:2. If there are 72 students, how many are boys?",
+    "options": {
+      "A": "48",
+      "B": "36",
+      "C": "60",
+      "D": "72"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 205
+  },
+  {
+    "question": "The ratio of boys to girls is 5:2. If there are 84 students, how many are boys?",
+    "options": {
+      "A": "60",
+      "B": "48",
+      "C": "72",
+      "D": "84"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 206
+  },
+  {
+    "question": "The ratio of boys to girls is 6:2. If there are 96 students, how many are boys?",
+    "options": {
+      "A": "72",
+      "B": "60",
+      "C": "84",
+      "D": "96"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 207
+  },
+  {
+    "question": "The ratio of boys to girls is 7:2. If there are 108 students, how many are boys?",
+    "options": {
+      "A": "84",
+      "B": "72",
+      "C": "96",
+      "D": "108"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 208
+  },
+  {
+    "question": "The ratio of boys to girls is 8:2. If there are 120 students, how many are boys?",
+    "options": {
+      "A": "96",
+      "B": "84",
+      "C": "108",
+      "D": "120"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 209
+  },
+  {
+    "question": "The ratio of boys to girls is 9:2. If there are 132 students, how many are boys?",
+    "options": {
+      "A": "108",
+      "B": "96",
+      "C": "120",
+      "D": "132"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 210
+  },
+  {
+    "question": "The ratio of boys to girls is 10:2. If there are 144 students, how many are boys?",
+    "options": {
+      "A": "120",
+      "B": "108",
+      "C": "132",
+      "D": "144"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:04",
+    "id": 211
   }
 ]
-

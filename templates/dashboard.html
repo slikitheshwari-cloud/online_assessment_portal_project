@@ -86,6 +86,8 @@
   .pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;}
   .pill{background:#1a1a28;border:1px solid var(--border);border-radius:20px;padding:7px 16px;font-size:.82rem;color:var(--muted);}
   .pill span{color:var(--cream);font-weight:500;}
+  .comparison-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin:0 0 28px;}
+  .comparison-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px;}.comparison-heading h3{font-family:'Syne',sans-serif;font-size:1.1rem;}.change-badge{padding:7px 12px;border-radius:18px;font-weight:700;font-size:.82rem;}.change-up{color:var(--green);}.change-down{color:var(--err);}.change-same{color:var(--gold);}.comparison-note{font-size:.86rem;color:var(--muted);margin:-8px 0 18px;}.comparison-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}.comparison-item{background:#0f0f1a;border:1px solid var(--border);border-radius:10px;padding:14px;}.comparison-name{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}.comparison-scores{margin-top:8px;font-size:.85rem;color:#ccc;}.comparison-delta{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;margin-top:8px;}@media(max-width:700px){.comparison-grid{grid-template-columns:repeat(2,1fr);}}
 </style>
 </head>
 <body>
@@ -113,8 +115,8 @@
   <div class="pills">
     <div class="pill">📝 Sections: <span>Aptitude · Reasoning · English · Essay</span></div>
     <div class="pill">⏱ Duration: <span>60 minutes</span></div>
-    <div class="pill">🎯 Total Marks: <span>40</span></div>
-    <div class="pill">📋 Questions: <span>30 MCQ + 1 Essay</span></div>
+    <div class="pill">🎯 Total Marks: <span>100</span></div>
+    <div class="pill">📋 Questions: <span>90 MCQ + 1 Essay</span></div>
   </div>
 
   {% if results %}
@@ -147,23 +149,38 @@
       </div>
       <!-- Bars -->
       <div class="score-details">
-        <div class="score-title">{{ r.total_score }} / 40 marks</div>
+        <div class="score-title">{{ r.total_score }} / 100 marks</div>
         {% set sections = [
-          ('Aptitude',  r.aptitude_score),
-          ('Reasoning', r.reasoning_score),
-          ('English',   r.english_score),
-          ('Essay',     r.essay_score)
+          ('Aptitude', r.aptitude_score, 30), ('Reasoning', r.reasoning_score, 30),
+          ('English', r.english_score, 30), ('Essay', r.essay_score, 10)
         ] %}
-        {% for name, score in sections %}
+        {% for name, score, maximum in sections %}
         <div class="bar-row">
           <span class="bar-name">{{ name }}</span>
-          <div class="bar-bg"><div class="bar-fill" style="width:{{ score * 10 }}%"></div></div>
-          <span class="bar-val">{{ score }}/10</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:{{ (score / maximum) * 100 }}%"></div></div>
+          <span class="bar-val">{{ score }}/{{ maximum }}</span>
         </div>
         {% endfor %}
         <div class="score-date">Submitted: {{ r.submitted_at }}</div>
       </div>
     </div>
+
+    {% if comparison %}
+    <div class="comparison-card">
+      <div class="comparison-heading">
+        <h3>Assessment Progress</h3>
+        <span class="change-badge {% if comparison.overall_change > 0 %}change-up{% elif comparison.overall_change < 0 %}change-down{% else %}change-same{% endif %}">
+          {% if comparison.overall_change > 0 %}↑ Improved{% elif comparison.overall_change < 0 %}↓ Needs attention{% else %}→ No change{% endif %} · {{ '%+.2f'|format(comparison.overall_change) }}%
+        </span>
+      </div>
+      <p class="comparison-note">Your latest assessment compared with the previous attempt ({{ comparison.previous_percentage }}%).</p>
+      <div class="comparison-grid">
+        {% for section in comparison.sections %}
+        <div class="comparison-item"><div class="comparison-name">{{ section.name }}</div><div class="comparison-scores">{{ section.previous }}/{{ section.maximum }} → {{ section.latest }}/{{ section.maximum }}</div><div class="comparison-delta {% if section.change > 0 %}change-up{% elif section.change < 0 %}change-down{% else %}change-same{% endif %}">{{ '%+d'|format(section.change) }} marks</div></div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
 
     <!-- HISTORY TABLE (if more than 1 attempt) -->
     {% if results|length > 1 %}
@@ -186,11 +203,11 @@
           <tr>
             <td style="color:#555;">{{ loop.index }}</td>
             <td style="color:#888;font-size:.8rem;">{{ r.submitted_at }}</td>
-            <td>{{ r.aptitude_score }}/10</td>
-            <td>{{ r.reasoning_score }}/10</td>
-            <td>{{ r.english_score }}/10</td>
+            <td>{{ r.aptitude_score }}/30</td>
+            <td>{{ r.reasoning_score }}/30</td>
+            <td>{{ r.english_score }}/30</td>
             <td>{{ r.essay_score }}/10</td>
-            <td style="font-weight:600;">{{ r.total_score }}/40</td>
+            <td style="font-weight:600;">{{ r.total_score }}/100</td>
             <td>
               <span class="badge {% if r.percentage >= 75 %}badge-high{% elif r.percentage >= 50 %}badge-mid{% else %}badge-low{% endif %}">
                 {{ r.percentage }}%
@@ -216,7 +233,7 @@
           <div class="exam-meta-lbl">Minutes</div>
         </div>
         <div class="exam-meta-item">
-          <div class="exam-meta-val">30</div>
+          <div class="exam-meta-val">90</div>
           <div class="exam-meta-lbl">MCQ Questions</div>
         </div>
         <div class="exam-meta-item">
@@ -224,7 +241,7 @@
           <div class="exam-meta-lbl">Essay Topic</div>
         </div>
         <div class="exam-meta-item">
-          <div class="exam-meta-val">40</div>
+          <div class="exam-meta-val">100</div>
           <div class="exam-meta-lbl">Total Marks</div>
         </div>
       </div>

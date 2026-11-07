@@ -1648,5 +1648,698 @@
       "D": "She makes mistakes hardly never."
     },
     "answer": "B"
+  },
+  {
+    "question": "Choose the correct synonym of 'Happy'.",
+    "options": {
+      "A": "Sad",
+      "B": "Joyful",
+      "C": "Angry",
+      "D": "Lazy"
+    },
+    "answer": "B",
+    "id": 151
+  },
+  {
+    "question": "Choose the correct antonym of 'Ancient'.",
+    "options": {
+      "A": "Old",
+      "B": "Historic",
+      "C": "Modern",
+      "D": "Traditional"
+    },
+    "answer": "C",
+    "id": 152
+  },
+  {
+    "question": "Fill in the blank: She _____ to school every day.",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "gone",
+      "D": "going"
+    },
+    "answer": "B",
+    "id": 153
+  },
+  {
+    "question": "Identify the correctly spelled word.",
+    "options": {
+      "A": "Definately",
+      "B": "Definetely",
+      "C": "Definitely",
+      "D": "Definatly"
+    },
+    "answer": "C",
+    "id": 154
+  },
+  {
+    "question": "Choose the correct article: He is _____ honest man.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "B",
+    "id": 155
+  },
+  {
+    "question": "Fill in the blank: I have been waiting _____ two hours.",
+    "options": {
+      "A": "since",
+      "B": "for",
+      "C": "from",
+      "D": "at"
+    },
+    "answer": "B",
+    "id": 156
+  },
+  {
+    "question": "Choose the correct passive voice: 'They built the bridge.'",
+    "options": {
+      "A": "The bridge was built by them.",
+      "B": "The bridge is built by them.",
+      "C": "The bridge has built by them.",
+      "D": "The bridge built by them."
+    },
+    "answer": "A",
+    "id": 157
+  },
+  {
+    "question": "Choose the correct meaning of the idiom 'Break the ice'.",
+    "options": {
+      "A": "To damage something",
+      "B": "To start a conversation",
+      "C": "To end a relationship",
+      "D": "To solve a puzzle"
+    },
+    "answer": "B",
+    "id": 158
+  },
+  {
+    "question": "Which sentence is grammatically correct?",
+    "options": {
+      "A": "She don't like coffee.",
+      "B": "She doesn't likes coffee.",
+      "C": "She doesn't like coffee.",
+      "D": "She not like coffee."
+    },
+    "answer": "C",
+    "id": 159
+  },
+  {
+    "question": "Choose the correct preposition: The book is _____ the table.",
+    "options": {
+      "A": "on",
+      "B": "in",
+      "C": "at",
+      "D": "over"
+    },
+    "answer": "A",
+    "id": 160
+  },
+  {
+    "question": "Choose the correct tense: They _____ football when it started raining.",
+    "options": {
+      "A": "play",
+      "B": "were playing",
+      "C": "played",
+      "D": "have played"
+    },
+    "answer": "B",
+    "id": 161
+  },
+  {
+    "question": "Find the error: 'Neither of the boys have completed the assignment.'",
+    "options": {
+      "A": "Neither",
+      "B": "boys",
+      "C": "have",
+      "D": "assignment"
+    },
+    "answer": "C",
+    "id": 162
+  },
+  {
+    "question": "Choose the correct synonym of 'Brave'.",
+    "options": {
+      "A": "Cowardly",
+      "B": "Fearful",
+      "C": "Courageous",
+      "D": "Weak"
+    },
+    "answer": "C",
+    "id": 163
+  },
+  {
+    "question": "Choose the correct antonym of 'Generous'.",
+    "options": {
+      "A": "Kind",
+      "B": "Selfish",
+      "C": "Helpful",
+      "D": "Friendly"
+    },
+    "answer": "B",
+    "id": 164
+  },
+  {
+    "question": "Fill in the blank: If I _____ rich, I would travel the world.",
+    "options": {
+      "A": "am",
+      "B": "was",
+      "C": "were",
+      "D": "be"
+    },
+    "answer": "C",
+    "id": 165
+  },
+  {
+    "added_at": "2026-08-18 19:11:52",
+    "answer": "B",
+    "id": 166,
+    "options": {
+      "A": "Slow",
+      "B": "Quick",
+      "C": "Weak",
+      "D": "Silent"
+    },
+    "question": "Choose the synonym of 'rapid'."
+  },
+  {
+    "added_at": "2026-08-18 19:11:52",
+    "answer": "C",
+    "id": 167,
+    "options": {
+      "A": "Accomodation",
+      "B": "Acommodation",
+      "C": "Accommodation",
+      "D": "Accommadation"
+    },
+    "question": "Choose the correctly spelled word."
+  },
+  {
+    "added_at": "2026-08-18 19:11:52",
+    "answer": "B",
+    "id": 168,
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "going",
+      "D": "gone"
+    },
+    "question": "Fill in the blank: She ___ to college every day."
+  },
+  {
+    "added_at": "2026-08-18 19:11:52",
+    "answer": "C",
+    "id": 169,
+    "options": {
+      "A": "Old",
+      "B": "Historic",
+      "C": "Modern",
+      "D": "Traditional"
+    },
+    "question": "Choose the antonym of 'ancient'."
+  },
+  {
+    "added_at": "2026-08-18 19:11:52",
+    "answer": "D",
+    "id": 170,
+    "options": {
+      "A": "garden",
+      "B": "attracted",
+      "C": "many",
+      "D": "beautiful"
+    },
+    "question": "Identify the adjective in this sentence: The beautiful garden attracted many visitors."
+  },
+  {
+    "question": "Choose the synonym of “rapid”.",
+    "options": {
+      "A": "fast",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 171
+  },
+  {
+    "question": "Choose the synonym of “honest”.",
+    "options": {
+      "A": "truthful",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 172
+  },
+  {
+    "question": "Choose the synonym of “brave”.",
+    "options": {
+      "A": "courageous",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 173
+  },
+  {
+    "question": "Choose the synonym of “silent”.",
+    "options": {
+      "A": "quiet",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 174
+  },
+  {
+    "question": "Choose the synonym of “ancient”.",
+    "options": {
+      "A": "old",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 175
+  },
+  {
+    "question": "Choose the synonym of “begin”.",
+    "options": {
+      "A": "start",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 176
+  },
+  {
+    "question": "Choose the synonym of “smart”.",
+    "options": {
+      "A": "clever",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 177
+  },
+  {
+    "question": "Choose the synonym of “happy”.",
+    "options": {
+      "A": "joyful",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 178
+  },
+  {
+    "question": "Choose the synonym of “tiny”.",
+    "options": {
+      "A": "small",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 179
+  },
+  {
+    "question": "Choose the synonym of “difficult”.",
+    "options": {
+      "A": "hard",
+      "B": "opposite",
+      "C": "unrelated",
+      "D": "unknown"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 180
+  },
+  {
+    "question": "Choose the antonym of “increase”.",
+    "options": {
+      "A": "decrease",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 181
+  },
+  {
+    "question": "Choose the antonym of “accept”.",
+    "options": {
+      "A": "reject",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 182
+  },
+  {
+    "question": "Choose the antonym of “victory”.",
+    "options": {
+      "A": "defeat",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 183
+  },
+  {
+    "question": "Choose the antonym of “early”.",
+    "options": {
+      "A": "late",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 184
+  },
+  {
+    "question": "Choose the antonym of “empty”.",
+    "options": {
+      "A": "full",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 185
+  },
+  {
+    "question": "Choose the antonym of “strong”.",
+    "options": {
+      "A": "weak",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 186
+  },
+  {
+    "question": "Choose the antonym of “bright”.",
+    "options": {
+      "A": "dark",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 187
+  },
+  {
+    "question": "Choose the antonym of “noisy”.",
+    "options": {
+      "A": "quiet",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 188
+  },
+  {
+    "question": "Choose the antonym of “polite”.",
+    "options": {
+      "A": "rude",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 189
+  },
+  {
+    "question": "Choose the antonym of “generous”.",
+    "options": {
+      "A": "selfish",
+      "B": "similar",
+      "C": "equal",
+      "D": "related"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 190
+  },
+  {
+    "question": "She ___ to school every day.",
+    "options": {
+      "A": "goes",
+      "B": "go",
+      "C": "going",
+      "D": "gone"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 191
+  },
+  {
+    "question": "They ___ playing cricket now.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "was",
+      "D": "be"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 192
+  },
+  {
+    "question": "I ___ a new bicycle yesterday.",
+    "options": {
+      "A": "bought",
+      "B": "buy",
+      "C": "buying",
+      "D": "buys"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 193
+  },
+  {
+    "question": "The children ___ in the park.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "was",
+      "D": "be"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 194
+  },
+  {
+    "question": "My mother ___ delicious food.",
+    "options": {
+      "A": "cooks",
+      "B": "cook",
+      "C": "cooking",
+      "D": "cooked"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 195
+  },
+  {
+    "question": "We ___ the match last Sunday.",
+    "options": {
+      "A": "watched",
+      "B": "watch",
+      "C": "watching",
+      "D": "watches"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 196
+  },
+  {
+    "question": "The sun ___ in the east.",
+    "options": {
+      "A": "rises",
+      "B": "rise",
+      "C": "rising",
+      "D": "rose"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 197
+  },
+  {
+    "question": "Rahul and I ___ friends.",
+    "options": {
+      "A": "are",
+      "B": "is",
+      "C": "am",
+      "D": "was"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 198
+  },
+  {
+    "question": "She ___ not like coffee.",
+    "options": {
+      "A": "does",
+      "B": "do",
+      "C": "did",
+      "D": "has"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 199
+  },
+  {
+    "question": "___ apple a day keeps the doctor away.",
+    "options": {
+      "A": "An",
+      "B": "a",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 200
+  },
+  {
+    "question": "He is ___ university student.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 201
+  },
+  {
+    "question": "The Ganga is ___ holy river.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 202
+  },
+  {
+    "question": "She bought ___ umbrella.",
+    "options": {
+      "A": "an",
+      "B": "a",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 203
+  },
+  {
+    "question": "I saw ___ elephant at the zoo.",
+    "options": {
+      "A": "an",
+      "B": "a",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 204
+  },
+  {
+    "question": "This is ___ best answer.",
+    "options": {
+      "A": "the",
+      "B": "a",
+      "C": "an",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 205
+  },
+  {
+    "question": "We visited ___ Taj Mahal.",
+    "options": {
+      "A": "the",
+      "B": "a",
+      "C": "an",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 206
+  },
+  {
+    "question": "He wants to be ___ engineer.",
+    "options": {
+      "A": "an",
+      "B": "a",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 207
+  },
+  {
+    "question": "She has ___ blue pen.",
+    "options": {
+      "A": "a",
+      "B": "an",
+      "C": "the",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 208
+  },
+  {
+    "question": "___ moon shines at night.",
+    "options": {
+      "A": "The",
+      "B": "a",
+      "C": "an",
+      "D": "no article"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:17:59",
+    "id": 209
   }
 ]

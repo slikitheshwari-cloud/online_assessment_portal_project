@@ -1648,5 +1648,693 @@
       "D": "South-West"
     },
     "answer": "B"
+  },
+  {
+    "question": "Find the next letter in the series: A, C, E, G, ?",
+    "options": {
+      "A": "H",
+      "B": "I",
+      "C": "J",
+      "D": "K"
+    },
+    "answer": "B",
+    "id": 151
+  },
+  {
+    "question": "Which one is different from the others?",
+    "options": {
+      "A": "Apple",
+      "B": "Banana",
+      "C": "Mango",
+      "D": "Carrot"
+    },
+    "answer": "D",
+    "id": 152
+  },
+  {
+    "question": "If CAT is coded as DBU, then DOG is coded as:",
+    "options": {
+      "A": "EPH",
+      "B": "EOH",
+      "C": "EPG",
+      "D": "FPH"
+    },
+    "answer": "A",
+    "id": 153
+  },
+  {
+    "question": "Pointing to a woman, Raj said, 'She is the daughter of my mother's only daughter.' Who is the woman?",
+    "options": {
+      "A": "Raj's sister",
+      "B": "Raj's daughter",
+      "C": "Raj's mother",
+      "D": "Raj's niece"
+    },
+    "answer": "B",
+    "id": 154
+  },
+  {
+    "question": "Find the missing number: 2, 6, 12, 20, ?",
+    "options": {
+      "A": "28",
+      "B": "30",
+      "C": "32",
+      "D": "36"
+    },
+    "answer": "B",
+    "id": 155
+  },
+  {
+    "question": "If all roses are flowers and some flowers are red, then:",
+    "options": {
+      "A": "All roses are red",
+      "B": "Some roses may be red",
+      "C": "No roses are red",
+      "D": "All flowers are roses"
+    },
+    "answer": "B",
+    "id": 156
+  },
+  {
+    "question": "Choose the odd one out.",
+    "options": {
+      "A": "Circle",
+      "B": "Square",
+      "C": "Triangle",
+      "D": "Cube"
+    },
+    "answer": "D",
+    "id": 157
+  },
+  {
+    "question": "Complete the analogy: Book : Reading :: Pen : ?",
+    "options": {
+      "A": "Writing",
+      "B": "Drawing",
+      "C": "Paper",
+      "D": "Ink"
+    },
+    "answer": "A",
+    "id": 158
+  },
+  {
+    "question": "Find the next number in the series: 1, 4, 9, 16, ?",
+    "options": {
+      "A": "20",
+      "B": "25",
+      "C": "30",
+      "D": "36"
+    },
+    "answer": "B",
+    "id": 159
+  },
+  {
+    "question": "If Monday is the 1st day of the month, what day will the 15th be?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Sunday",
+      "D": "Wednesday"
+    },
+    "answer": "A",
+    "id": 160
+  },
+  {
+    "question": "Which word does not belong to the group?",
+    "options": {
+      "A": "Lion",
+      "B": "Tiger",
+      "C": "Elephant",
+      "D": "Leopard"
+    },
+    "answer": "C",
+    "id": 161
+  },
+  {
+    "question": "Complete the analogy: Finger : Hand :: Toe : ?",
+    "options": {
+      "A": "Leg",
+      "B": "Foot",
+      "C": "Heel",
+      "D": "Ankle"
+    },
+    "answer": "B",
+    "id": 162
+  },
+  {
+    "question": "Find the next letter series: Z, X, V, T, ?",
+    "options": {
+      "A": "S",
+      "B": "R",
+      "C": "Q",
+      "D": "P"
+    },
+    "answer": "B",
+    "id": 163
+  },
+  {
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "Cannot determine"
+    },
+    "answer": "C",
+    "id": 164
+  },
+  {
+    "question": "Find the missing number: 3, 7, 13, 21, ?",
+    "options": {
+      "A": "29",
+      "B": "30",
+      "C": "31",
+      "D": "33"
+    },
+    "answer": "C",
+    "id": 165
+  },
+  {
+    "question": "Which one is the odd pair?",
+    "options": {
+      "A": "Bird : Nest",
+      "B": "Dog : Kennel",
+      "C": "Horse : Stable",
+      "D": "Cow : Tree"
+    },
+    "answer": "D",
+    "id": 166
+  },
+  {
+    "question": "If today is Friday, what day will it be after 10 days?",
+    "options": {
+      "A": "Sunday",
+      "B": "Monday",
+      "C": "Tuesday",
+      "D": "Wednesday"
+    },
+    "answer": "B",
+    "id": 167
+  },
+  {
+    "question": "Choose the correct analogy: Doctor : Hospital :: Teacher : ?",
+    "options": {
+      "A": "School",
+      "B": "College",
+      "C": "Library",
+      "D": "Book"
+    },
+    "answer": "A",
+    "id": 168
+  },
+  {
+    "question": "Which number comes next in the series: 5, 10, 20, 40, ?",
+    "options": {
+      "A": "60",
+      "B": "70",
+      "C": "80",
+      "D": "90"
+    },
+    "answer": "C",
+    "id": 169
+  },
+  {
+    "question": "If all pens are books and all books are bags, then all pens are:",
+    "options": {
+      "A": "Bags",
+      "B": "Boxes",
+      "C": "Pencils",
+      "D": "Tables"
+    },
+    "answer": "A",
+    "id": 170
+  },
+  {
+    "question": "Find the next number: 2, 4, 6, 8, ?",
+    "options": {
+      "A": "10",
+      "B": "8",
+      "C": "12",
+      "D": "14"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 171
+  },
+  {
+    "question": "Find the next number: 3, 6, 9, 12, ?",
+    "options": {
+      "A": "15",
+      "B": "12",
+      "C": "18",
+      "D": "21"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 172
+  },
+  {
+    "question": "Find the next number: 5, 10, 15, 20, ?",
+    "options": {
+      "A": "25",
+      "B": "20",
+      "C": "30",
+      "D": "35"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 173
+  },
+  {
+    "question": "Find the next number: 4, 8, 12, 16, ?",
+    "options": {
+      "A": "20",
+      "B": "16",
+      "C": "24",
+      "D": "28"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 174
+  },
+  {
+    "question": "Find the next number: 7, 10, 13, 16, ?",
+    "options": {
+      "A": "19",
+      "B": "16",
+      "C": "22",
+      "D": "25"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 175
+  },
+  {
+    "question": "Find the next number: 10, 15, 20, 25, ?",
+    "options": {
+      "A": "30",
+      "B": "25",
+      "C": "35",
+      "D": "40"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 176
+  },
+  {
+    "question": "Find the next number: 6, 12, 18, 24, ?",
+    "options": {
+      "A": "30",
+      "B": "24",
+      "C": "36",
+      "D": "42"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 177
+  },
+  {
+    "question": "Find the next number: 8, 12, 16, 20, ?",
+    "options": {
+      "A": "24",
+      "B": "20",
+      "C": "28",
+      "D": "32"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 178
+  },
+  {
+    "question": "Find the next number: 11, 13, 15, 17, ?",
+    "options": {
+      "A": "19",
+      "B": "17",
+      "C": "21",
+      "D": "23"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 179
+  },
+  {
+    "question": "Find the next number: 9, 16, 23, 30, ?",
+    "options": {
+      "A": "37",
+      "B": "30",
+      "C": "44",
+      "D": "51"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 180
+  },
+  {
+    "question": "Find the next letter: B, E, H, K, ?",
+    "options": {
+      "A": "N",
+      "B": "K",
+      "C": "M",
+      "D": "O"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 181
+  },
+  {
+    "question": "Find the next letter: C, E, G, I, ?",
+    "options": {
+      "A": "K",
+      "B": "I",
+      "C": "J",
+      "D": "L"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 182
+  },
+  {
+    "question": "Find the next letter: D, G, J, M, ?",
+    "options": {
+      "A": "P",
+      "B": "M",
+      "C": "O",
+      "D": "Q"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 183
+  },
+  {
+    "question": "Find the next letter: E, G, I, K, ?",
+    "options": {
+      "A": "M",
+      "B": "K",
+      "C": "L",
+      "D": "N"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 184
+  },
+  {
+    "question": "Find the next letter: F, I, L, O, ?",
+    "options": {
+      "A": "R",
+      "B": "O",
+      "C": "Q",
+      "D": "S"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 185
+  },
+  {
+    "question": "Find the next letter: G, I, K, M, ?",
+    "options": {
+      "A": "O",
+      "B": "M",
+      "C": "N",
+      "D": "P"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 186
+  },
+  {
+    "question": "Find the next letter: H, K, N, Q, ?",
+    "options": {
+      "A": "T",
+      "B": "Q",
+      "C": "S",
+      "D": "U"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 187
+  },
+  {
+    "question": "Find the next letter: I, K, M, O, ?",
+    "options": {
+      "A": "Q",
+      "B": "O",
+      "C": "P",
+      "D": "R"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 188
+  },
+  {
+    "question": "Find the next letter: J, M, P, S, ?",
+    "options": {
+      "A": "V",
+      "B": "S",
+      "C": "U",
+      "D": "W"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 189
+  },
+  {
+    "question": "Book is to Reading as Fork is to ?",
+    "options": {
+      "A": "Eating",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 190
+  },
+  {
+    "question": "Pen is to Writing as Brush is to ?",
+    "options": {
+      "A": "Painting",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 191
+  },
+  {
+    "question": "Doctor is to Hospital as Teacher is to ?",
+    "options": {
+      "A": "School",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 192
+  },
+  {
+    "question": "Bird is to Nest as Lion is to ?",
+    "options": {
+      "A": "Den",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 193
+  },
+  {
+    "question": "Fish is to Water as Camel is to ?",
+    "options": {
+      "A": "Desert",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 194
+  },
+  {
+    "question": "Knife is to Cutting as Needle is to ?",
+    "options": {
+      "A": "Sewing",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 195
+  },
+  {
+    "question": "Eye is to See as Ear is to ?",
+    "options": {
+      "A": "Hear",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 196
+  },
+  {
+    "question": "Clock is to Time as Thermometer is to ?",
+    "options": {
+      "A": "Temperature",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 197
+  },
+  {
+    "question": "Chef is to Kitchen as Pilot is to ?",
+    "options": {
+      "A": "Cockpit",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 198
+  },
+  {
+    "question": "Cow is to Calf as Goat is to ?",
+    "options": {
+      "A": "Kid",
+      "B": "Running",
+      "C": "Sleeping",
+      "D": "Swimming"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 199
+  },
+  {
+    "question": "Ravi walks 5 metres north, then 5 metres east. In which direction is he from his starting point?",
+    "options": {
+      "A": "north-east",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 200
+  },
+  {
+    "question": "Ravi walks 5 metres north, then 5 metres west. In which direction is he from his starting point?",
+    "options": {
+      "A": "north-west",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 201
+  },
+  {
+    "question": "Ravi walks 5 metres south, then 5 metres east. In which direction is he from his starting point?",
+    "options": {
+      "A": "south-east",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 202
+  },
+  {
+    "question": "Ravi walks 5 metres south, then 5 metres west. In which direction is he from his starting point?",
+    "options": {
+      "A": "south-west",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 203
+  },
+  {
+    "question": "Ravi walks 5 metres east, then 5 metres north. In which direction is he from his starting point?",
+    "options": {
+      "A": "north-east",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 204
+  },
+  {
+    "question": "Ravi walks 5 metres east, then 5 metres south. In which direction is he from his starting point?",
+    "options": {
+      "A": "south-east",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 205
+  },
+  {
+    "question": "Ravi walks 5 metres west, then 5 metres north. In which direction is he from his starting point?",
+    "options": {
+      "A": "north-west",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 206
+  },
+  {
+    "question": "Ravi walks 5 metres west, then 5 metres south. In which direction is he from his starting point?",
+    "options": {
+      "A": "south-west",
+      "B": "north",
+      "C": "south",
+      "D": "east"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 207
+  },
+  {
+    "question": "Ravi walks 5 metres north, then 5 metres north. In which direction is he from his starting point?",
+    "options": {
+      "A": "north",
+      "B": "south",
+      "C": "east",
+      "D": "west"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 208
+  },
+  {
+    "question": "Ravi walks 5 metres east, then 5 metres east. In which direction is he from his starting point?",
+    "options": {
+      "A": "east",
+      "B": "north",
+      "C": "south",
+      "D": "west"
+    },
+    "answer": "A",
+    "added_at": "2026-08-23 20:15:27",
+    "id": 209
   }
 ]

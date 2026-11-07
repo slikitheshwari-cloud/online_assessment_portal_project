@@ -107,10 +107,18 @@
     border-color:var(--gold);
   }
 
+  .tab:disabled{
+    cursor:not-allowed;
+    opacity:1;
+    color:#b5b5c4;
+    border-color:#393949;
+    background:#151520;
+  }
+
   /* SECTIONS */
   .section{
     display:none;
-    padding:28px;
+    padding:18px 260px 100px 28px;
   }
 
   .section.active{
@@ -133,6 +141,7 @@
   /* QUESTION CARD */
   .q-card{
     background:var(--card);
+    display:none;
     border:1px solid var(--border);
     border-radius:12px;
     padding:24px;
@@ -143,24 +152,29 @@
   .q-card.answered{
     border-color:rgba(61,186,110,.3);
   }
-
-  .q-num{
-    font-size:.75rem;
-    color:var(--gold);
-    letter-spacing:.1em;
-    text-transform:uppercase;
-    margin-bottom:10px;
+  .q-card.active-question{
+    display:block;
   }
+  .q-num{
+  font-size:1rem;
+  font-weight:800;
+  color:var(--gold);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
 
   .q-text{
-    font-size:1rem;
-    line-height:1.6;
-    margin-bottom:18px;
-  }
+  font-size:1.3rem;
+  font-weight:700;
+  line-height:1.65;
+  margin-bottom:24px;
+  color:#fff;
+}
 
   .options{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
     gap:10px;
   }
 
@@ -349,6 +363,154 @@
   @keyframes spin{
     to{transform:rotate(360deg);}
   }
+  .question-palette{
+  position:fixed;
+  right:18px;
+  top:138px;
+  width:220px;
+  max-height:calc(100vh - 160px);
+  overflow:auto;
+  background:#13131e;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  z-index:90;
+}
+
+.palette-title{
+  font-family:'Syne',sans-serif;
+  font-size:.9rem;
+  color:var(--gold);
+  margin-bottom:12px;
+}
+
+.palette-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:7px;
+}
+
+.q-jump{
+  height:30px;
+  border:0;
+  border-radius:6px;
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.q-jump.unanswered{background:#e84545;}
+.q-jump.answered{background:#3dba6e;}
+.q-jump.bookmarked{background:#8b5cf6;}
+
+.bookmark-toggle{
+  float:right;
+  background:transparent;
+  border:1px solid #8b5cf6;
+  color:#bda8ff;
+  border-radius:6px;
+  padding:5px 10px;
+  cursor:pointer;
+  font-size:.78rem;
+}
+
+.bookmark-toggle.active{
+  background:#8b5cf6;
+  color:#fff;
+}
+
+.legend{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-top:14px;
+  font-size:.78rem;
+  color:#aaa;
+}
+
+.legend span::before{
+  content:'';
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:3px;
+  margin-right:7px;
+}
+
+.legend .answered::before{background:#3dba6e;}
+.legend .bookmarked::before{background:#8b5cf6;}
+.legend .unanswered::before{background:#e84545;}
+
+.question-navigation{
+  position:fixed;
+  left:28px;
+  right:260px;
+  bottom:18px;
+  margin:0;
+  padding:10px 0;
+  background:var(--ink);
+  z-index:100;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.question-position{color:#aaa;font-size:.9rem;text-align:center;}
+.question-position-top{padding:16px 28px 0;color:#aaa;font-size:.95rem;text-align:center;}
+.question-navigation .btn:disabled{cursor:not-allowed;opacity:.45;}
+
+#sec-0 .nav-row,#sec-1 .nav-row,#sec-2 .nav-row{display:none;}
+/* Desktop exam mode: keep the complete working area inside the viewport.
+   Navigation remains visible, so changing questions never requires page scrolling. */
+@media(min-width:901px){
+  html,body{
+    height:100%;
+    overflow:hidden;
+  }
+  .topbar{position:relative;}
+  .section{
+    position:fixed;
+    inset:166px 0 76px;
+    padding:18px 260px 12px 28px;
+    overflow:hidden;
+  }
+  .q-card{
+    margin-bottom:0;
+  }
+  #sec-3 .nav-row{
+    position:absolute;
+    bottom:10px;
+  }
+  #sec-3 textarea{min-height:190px;}
+}
+/* Compact desktop mode keeps all four choices visible on shorter displays. */
+@media(min-width:901px) and (max-height:700px){
+  .section{
+    inset:158px 0 70px;
+    padding-top:8px;
+    padding-bottom:6px;
+  }
+  .section-header{font-size:1.2rem;margin-bottom:2px;}
+  .section-meta{margin-bottom:10px;}
+  .q-card{padding:12px;}
+  .q-num{margin-bottom:7px;font-size:.9rem;}
+  .q-text{font-size:1.08rem;line-height:1.35;margin-bottom:12px;}
+  .options{gap:7px;}
+  .opt{padding:8px 12px;}
+  .bookmark-toggle{padding:4px 8px;}
+  .question-navigation{bottom:8px;padding:6px 0;}
+}
+@media(max-width:900px){
+  .question-palette{
+    position:static;
+    width:auto;
+    margin:16px 28px;
+    max-height:none;
+  }
+  .section{padding-right:28px;}
+  .question-navigation{left:28px;right:28px;}
+}
 </style>
 </head>
 
@@ -371,16 +533,33 @@
   <button class="tab" onclick="goSection(2)">📝 English</button>
   <button class="tab" onclick="goSection(3)">✍️ Essay</button>
 </div>
+<div class="question-position-top" id="question-position-top" aria-live="polite"></div>
+<div class="question-palette">
+  <div class="palette-title">Questions</div>
+  <div class="palette-grid" id="question-palette"></div>
+
+  <div class="legend">
+    <span class="answered">Answered</span>
+    <span class="bookmarked">Bookmarked</span>
+    <span class="unanswered">Unanswered</span>
+  </div>
+</div>
 
 <!-- APTITUDE -->
 <div class="section active" id="sec-0">
 
   <div class="section-header">Aptitude Test</div>
-  <div class="section-meta">30 Questions</div>
+  <div class="section-meta">{{ aptitude|length }} Questions</div>
 
   {% for q in aptitude %}
 
   <div class="q-card">
+    <button
+  type="button"
+  class="bookmark-toggle"
+  onclick="toggleBookmark(this)">
+  Bookmark
+</button>
 
     <div class="q-num">
       Q{{ loop.index }}
@@ -422,14 +601,20 @@
 <div class="section" id="sec-1">
 
   <div class="section-header">Reasoning Test</div>
-  <div class="section-meta">30 Questions</div>
+  <div class="section-meta">{{ reasoning|length }} Questions</div>
 
   {% for q in reasoning %}
 
   <div class="q-card">
+    <button
+  type="button"
+  class="bookmark-toggle"
+  onclick="toggleBookmark(this)">
+  Bookmark
+</button>
 
     <div class="q-num">
-      Q{{ loop.index }}
+     Q{{ loop.index }}
     </div>
 
     <div class="q-text">
@@ -471,11 +656,17 @@
 <div class="section" id="sec-2">
 
   <div class="section-header">English Test</div>
-  <div class="section-meta">30 Questions</div>
+  <div class="section-meta">{{ english|length }} Questions</div>
 
   {% for q in english %}
 
   <div class="q-card">
+    <button
+  type="button"
+  class="bookmark-toggle"
+  onclick="toggleBookmark(this)">
+  Bookmark
+</button>
 
     <div class="q-num">
       Q{{ loop.index }}
@@ -551,6 +742,13 @@
 
 </div>
 
+<!-- Question navigation remains below the active section instead of being moved by JavaScript. -->
+<div class="question-navigation" id="question-navigation">
+  <button class="btn btn-back" id="prev-question" type="button" onclick="moveQuestion(-1)">← Previous</button>
+  <div class="question-position" aria-hidden="true"></div>
+  <button class="btn btn-next" id="next-question" type="button" onclick="moveQuestion(1)">Next →</button>
+</div>
+
 <!-- MODAL -->
 <div class="modal-overlay" id="submit-modal">
 
@@ -592,19 +790,91 @@ const answers = {
   english:{}
 };
 
-function goSection(n){
+const bookmarkedQuestions = new Set();
+const sectionQuestionCards = [0, 1, 2].map(section =>
+  Array.from(document.querySelectorAll(`#sec-${section} .q-card`))
+);
+const currentQuestionIndexes = [0, 0, 0];
+const unlockedSections = [true, false, false, false];
+const finishedSections = [false, false, false, false];
+let currentSection = 0;
 
-  document.querySelectorAll('.section')
-    .forEach((s,i)=>{
-      s.classList.toggle('active',i===n);
-    });
+function bookmarkKey(section, question){ return `${section}:${question}`; }
 
-  document.querySelectorAll('.tab')
-    .forEach((t,i)=>{
-      t.classList.toggle('active',i===n);
-    });
+function initQuestionPalette(){
+  sectionQuestionCards.forEach((cards, section) => cards.forEach((card, index) => {
+    card.dataset.section = section;
+    card.dataset.qIndex = index;
+    card.querySelector('.bookmark-toggle').onclick = () => toggleBookmark(section, index);
+  }));
+  goSection(0, false);
+  renderSectionQuestion(0, 0, false);
+}
 
-  window.scrollTo(0,0);
+function toggleBookmark(section, index){
+  const key = bookmarkKey(section, index);
+  const card = sectionQuestionCards[section][index];
+  bookmarkedQuestions.has(key) ? bookmarkedQuestions.delete(key) : bookmarkedQuestions.add(key);
+  card.querySelector('.bookmark-toggle').classList.toggle('active', bookmarkedQuestions.has(key));
+  updateQuestionPalette();
+}
+
+function jumpToQuestion(index){ renderSectionQuestion(currentSection, index); }
+function moveQuestion(direction){ renderSectionQuestion(currentSection, currentQuestionIndexes[currentSection] + direction); }
+
+function renderSectionQuestion(section, index, shouldScroll = true){
+  const cards = sectionQuestionCards[section];
+  if(!cards || index < 0 || index >= cards.length) return;
+  currentQuestionIndexes[section] = index;
+  cards.forEach((card, cardIndex) => card.classList.toggle('active-question', cardIndex === index));
+  updateQuestionNavigation();
+  updateQuestionPalette();
+  if(shouldScroll) window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function updateQuestionNavigation(){
+  if(currentSection === 3) return;
+  const cards = sectionQuestionCards[currentSection];
+  const index = currentQuestionIndexes[currentSection];
+  const sectionName = document.querySelector(`#sec-${currentSection} .section-header`).innerText;
+  document.getElementById('question-position-top').innerText =
+    `Question ${index + 1} of ${cards.length} · ${sectionName}`;
+  document.getElementById('prev-question').disabled = index === 0;
+  document.getElementById('next-question').disabled = index === cards.length - 1;
+}
+
+function updateQuestionPalette(){
+  const palette = document.getElementById('question-palette');
+  palette.innerHTML = '';
+  if(currentSection === 3) return;
+  sectionQuestionCards[currentSection].forEach((card, index) => {
+    const jump = document.createElement('button');
+    const key = bookmarkKey(currentSection, index);
+    jump.type = 'button';
+    jump.className = `q-jump ${bookmarkedQuestions.has(key) ? 'bookmarked' : card.classList.contains('answered') ? 'answered' : 'unanswered'}`;
+    jump.innerText = index + 1;
+    jump.onclick = () => jumpToQuestion(index);
+    palette.appendChild(jump);
+  });
+}
+
+function goSection(n, selectQuestion = true){
+  // Candidates can work only in the section whose timer is currently running.
+  // Finished sections cannot be reopened and future sections remain locked.
+  if(n !== timedSection) return;
+  currentSection = n;
+  document.querySelectorAll('.section').forEach((section, index) => section.classList.toggle('active', index === n));
+  document.querySelectorAll('.tab').forEach((tab, index) => {
+    tab.classList.toggle('active', index === n);
+    tab.disabled = index !== timedSection;
+    tab.title = index === timedSection ? '' : 'Only the current timed section is available.';
+  });
+  document.getElementById('question-navigation').style.display = n === 3 ? 'none' : 'flex';
+  document.querySelector('.question-palette').style.display = n === 3 ? 'none' : 'block';
+  document.getElementById('question-position-top').innerText = n === 3 ? 'Essay Writing · 10 minutes' : '';
+  if(n < 3 && selectQuestion) renderSectionQuestion(n, currentQuestionIndexes[n], false);
+  else updateQuestionPalette();
+  window.scrollTo(0, 0);
 }
 
 function selectOpt(btn, section, question){
@@ -619,6 +889,7 @@ function selectOpt(btn, section, question){
   card.classList.add('answered');
 
   answers[section][question] = btn.innerText.trim();
+  updateQuestionPalette();
 }
 
 function updateWordCount(){
@@ -636,34 +907,51 @@ function updateWordCount(){
   el.style.color = count >= 150 ? '#3dba6e' : '#e84545';
 }
 
-/* TIMER */
-
-let totalSeconds = 3600;
-
+/* Each timer unlocks the next section. Finished sections are locked. */
+const sectionLabels = ['Aptitude', 'Reasoning', 'English', 'Essay Writing'];
+const sectionDurations = [20 * 60, 20 * 60, 20 * 60, 10 * 60];
+let timedSection = 0;
+let sectionSeconds = sectionDurations[timedSection];
 const timerEl = document.getElementById('timer');
 
-const timerInterval = setInterval(()=>{
+function renderTimer(){
+  const m = String(Math.floor(sectionSeconds / 60)).padStart(2, '0');
+  const s = String(sectionSeconds % 60).padStart(2, '0');
+  timerEl.innerText = `${sectionLabels[timedSection]} · ${m}:${s}`;
+  timerEl.classList.toggle('danger', sectionSeconds <= 300);
+}
 
-  totalSeconds--;
-
-  if(totalSeconds <= 0){
+function finishTimedSection(){
+  finishedSections[timedSection] = true;
+  if(timedSection === 3){
     clearInterval(timerInterval);
-    submitExam();
+    submitExam(true);
     return;
   }
+  timedSection += 1;
+  unlockedSections[timedSection] = true;
+  sectionSeconds = sectionDurations[timedSection];
+  goSection(timedSection);
+  renderTimer();
+}
 
-  const m = String(Math.floor(totalSeconds/60)).padStart(2,'0');
-  const s = String(totalSeconds%60).padStart(2,'0');
-
-  timerEl.innerText = `${m}:${s}`;
-
-  if(totalSeconds <= 300){
-    timerEl.classList.add('danger');
+const timerInterval = setInterval(() => {
+  sectionSeconds -= 1;
+  if(sectionSeconds <= 0){
+    sectionSeconds = 0;
+    renderTimer();
+    finishTimedSection();
+    return;
   }
-
-},1000);
+  renderTimer();
+}, 1000);
+renderTimer();
 
 function showSubmitModal(){
+  if(!finishedSections[3]){
+    alert('The essay section must remain open until its 10-minute timer ends.');
+    return;
+  }
   document.getElementById('submit-modal')
           .classList.add('show');
 }
@@ -673,8 +961,9 @@ function hideSubmitModal(){
           .classList.remove('show');
 }
 
-async function submitExam(){
+async function submitExam(timeExpired = false){
 
+  if(!timeExpired && !finishedSections[3]) return;
   clearInterval(timerInterval);
 
   hideSubmitModal();
@@ -713,7 +1002,7 @@ async function submitExam(){
             .classList.remove('show');
   }
 }
-
+initQuestionPalette();
 window.onbeforeunload = function(){
   return 'Exam is in progress.';
 };

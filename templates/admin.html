@@ -192,6 +192,53 @@ input:focus{
   border-color:var(--gold);
 }
 
+select, textarea{
+  width:100%;
+  background:#1a1a28;
+  border:1px solid #2a2a40;
+  border-radius:8px;
+  padding:10px 12px;
+  color:var(--cream);
+  font:inherit;
+  outline:none;
+}
+
+textarea{min-height:88px;resize:vertical;}
+select:focus, textarea:focus{border-color:var(--gold);}
+.notice{padding:12px 16px;border-radius:8px;margin-bottom:20px;}
+.notice.success{background:rgba(61,186,110,.15);color:var(--green);}
+.notice.error{background:rgba(232,69,69,.15);color:var(--err);}
+.toast{position:fixed;right:24px;bottom:24px;z-index:1000;max-width:min(420px,calc(100vw - 48px));padding:14px 18px;border-radius:9px;background:#173a26;border:1px solid var(--green);color:#d9ffe7;box-shadow:0 12px 30px rgba(0,0,0,.32);animation:toast-in .25s ease-out;}
+.toast.error{background:#401d25;border-color:var(--err);color:#ffe1e1;}
+@keyframes toast-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.question-list{margin-top:22px;display:grid;gap:10px;max-height:440px;overflow:auto;}
+.question-item{display:flex;gap:14px;align-items:center;justify-content:space-between;background:#0f0f1a;border:1px solid var(--border);border-radius:8px;padding:12px;}
+.question-copy{line-height:1.45;min-width:0;}
+.question-copy small{display:block;color:#888;margin-top:4px;}
+.btn-small{padding:7px 12px;font-size:.72rem;}
+.question-tools{display:flex;gap:12px;align-items:center;margin-top:22px;}
+.question-search{flex:1;min-width:0;}
+.undo-form{margin:0;white-space:nowrap;}
+.undo-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;}
+.restore-picker{margin:16px 0 20px;padding:16px;background:#0f0f1a;border:1px solid var(--border);border-radius:9px;}.restore-picker-title{font-weight:700;color:var(--gold);margin-bottom:5px;}.restore-picker-note{color:#888;font-size:.82rem;margin-bottom:12px;}.restore-list{display:grid;gap:8px;max-height:220px;overflow:auto;margin-bottom:12px;}.restore-option{display:flex;align-items:flex-start;gap:9px;padding:10px;border:1px solid #252535;border-radius:7px;cursor:pointer;line-height:1.4;color:#ddd;}.restore-option input{width:auto;margin-top:3px;accent-color:var(--green);}.restore-actions{display:flex;gap:10px;flex-wrap:wrap;}
+.exam-picker{margin-top:22px;border-top:1px solid var(--border);padding-top:22px;}
+.exam-picker-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.exam-section{margin-top:18px;background:#0f0f1a;border:1px solid var(--border);border-radius:8px;padding:14px;}
+.exam-section-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;font-weight:700;color:var(--gold);}
+.exam-options{display:grid;gap:8px;max-height:240px;overflow:auto;}
+.exam-option{display:flex;align-items:flex-start;gap:9px;color:#ddd;line-height:1.45;cursor:pointer;}
+.exam-option input{width:auto;margin-top:4px;accent-color:var(--gold);}
+.question-menu{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 22px;}
+.question-menu button.active{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+.question-panel{display:none;}
+.question-panel.active{display:block;}
+.date-picker{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 4px;}
+.date-picker button.active{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+.date-picker-note{color:#888;font-size:.84rem;margin-top:10px;}
+.exam-option.date-hidden{display:none;}
+.exam-section.date-empty{display:none;}
+@media(max-width:600px){.question-tools{align-items:stretch;flex-direction:column;}.undo-form .btn{width:100%;}}
+
 /* TABLE */
 
 .table-card{
@@ -311,6 +358,17 @@ tr:hover td{
 
 <div class="main">
 
+  {% if message %}
+  <div class="notice success">{{ message }}</div>
+  {% endif %}
+  {% if error %}
+  <div class="notice error">{{ error }}</div>
+  <div class="toast error" id="admin-toast" role="alert">{{ error }}</div>
+  {% endif %}
+  {% if message and ('removed' in message.lower() or 'Undid' in message) %}
+  <div class="toast" id="admin-toast" role="status">{{ message }}</div>
+  {% endif %}
+
   <!-- STATS -->
 
   <div class="stats">
@@ -372,6 +430,173 @@ tr:hover td{
       </div>
     </div>
 
+  </div>
+
+  <div class="form-card" style="margin-top:22px;">
+    <div class="form-title">Question Bank Statistics</div>
+    <p style="color:#888;margin:-8px 0 18px;line-height:1.5;">These totals refresh every time the admin panel opens, including after questions are added, removed, or restored.</p>
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-label">Total Questions</div>
+        <div class="stat-val" style="color:var(--gold);">{{ total_questions }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Aptitude</div>
+        <div class="stat-val" style="color:var(--green);">{{ question_counts.aptitude }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Reasoning</div>
+        <div class="stat-val" style="color:#a78bfa;">{{ question_counts.reasoning }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">English</div>
+        <div class="stat-val" style="color:var(--err);">{{ question_counts.english }}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Essay Topics</div>
+        <div class="stat-val" style="color:var(--cream);">{{ question_counts.essay }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="form-title">Manage Questions</div>
+    <p style="color:#888;margin:-8px 0 18px;line-height:1.5;">Use the menu to add questions, remove or restore them, and select the questions students should receive in an exam.</p>
+
+    <div class="question-menu" role="tablist" aria-label="Question management menu">
+      <button class="btn active" type="button" data-question-panel="add" onclick="showQuestionPanel('add', this)">Add Questions</button>
+      <button class="btn" type="button" data-question-panel="remove" onclick="showQuestionPanel('remove', this)">Remove / Restore</button>
+      <button class="btn" type="button" data-question-panel="select" onclick="showQuestionPanel('select', this)">Select for Exam</button>
+    </div>
+
+    <div class="question-panel active" id="question-panel-add">
+
+    <div class="form-row" style="margin-bottom:14px;">
+      <div class="form-group">
+        <label>Add Questions</label>
+        <select id="question-mode" onchange="toggleQuestionMode()">
+          <option value="single">Single Question</option>
+          <option value="multiple">Multiple Questions (JSON File)</option>
+        </select>
+      </div>
+    </div>
+
+    <form method="POST" action="/admin/questions/add" id="question-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Section (questions will be added here)</label>
+          <select name="section" id="question-section" onchange="toggleQuestionFields()">
+            <option value="aptitude">Aptitude</option>
+            <option value="reasoning">Reasoning</option>
+            <option value="english">English</option>
+            <option value="essay">Essay Topics</option>
+          </select>
+        </div>
+        <div class="form-group" style="grid-column:span 2;">
+          <label id="question-label">Question</label>
+          <textarea name="question" id="question-text" placeholder="Enter the question"></textarea>
+          <textarea name="topic" id="topic-text" placeholder="Enter the essay topic" style="display:none;"></textarea>
+        </div>
+      </div>
+      <div class="form-row" id="mcq-fields" style="margin-top:14px;">
+        <div class="form-group"><label>Option A</label><input name="option_a" placeholder="Option A"></div>
+        <div class="form-group"><label>Option B</label><input name="option_b" placeholder="Option B"></div>
+        <div class="form-group"><label>Option C</label><input name="option_c" placeholder="Option C"></div>
+        <div class="form-group"><label>Option D</label><input name="option_d" placeholder="Option D"></div>
+        <div class="form-group"><label>Correct Answer</label><select name="answer"><option value="A">Option A</option><option value="B">Option B</option><option value="C">Option C</option><option value="D">Option D</option></select></div>
+        <div class="form-group"><label>&nbsp;</label><button class="btn btn-gold" type="submit">Add Question</button></div>
+      </div>
+      <div class="form-group" id="essay-submit" style="display:none;margin-top:14px;"><button class="btn btn-gold" type="submit">Add Essay Topic</button></div>
+    </form>
+
+    <form method="POST" action="/admin/questions/import" enctype="multipart/form-data" id="bulk-question-form" style="display:none;">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Section (JSON questions will be added here)</label>
+          <select name="section" id="bulk-question-section" onchange="toggleQuestionList(this.value)">
+            <option value="aptitude">Aptitude</option>
+            <option value="reasoning">Reasoning</option>
+            <option value="english">English</option>
+            <option value="essay">Essay Topics</option>
+          </select>
+        </div>
+        <div class="form-group" style="grid-column:span 2;">
+          <label>Questions JSON File</label>
+          <input type="file" name="questions_file" id="questions-file" accept=".json,application/json" required>
+          <small style="color:#888;display:block;margin-top:8px;">Upload a JSON array. Every item must include its section (aptitude, reasoning, english, or essay). MCQ items also need question, options (A-D), and answer; essay items need topic.</small>
+        </div>
+      </div>
+      <div class="form-group" style="margin-top:14px;"><button class="btn btn-gold" type="submit">Import Questions</button></div>
+    </form>
+
+    </div>
+
+    <div class="question-panel" id="question-panel-remove">
+    <div class="undo-actions">
+      <form class="undo-form" method="POST" action="/admin/questions/undo-last" onsubmit="return confirm('Undo the latest added question or import? It will be removed from the question bank.');">
+        <button class="btn btn-err btn-small" type="submit">Undo Latest Add / Import</button>
+      </form>
+    </div>
+
+    {% if latest_removal %}
+    <form class="restore-picker" method="POST" action="/admin/questions/undo-removal" onsubmit="return confirm('Restore the selected question(s)?');">
+      <div class="restore-picker-title">Restore recently removed questions</div>
+      <div class="restore-picker-note">Select individual questions, or restore every question from the latest removal.</div>
+      <div class="restore-list">
+        {% for question in latest_removal.questions %}
+        <label class="restore-option">
+          <input type="checkbox" name="question_ids" value="{{ question.id }}">
+          <span><strong>{{ question.topic if latest_removal.section == 'essay' else question.question }}</strong><br><small>{{ latest_removal.section|title }} · ID {{ question.id }}</small></span>
+        </label>
+        {% endfor %}
+      </div>
+      <div class="restore-actions">
+        <button class="btn btn-green btn-small" type="submit">Restore Selected</button>
+        <button class="btn btn-outline btn-small" type="submit" name="restore_all" value="true">Restore All</button>
+      </div>
+    </form>
+    {% endif %}
+
+    <div class="question-tools">
+      <input class="question-search" type="search" id="question-search" placeholder="Search questions to remove by text or ID" oninput="filterQuestionList()" aria-label="Search questions">
+    </div>
+
+    <div class="question-list">
+      {% for section, questions in question_banks.items() %}
+        {% for question in questions %}
+        <div class="question-item" data-section="{{ section }}" {% if section != 'aptitude' %}style="display:none;"{% endif %}>
+          <div class="question-copy">
+            <strong>{{ question.topic if section == 'essay' else question.question }}</strong>
+            <small>{{ section|title }} · ID {{ question.id }} · Added: {{ question_added_at(question) }}</small>
+          </div>
+          <form method="POST" action="/admin/questions/{{ section }}/{{ question.id }}/delete" onsubmit="return confirm('Remove this item? You can restore the latest removed item if needed.');">
+            <button class="btn btn-err btn-small" type="submit">Remove</button>
+          </form>
+        </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    </div>
+
+    <div class="question-panel" id="question-panel-select">
+    <div class="exam-picker">
+      <div class="exam-picker-header">
+        <div>
+          <div class="form-title">Publish Questions by Upload Date</div>
+          <p style="color:#888;margin-top:6px;line-height:1.5;">Choose a date and all questions uploaded on that date or later will automatically appear for students.</p>
+          {% if exam_selection %}<small style="color:var(--green);display:block;margin-top:6px;">Current date filter: {{ exam_selection.question_date_from or 'All questions' }} · Published: {{ exam_selection.published_at }}</small>{% endif %}
+        </div>
+      </div>
+      <form method="POST" action="/admin/questions/publish-exam" onsubmit="return confirm('Publish all questions uploaded on or after this date for students?');">
+        <div style="margin:0 0 18px;">
+          <label for="question-date-from" style="display:block;margin-bottom:7px;font-weight:600;">Include questions uploaded on or after</label>
+          <input id="question-date-from" name="question_date_from" type="date" value="{{ exam_selection.question_date_from if exam_selection and exam_selection.question_date_from else '' }}" required style="padding:10px 12px;border:1px solid var(--border);border-radius:6px;background:#0d0d15;color:var(--cream);font:inherit;">
+          <small style="display:block;color:#888;margin-top:6px;">For example, 15-09-2026 includes questions uploaded on 15-09-2026 and every later date. No individual question selection is needed.</small>
+        </div>
+        <div style="margin-top:16px;"><button class="btn btn-gold" type="submit">Publish Questions by Date</button></div>
+      </form>
+    </div>
+    </div>
   </div>
 
   <!-- ADD STUDENT -->
@@ -542,6 +767,131 @@ tr:hover td{
   </div>
 
 </div>
+
+<script>
+function toggleQuestionFields(){
+  const section = document.getElementById('question-section').value;
+  const isEssay = section === 'essay';
+  document.getElementById('mcq-fields').style.display = isEssay ? 'none' : 'grid';
+  document.getElementById('essay-submit').style.display = isEssay ? 'flex' : 'none';
+  document.getElementById('question-text').style.display = isEssay ? 'none' : 'block';
+  document.getElementById('topic-text').style.display = isEssay ? 'block' : 'none';
+  document.getElementById('question-label').innerText = isEssay ? 'Essay Topic' : 'Question';
+  toggleQuestionList(section);
+}
+
+function toggleQuestionList(section){
+  document.getElementById('question-search').value = '';
+  filterQuestionList(section);
+}
+
+function filterQuestionList(section){
+  const selectedSection = section || (document.getElementById('question-mode').value === 'multiple'
+    ? document.getElementById('bulk-question-section').value
+    : document.getElementById('question-section').value);
+  const searchTerm = document.getElementById('question-search').value.trim().toLowerCase();
+  document.querySelectorAll('.question-item').forEach(item => {
+    const matchesSection = item.dataset.section === selectedSection;
+    const matchesSearch = !searchTerm || item.textContent.toLowerCase().includes(searchTerm);
+    item.style.display = matchesSection && matchesSearch ? 'flex' : 'none';
+  });
+}
+
+function toggleQuestionMode(){
+  const isMultiple = document.getElementById('question-mode').value === 'multiple';
+  document.getElementById('question-form').style.display = isMultiple ? 'none' : 'block';
+  document.getElementById('bulk-question-form').style.display = isMultiple ? 'block' : 'none';
+  toggleQuestionList(isMultiple
+    ? document.getElementById('bulk-question-section').value
+    : document.getElementById('question-section').value);
+}
+function showQuestionPanel(panel, button){
+  document.querySelectorAll('.question-panel').forEach(item => {
+    item.classList.toggle('active', item.id === `question-panel-${panel}`);
+  });
+  document.querySelectorAll('[data-question-panel]').forEach(item => {
+    item.classList.toggle('active', item === button);
+  });
+}
+
+function setAllExamQuestions(checked){
+  document.querySelectorAll('.exam-question-checkbox').forEach(input => {
+    if (!input.closest('.exam-option').classList.contains('date-hidden')) input.checked = checked;
+  });
+}
+
+function setSectionExamQuestions(section, checked){
+  document.querySelectorAll(`.exam-question-checkbox[data-exam-section="${section}"]`)
+    .forEach(input => {
+      if (!input.closest('.exam-option').classList.contains('date-hidden')) input.checked = checked;
+    });
+}
+
+function displayAddedDate(date){
+  if (date === 'untracked') return 'Added before date tracking';
+  const [year, month, day] = date.split('-');
+  return `${day}-${month}-${year}`;
+}
+
+function filterExamQuestions(date, button){
+  document.querySelectorAll('.exam-option').forEach(option => {
+    const matches = date === 'all' || option.querySelector('.exam-question-checkbox').dataset.addedDate === date;
+    option.classList.toggle('date-hidden', !matches);
+  });
+  document.querySelectorAll('.exam-section').forEach(section => {
+    section.classList.toggle('date-empty', !section.querySelector('.exam-option:not(.date-hidden)'));
+  });
+  document.querySelectorAll('#exam-date-picker button').forEach(item => item.classList.toggle('active', item === button));
+}
+
+function buildExamDatePicker(){
+  const picker = document.getElementById('exam-date-picker');
+  const dates = [...new Set([...document.querySelectorAll('.exam-question-checkbox')]
+    .map(input => input.dataset.addedDate))]
+    .sort((a, b) => {
+      if (a === 'untracked') return 1;
+      if (b === 'untracked') return -1;
+      return b.localeCompare(a);
+    });
+  const allButton = document.createElement('button');
+  allButton.type = 'button';
+  allButton.className = 'btn btn-small active';
+  allButton.textContent = 'All dates';
+  allButton.onclick = () => filterExamQuestions('all', allButton);
+  picker.appendChild(allButton);
+  dates.forEach(date => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'btn btn-small';
+    button.textContent = displayAddedDate(date);
+    button.onclick = () => filterExamQuestions(date, button);
+    picker.appendChild(button);
+  });
+}
+document.getElementById('bulk-question-form').addEventListener('submit', function(event) {
+  const selected = document.getElementById('bulk-question-section').value;
+  const file = document.getElementById('questions-file').files[0];
+  if (!file) return;
+  event.preventDefault();
+  const reader = new FileReader();
+  reader.onload = () => {
+    let questions;
+    try { questions = JSON.parse(reader.result); } catch (error) { alert('This file is not valid JSON.'); return; }
+    if (!Array.isArray(questions)) { alert('The JSON file must contain an array of questions.'); return; }
+    const names = { aptitude: 'Aptitude', reasoning: 'Reasoning', english: 'English', essay: 'Essay Topics' };
+    const sections = questions.map(question => String(question && question.section || '').trim().toLowerCase());
+    if (sections.some(section => !names[section])) { alert('Every question must include a valid section: aptitude, reasoning, english, or essay. No questions were imported.'); return; }
+    const wrong = [...new Set(sections.filter(section => section !== selected))];
+    if (wrong.length) { alert(`You selected ${names[selected]}, but this file contains questions for ${wrong.map(section => names[section]).join(', ')}. Choose the correct section before importing.`); return; }
+    if (confirm(`Are you sure you want to import ${questions.length} question${questions.length === 1 ? '' : 's'} into ${names[selected]}?`)) event.target.submit();
+  };
+  reader.readAsText(file);
+});
+
+const adminToast = document.getElementById('admin-toast');
+if (adminToast) setTimeout(() => adminToast.remove(), 5200);
+buildExamDatePicker();
+</script>
 
 </body>
 </html>
